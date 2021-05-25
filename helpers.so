@@ -58,24 +58,29 @@ Computes the first 0 to d-1 order partial derivatives of f and returns a polynom
 If none exist, returns poly(0).
 
 Requires:
-	d > 0
-	A basering is defined
+	f is a non-zero polynomial that has degree d > 0.
+	A basering is defined.
 
 //example:
 ring A = 0,(x,y,z),lp;
-poly f = xyz - 3xy2 + 9y2z - xz + 11x + 4;
-hypersurface_of_max_contact(f, 3);
->>> xy - x + 9y2
+poly f = x2 + y2;
+hypersurface_of_max_contact(f, 2);
+>>  2x
 
 */
 proc hypersurface_of_max_contact(poly f, int d)
 {
+	// we want f to have at least degree 0, so just terminate with poly(0) otherwise.
+	if (mindeg(f) < d)
+	{
+		return(poly(0));
+	}
+
 
 	//to_process is a list of nodes to process.
 	//each item is a node containing a partial derivative of the polynomial and its order.
 	//only process up to order d-1.
 	list to_process = list(list(f, 0));
-	int num_ringvars = nvars(basering);
 
 	while(size(to_process) > 0)
 	{
@@ -95,7 +100,7 @@ proc hypersurface_of_max_contact(poly f, int d)
 			//processing list, except those partial derivatives of order d or more.
 			if(current_order < d)
 			{
-				for(int j = 1; j <= num_ringvars; j++)
+				for(int j = 1; j <= nvars(basering); j++)
 				{
 					poly g = diff(current_derivative, var(j));
 					if(mindeg(g) > 0)
