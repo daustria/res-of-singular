@@ -1,0 +1,51 @@
+// a user defined type for coefficient ideals
+newstruct("coeff_ideal", "ideal I, int d");
+
+proc pretty_print(coeff_ideal J)
+{
+	"(" + string(J.I) + ", " + string(J.d) + ")"
+}
+
+
+// Returns the coefficient ideal that represents the sum of the coefficient ideals L and R.
+proc add_coeff_ideal(coeff_ideal L, coeff_ideal R)
+{
+	ideal J = L.I^R.d + R.I^L.d;
+
+	coeff_ideal K;
+	K.I = J;
+	K.d = L.d * R.d;
+
+	return(K);
+}
+
+system("install", "coeff_ideal", "+", add_coeff_ideal, 2); 
+system("install", "coeff_ideal", "print", pretty_print, 1);
+
+/*
+Examples:
+ring R = (0,complex),(x,y,z),dp;
+
+coeff_ideal J;
+J.I = x2+y2;
+J.d = 2;
+
+J+J;
+
+print(J+J);
+>> (2*x^4+4*x^2*y^2+2*y^4, 4)
+
+// note that in this example, I am implicitly using the addition and print functions defined above. 
+// this is thanks to the system("install", ...) ... commands above.
+// you can check that the ideal above is consistent with the ideal I^2 + I^2 , for I = (x2+y2). 
+
+coeff_ideal K;
+
+K.I = x + y2z;
+K.d = 3;
+
+print(K+J);
+>> (x^6+3*x^4*y^2+3*x^2*y^4+y^6+y^2*z^4+2*x^2*y*z^2+x^4, 6)
+
+*/
+
