@@ -3,9 +3,8 @@ newstruct("coeff_ideal", "ideal I, int d");
 
 proc pretty_print(coeff_ideal J)
 {
-	"(" + string(J.I) + ", " + string(J.d) + ")"
+	"((" + string(J.I) + "), " + string(J.d) + ")"
 }
-
 
 // Returns the coefficient ideal that represents the sum of the coefficient ideals L and R.
 proc add_coeff_ideal(coeff_ideal L, coeff_ideal R)
@@ -27,25 +26,108 @@ Examples:
 ring R = (0,complex),(x,y,z),dp;
 
 coeff_ideal J;
-J.I = x2+y2;
+J.I = ideal(x2+y2);
 J.d = 2;
 
-J+J;
-
 print(J+J);
->> (2*x^4+4*x^2*y^2+2*y^4, 4)
+>> ((x4+2x2y2+y4), 4)
 
 // note that in this example, I am implicitly using the addition and print functions defined above. 
 // this is thanks to the system("install", ...) ... commands above.
-// you can check that the ideal above is consistent with the ideal I^2 + I^2 , for I = (x2+y2). 
 
 coeff_ideal K;
 
-K.I = x + y2z;
+K.I = ideal(x + y2z);
 K.d = 3;
 
-print(K+J);
+K+J;
 >> (x^6+3*x^4*y^2+3*x^2*y^4+y^6+y^2*z^4+2*x^2*y*z^2+x^4, 6)
-
 */
+
+
+/*
+This processes a certain kind of coefficient ideals for the algorithm described for computing the centre of blowup.
+
+requires:
+	-The ideal in the coefficient ideal J, namely J.I, is a non-zero principal ideal. J.I = (f) for a single non-zero polynomial f.
+	-The degree of J, J.d, is the order of vanishing of f at the origin.
+	-hypersurface_variable is just a coordinate variable, say x.
+	-The generator f can be expressed as x^d + (c_(d-2))x^(d-2) + ... + c_1 x + c_0, where the c_i's are polynomials in the remaining ring variables
+
+returns:
+	0 if failed. Otherwise, the coefficient ideal required for the algorithm that computes the centre of blowup.
+	
+*/ 
+proc process_coeff_ideal_principal(coeff_ideal J, poly hypersurface_variable)
+{
+	poly generator = J.I[1]; // we have that J has exactly one non-zero generator
+	int d = J.d;
+
+	matrix m = coef(generator, hypersurface_variable);
+
+	poly highest = m[1][1];
+	poly second_highest = m[1][2];
+
+	if(m[1][1] != hypersurface_variable^d)
+	{
+		return(0);
+	}
+
+
+	if(m[1][2] == hypersurface_variable^(d-1) && m[2][2] != 0)
+	{
+		// this change of variables is so that the coefficient of the hypersurface_variable^(d-1) 
+		// the generator polynomial, namely c_(d-1), is 0.
+		
+		generator = subst(generator, hypersurface_variable, hypersurface_variable - (m[2][2]/d));
+		m = coef(generator, hypersurface_variable);
+	}
+
+	print(m);
+
+
+	coeff_ideal out;
+	out.I = poly(0);
+	out.d = 1;
+
+	int num_terms = size(m) div 2;
+
+	// start from 2, according to the algorithm.
+	for(int i = 2; i <= num_terms; i++)
+	{
+		coeff_ideal K;
+
+		print("term : " + string(m[1,i]));
+		print("coefficient of the term : " + string(m[2,i]));
+
+		K.I = ideal(m[2,i]);
+		K.d = J.d - deg(m[1,i]);
+
+		// add the marked ideal to the output
+		out = out + K;
+
+		print("marked ideal to add is : ");
+		print(K);
+		print("marked ideal is now : ");
+		print(out);
+	}
+
+	return(out);
+}
+
+/* 
+ * Example:
+ *
+ * ring R = 0,(x,y,z),dp;
+ *
+ * coeff_ideal J;
+ * J.I = ideal(z3 - x2yz - x4);
+ * J.d = 3;
+ *
+ * process_coeff_ideal_principal(J);
+ * >> ((-x6y3,x8), 6)
+ *
+*/ 
+
+
 
