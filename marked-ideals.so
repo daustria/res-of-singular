@@ -41,7 +41,7 @@ K.I = ideal(x + y2z);
 K.d = 3;
 
 K+J;
->> (x^6+3*x^4*y^2+3*x^2*y^4+y^6+y^2*z^4+2*x^2*y*z^2+x^4, 6)
+>> ((x^6+3*x^4*y^2+3*x^2*y^4+y^6+y^2*z^4+2*x^2*y*z^2+x^4), 6)
 */
 
 
@@ -87,7 +87,7 @@ proc process_coeff_ideal_principal(coeff_ideal J, poly hypersurface_variable)
 
 
 	coeff_ideal out;
-	out.I = poly(0);
+	out.I = ideal(0);
 	out.d = 1;
 
 	int num_terms = size(m) div 2;
@@ -128,6 +128,21 @@ proc process_coeff_ideal_principal(coeff_ideal J, poly hypersurface_variable)
  * >> ((-x6y3,x8), 6)
  *
 */ 
+
+//same as process_coeff_ideal_principal, except that the ideal in J does not necessarily have to be principal.
+proc process_coeff_ideal(coeff_ideal J, poly hypersurface_variable)
+{
+	coeff_ideal out;
+	out.I = ideal(0);
+	out.d = 1;
+
+	for(i = 1; i <= size(J); i++)
+	{
+		out = out + process_coeff_ideal_principal(J[i]);
+	}
+
+	return out
+}
 
 
 
