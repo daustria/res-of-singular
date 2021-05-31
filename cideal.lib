@@ -143,6 +143,3 @@ proc process_coeff_ideal(coeff_ideal J, poly hypersurface_variable)
 
 	return out
 }
-
-
-
