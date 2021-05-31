@@ -1,7 +1,28 @@
-// a user defined type for coefficient ideals
-newstruct("coeff_ideal", "ideal I, int d");
+////////////////////////////////////////////////////////////////
+info="
+LIBRARY:   cideal.lib  
+AUTHOR:    Dominic Austria, email: dgaustri@uwaterloo.ca
 
-proc pretty_print(coeff_ideal J)
+";
+////////////////////////////////////////////////////////////////
+static proc mod_init()
+{
+	newstruct("coeff_ideal", "ideal I, int d");
+
+	system("install", "coeff_ideal", "+", add_coeff_ideal, 2); 
+	system("install", "coeff_ideal", "print", pretty_print_coeff_ideal, 1);
+	system("install", "coeff_ideal", "=", make_coeff_ideal, 1);
+}
+
+proc make_coeff_ideal(ideal I, int d)
+{
+	coeff_ideal J;
+	J.I = I;
+	J.d = d;
+	return(J);
+}
+
+proc pretty_print_coeff_ideal(coeff_ideal J)
 {
 	"((" + string(J.I) + "), " + string(J.d) + ")"
 }
@@ -9,41 +30,18 @@ proc pretty_print(coeff_ideal J)
 // Returns the coefficient ideal that represents the sum of the coefficient ideals L and R.
 proc add_coeff_ideal(coeff_ideal L, coeff_ideal R)
 {
-	ideal J = L.I^R.d + R.I^L.d;
-
-	coeff_ideal K;
-	K.I = J;
-	K.d = L.d * R.d;
-
+	coeff_ideal K = ideal(L.I^R.d + R.I^L.d), L.d * R.d;
 	return(K);
 }
+example
+{
+	ring R = (0.complex),(x,y,z),dp;
+	coeff_ideal J;
+	J.I = ideal(x2+y2);
+	J.d = 2;
 
-system("install", "coeff_ideal", "+", add_coeff_ideal, 2); 
-system("install", "coeff_ideal", "print", pretty_print, 1);
-
-/*
-Examples:
-ring R = (0,complex),(x,y,z),dp;
-
-coeff_ideal J;
-J.I = ideal(x2+y2);
-J.d = 2;
-
-print(J+J);
->> ((x4+2x2y2+y4), 4)
-
-// note that in this example, I am implicitly using the addition and print functions defined above. 
-// this is thanks to the system("install", ...) ... commands above.
-
-coeff_ideal K;
-
-K.I = ideal(x + y2z);
-K.d = 3;
-
-K+J;
->> ((x^6+3*x^4*y^2+3*x^2*y^4+y^6+y^2*z^4+2*x^2*y*z^2+x^4), 6)
-*/
-
+	J+J; //((x4+2x2y2+y4), 4)
+}
 
 /*
 This processes a certain kind of coefficient ideals for the algorithm described for computing the centre of blowup.
@@ -65,6 +63,8 @@ proc process_coeff_ideal_principal(coeff_ideal J, poly hypersurface_variable)
 
 	matrix m = coef(generator, hypersurface_variable);
 
+	// check that the generator f can be expressed 
+	// in the form x^d + (c_(d-2))x^(d-2) + ... + c_1 x + c_0
 	poly highest = m[1][1];
 	poly second_highest = m[1][2];
 
@@ -83,8 +83,7 @@ proc process_coeff_ideal_principal(coeff_ideal J, poly hypersurface_variable)
 		m = coef(generator, hypersurface_variable);
 	}
 
-	print(m);
-
+	dbprint(m);
 
 	coeff_ideal out;
 	out.I = ideal(0);
@@ -97,8 +96,8 @@ proc process_coeff_ideal_principal(coeff_ideal J, poly hypersurface_variable)
 	{
 		coeff_ideal K;
 
-		print("term : " + string(m[1,i]));
-		print("coefficient of the term : " + string(m[2,i]));
+		dbprint("term : " + string(m[1,i]));
+		dbprint("coefficient of the term : " + string(m[2,i]));
 
 		K.I = ideal(m[2,i]);
 		K.d = J.d - deg(m[1,i]);
@@ -106,35 +105,25 @@ proc process_coeff_ideal_principal(coeff_ideal J, poly hypersurface_variable)
 		// add the marked ideal to the output
 		out = out + K;
 
-		print("marked ideal to add is : ");
-		print(K);
-		print("marked ideal is now : ");
-		print(out);
+		dbprint("marked ideal to add is : ");
+		dbprint(K);
+		dbprint("marked ideal is now : ");
+		dbprint(out);
 	}
 
 	return(out);
 }
-
-/* 
- * Example:
- *
- * ring R = 0,(x,y,z),dp;
- *
- * coeff_ideal J;
- * J.I = ideal(z3 - x2yz - x4);
- * J.d = 3;
- *
- * process_coeff_ideal_principal(J);
- * >> ((-x6y3,x8), 6)
- *
-*/ 
+example
+{
+	ring R = 0,(x,y,z),dp;
+	coeff_ideal J = ideal(z3-x2yz-x4), 3;
+	process_coeff_ideal_principal(J); // ((-x6y3,x8), 6)
+}
 
 //same as process_coeff_ideal_principal, except that the ideal in J does not necessarily have to be principal.
 proc process_coeff_ideal(coeff_ideal J, poly hypersurface_variable)
 {
-	coeff_ideal out;
-	out.I = ideal(0);
-	out.d = 1;
+	coeff_ideal out = ideal(0), 1;
 
 	for(int i = 1; i <= size(J); i++)
 	{
@@ -143,3 +132,5 @@ proc process_coeff_ideal(coeff_ideal J, poly hypersurface_variable)
 
 	return out
 }
+
+
