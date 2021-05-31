@@ -136,7 +136,7 @@ proc process_coeff_ideal(coeff_ideal J, poly hypersurface_variable)
 	out.I = ideal(0);
 	out.d = 1;
 
-	for(i = 1; i <= size(J); i++)
+	for(int i = 1; i <= size(J); i++)
 	{
 		out = out + process_coeff_ideal_principal(J[i]);
 	}
