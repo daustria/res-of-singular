@@ -1,0 +1,17 @@
+LIB "cideal.lib";
+
+
+example add_coeff_ideal;
+example process_coeff_ideal;
+
+
+coeff_ideal J1 = ideal(x2 + yz2), 2;
+process_coeff_ideal(J1, x);
+
+//need a ring with 4 variables, so i redefine it
+ring R = (0,complex),(x,y,z,w),lp;
+
+coeff_ideal J2 = ideal(x2 + yz2 + w4), 2;
+process_coeff_ideal(J2, x);
+
+
