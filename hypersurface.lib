@@ -1,4 +1,15 @@
-LIB "general.lib";
+////////////////////////////////////////////////////////////////
+info="
+LIBRARY:   hypersurface.lib  
+AUTHOR:    Dominic Austria, email: dgaustri@uwaterloo.ca
+
+";
+////////////////////////////////////////////////////////////////
+
+static proc mod_init()
+{
+	LIB "general.lib";
+}
 
 /*
 polynomials: a list of polynomials
@@ -9,21 +20,6 @@ Returns the polynomial in the list with a monomial of minimum total degree.
 'greatest' polynomial is chosen where the ordering comes from the active basering.
 
 -If the list is empty, returns the zero polynomial poly(0).
-
-Example:
-
-ring A = 0,(x,y),lp; // 'lp' specifies the lexicographical monomial ordering
-
-poly f1 = x3y2 + 7y3 - 3x3 - 12xy;
-poly f2 = y5 + 9x2 - xy;
-poly f3 = y5 + 11x3 + y2;
-poly f4 = x4y - y3 - x;
-poly f5 = xy4 + 2x2 + 9y;
-
-list l = f1,f2,f3,f5;
-
-smallest_total_degree(l);
->> x4y - y3 - x;
 */
 proc smallest_total_degree(list polynomials)
 {
@@ -51,37 +47,47 @@ proc smallest_total_degree(list polynomials)
 	sort(candidates);
 	return(candidates[1]);
 }
+example
+{
+
+	ring A = 0,(x,y),lp; // 'lp' specifies the lexicographical monomial ordering
+
+	poly f1 = x3y2 + 7y3 - 3x3 - 12xy;
+	poly f2 = y5 + 9x2 - xy;
+	poly f3 = y5 + 11x3 + y2;
+	poly f4 = x4y - y3 - x;
+	poly f5 = xy4 + 2x2 + 9y;
+
+	list l = f1,f2,f3,f5;
+
+	smallest_total_degree(l); // x4y - y3 - x
+}
 
 /*
-
-Computes the first 0 to d-1 order partial derivatives of f and returns a polynomial from that collection which has multiplicity 1 at the origin.
-If none exist, returns poly(0).
-
-Requires:
-	f is a non-zero polynomial that has degree d > 0.
-	A basering is defined.
-
-//example:
-ring A = 0,(x,y,z),lp;
-poly f = x2 + y2;
-hypersurface_of_max_contact(f, 2);
->>  2x
+ * Computes the first 0 to d-1 order partial derivatives of f and returns a polynomial from that collection which has multiplicity 1 at the origin.
+ * If none exist, returns poly(0).
+ *
+ * Requires:
+ * 	-f is a non-zero polynomial that has degree d > 0.
 
 */
-proc hypersurface_of_max_contact(poly f, int d)
+proc hypersurface_of_max_contact(poly f)
 {
+	int d = mindeg(f);
+
 	// we want f to have at least degree 0, so just terminate with poly(0) otherwise.
 	if (mindeg(f) < d)
 	{
 		return(poly(0));
 	}
 
-
-	//to_process is a list of nodes to process.
-	//each item is a node containing a partial derivative of the polynomial and its order.
+	//consider the tree f and its partial derivatives of orders 0 to d-1.
+	//to_process is a list of derivatives to process:
+	//each item represents a node containing a partial derivative of the polynomial and its order.
 	//only process up to order d-1.
 	list to_process = list(list(f, 0));
 
+	//breadth first search on the partial derivatives of f
 	while(size(to_process) > 0)
 	{
 		list current_node = to_process[1];
@@ -92,7 +98,8 @@ proc hypersurface_of_max_contact(poly f, int d)
 
 		if(mindeg(current_derivative) == 1)
 		{
-			return(current_derivative);
+			poly simplified = simplify(current_derivative, 1); // divide by the leading coefficient
+			return(simplified);
 		}	
 		else
 		{
@@ -113,4 +120,10 @@ proc hypersurface_of_max_contact(poly f, int d)
 	}	
 
 	return(poly(0));
+}
+example
+{
+	ring A = 0,(x,y,z),lp;
+	poly f = 2x3 + 3y2;
+	hypersurface_of_max_contact(f); // y
 }

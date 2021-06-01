@@ -8,6 +8,7 @@ example process_coeff_ideal;
 proc test_coeff_ideal(coeff_ideal J, poly hypersurface_var)
 {
 	print("=================================================");
+	print("Testing coefficient ideal ");
 	print(J);
 	print("Hypersurface of max contact variable: " + string(hypersurface_var));
 
