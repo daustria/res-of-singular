@@ -21,14 +21,15 @@ Returns the polynomial in the list with a monomial of minimum total degree.
 
 -If the list is empty, returns the zero polynomial poly(0).
 */
-proc smallest_total_degree(list polynomials)
+proc smallest_total_degree_polynomial(list polynomials)
 {
-	if(size(polynomials == 0))
+	if(size(polynomials) == 0)
 	{
 		return poly(0);
 	}
 
 	list candidates;
+
 	int min_so_far = mindeg(polynomials[1]);
 
 	int len = size(polynomials);
@@ -49,8 +50,7 @@ proc smallest_total_degree(list polynomials)
 }
 example
 {
-
-	ring A = 0,(x,y),lp; // 'lp' specifies the lexicographical monomial ordering
+	ring A = 0,(x,y),lp;
 
 	poly f1 = x3y2 + 7y3 - 3x3 - 12xy;
 	poly f2 = y5 + 9x2 - xy;
@@ -58,9 +58,14 @@ example
 	poly f4 = x4y - y3 - x;
 	poly f5 = xy4 + 2x2 + 9y;
 
-	list l = f1,f2,f3,f5;
+	list l = f1,f2,f3,f4,f5;
 
-	smallest_total_degree(l); // x4y - y3 - x
+	smallest_total_degree_polynomial(l); // 2x2 + xy4 + 9y;
+}
+
+proc smallest_total_degree(list polynomials)
+{
+	return mindeg(smallest_total_degree_polynomial(polynomials));
 }
 
 /*
@@ -71,7 +76,7 @@ example
  * 	-f is a non-zero polynomial that has degree d > 0.
 
 */
-proc hypersurface_of_max_contact(poly f)
+proc hypersurface_max_contact(poly f)
 {
 	int d = mindeg(f);
 
@@ -125,5 +130,5 @@ example
 {
 	ring A = 0,(x,y,z),lp;
 	poly f = 2x3 + 3y2;
-	hypersurface_of_max_contact(f); // y
+	hypersurface_max_contact(f); // y
 }

@@ -1,9 +1,11 @@
 LIB "cideal.lib";
 
 ring R = (0,complex),(x,y,z,w),lp;
+printlevel=3;
 
 example add_coeff_ideal;
 example process_coeff_ideal;
+example compute_invariant_0;
 
 proc test_coeff_ideal(coeff_ideal J, poly hypersurface_var)
 {
