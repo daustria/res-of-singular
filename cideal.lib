@@ -7,6 +7,8 @@ AUTHOR:    Dominic Austria, email: dgaustri@uwaterloo.ca
 ////////////////////////////////////////////////////////////////
 static proc mod_init()
 {
+	LIB "hypersurface.lib";
+
 	newstruct("coeff_ideal", "ideal I, int d");
 
 	system("install", "coeff_ideal", "+", add_coeff_ideal, 2); 
@@ -183,3 +185,67 @@ example
 	process_coeff_ideal(J, z); // ((-x6y3,x8), 6)
 }
 
+//assume I is non-zero
+//TODO: this is broken, i need to fix it
+proc compute_invariant_0(ideal I)
+{
+	list generators = I[1..size(I)]; //the list with f_i, where I = (f_1,...,f_m)
+	poly smallest_deg = smallest_total_degree_polynomial(generators);
+
+	poly hypersurface_var = hypersurface_max_contact(smallest_deg);
+
+	// order of vanishing of f_1,...,f_m at the origin corresponds to the f_i with smallest minimum degree
+	int d = mindeg(smallest_deg);
+
+	list invariant = d,0;
+
+	coeff_ideal J = I, d;
+
+	// terminate when J has the zero ideal
+	while(size(J.I) > 0)
+	{
+		dbprint("Current coefficient ideal is : ");
+		dbprint(J);
+
+		dbprint("Invariant is : " + string(invariant));
+
+		coeff_ideal res = process_coeff_ideal(J, hypersurface_var);
+
+		I = res.I;
+		d = res.d;
+
+		dbprint("After processing, coefficient ideal is : ");
+		dbprint(res);
+
+		if(size(I) == 0)
+		{
+			break;
+		}
+
+		generators = I[1..size(I)];
+
+		smallest_deg = smallest_total_degree_polynomial(generators);
+		int e = mindeg(smallest_deg);
+
+		//TODO:
+		//need to find out how to represent e/d as a double or fraction. right now, this is doing
+		//integer division, which is not what i want
+		invariant = invariant + list(e div d, 0);
+
+		//update the hypersurface of max contact
+		hypersurface_var = hypersurface_max_contact(smallest_deg);
+
+		res.d = e;
+		//update the coefficient ideal
+		J = res;
+	}
+
+	// use -1 to denote infinity
+	return(invariant + list(-1));
+}
+example
+{
+	ideal I = z3 - x2yz - x4;
+	list l = compute_invariant_0(I);
+	print(l);
+}
