@@ -14,6 +14,7 @@ static proc mod_init()
 	system("install", "coeff_ideal", "+", add_coeff_ideal, 2); 
 	system("install", "coeff_ideal", "print", pretty_print_coeff_ideal, 1);
 	system("install", "coeff_ideal", "=", make_coeff_ideal, 1);
+	system("install", "coeff_ideal", "string", string_coeff_ideal, 1);
 }
 
 proc make_coeff_ideal(ideal I, int d)
@@ -24,9 +25,14 @@ proc make_coeff_ideal(ideal I, int d)
 	return(J);
 }
 
+proc string_coeff_ideal(coeff_ideal J)
+{
+	return("((" + string(J.I) + "), " + string(J.d) + ")");
+}
+
 proc pretty_print_coeff_ideal(coeff_ideal J)
 {
-	"((" + string(J.I) + "), " + string(J.d) + ")"
+	"((" + string(J.I) + "), " + string(J.d) + ")";
 }
 
 proc add_coeff_ideal(coeff_ideal L, coeff_ideal R)
@@ -107,7 +113,7 @@ static proc format_polynomial(poly f, poly hypersurface_variable, int d)
 		g = subst(g, z, z - c_d_min_1 / d);
 	}
 
-	dbprint("Result is : " + string(g));
+	dbprint("Polynomial formatting result is : " + string(g));
 	return(g);
 
 }
@@ -128,24 +134,30 @@ static proc process_coeff_ideal_principal(coeff_ideal J, poly hypersurface_varia
 
 	int num_terms = size(m) div 2;
 
-	// start from 2, according to the algorithm.
-	// (ignore the z^d term)
-	for(int i = 2; i <= num_terms; i++)
+	for(int i = 1; i <= num_terms; i++)
 	{
-		coeff_ideal K;
+		int term_deg = deg(m[1,i]);
 
 		dbprint("term : " + string(m[1,i]));
 		dbprint("coefficient of the term : " + string(m[2,i]));
+
+		if (term_deg == J.d)
+		{
+			dbprint("Skipping the d-th term");
+			//need the i++ before continue in Singular, not like C.
+			i++;
+			continue;
+		}
+
+		coeff_ideal K;
 
 		K.I = ideal(m[2,i]);
 		K.d = J.d - deg(m[1,i]);
 
 		out = out + K;
 
-		dbprint("marked ideal to add is : ");
-		dbprint(K);
-		dbprint("marked ideal is now : ");
-		dbprint(out);
+		dbprint("marked ideal to add is : " + string(K));
+		dbprint("resulting marked ideal is now : " + string(out));
 	}
 
 	return(out);
@@ -163,6 +175,7 @@ returns:
 	0 if failed. Otherwise, the coefficient ideal required for the algorithm that computes the centre of blowup.
 	
 */ 
+//TODO: needs some more tests too.
 proc process_coeff_ideal(coeff_ideal J, poly hypersurface_variable)
 {
 	coeff_ideal out = ideal(0), 1;
@@ -170,7 +183,10 @@ proc process_coeff_ideal(coeff_ideal J, poly hypersurface_variable)
 	for(int i = 1; i <= size(J.I); i++)
 	{
 		coeff_ideal K = J.I[i], J.d;
-		out = out + process_coeff_ideal_principal(K, hypersurface_variable);
+		dbprint("Processing the principal coefficient ideal : " + string(K));
+		coeff_ideal processed = process_coeff_ideal_principal(K, hypersurface_variable);
+		dbprint("After processing, result is :" + string(processed));
+		out = out + processed;
 	}
 
 	return(out);
@@ -186,7 +202,7 @@ example
 }
 
 //assume I is non-zero
-//TODO: this is broken, i need to fix it
+//TODO: needs tests
 proc compute_invariant_0(ideal I)
 {
 	list generators = I[1..size(I)]; //the list with f_i, where I = (f_1,...,f_m)
@@ -204,8 +220,7 @@ proc compute_invariant_0(ideal I)
 	// terminate when J has the zero ideal
 	while(size(J.I) > 0)
 	{
-		dbprint("Current coefficient ideal is : ");
-		dbprint(J);
+		dbprint("Current coefficient ideal is : " + string(J));
 
 		dbprint("Invariant is : " + string(invariant));
 
@@ -214,8 +229,7 @@ proc compute_invariant_0(ideal I)
 		I = res.I;
 		d = res.d;
 
-		dbprint("After processing, coefficient ideal is : ");
-		dbprint(res);
+		dbprint("After processing, coefficient ideal is : " + string(res));
 
 		if(size(I) == 0)
 		{
@@ -227,10 +241,7 @@ proc compute_invariant_0(ideal I)
 		smallest_deg = smallest_total_degree_polynomial(generators);
 		int e = mindeg(smallest_deg);
 
-		//TODO:
-		//need to find out how to represent e/d as a double or fraction. right now, this is doing
-		//integer division, which is not what i want
-		invariant = invariant + list(e div d, 0);
+		invariant = invariant + list(number(e) / number(d), 0);
 
 		//update the hypersurface of max contact
 		hypersurface_var = hypersurface_max_contact(smallest_deg);
@@ -247,5 +258,5 @@ example
 {
 	ideal I = z3 - x2yz - x4;
 	list l = compute_invariant_0(I);
-	print(l);
+	string(l);
 }
