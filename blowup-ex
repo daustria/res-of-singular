@@ -13,6 +13,7 @@ proc showBlowUp(int i)
 
 	def Q = blow[i];
 	setring(Q);
+	Q;	
 
 	print("Ideal of blownup ambient space");
 
@@ -32,5 +33,7 @@ proc showBlowUp(int i)
 	print("=====================================");
 }
 
-showBlowUp(1);
-showBlowUp(2);
+for(int i = 1; i <= size(blow); i++)
+{
+	showBlowUp(i);
+}

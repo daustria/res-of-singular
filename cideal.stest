@@ -1,4 +1,5 @@
 LIB "cideal.lib";
+LIB "resolve-bm.lib";
 
 ring R = (0,complex),(x,y,z,w),lp;
 

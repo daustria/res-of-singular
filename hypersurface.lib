@@ -109,29 +109,34 @@ proc hypersurface_max_contact(poly f)
 
 		to_process = delete(to_process, 1);
 		
-		if(mindeg(current_derivative) == 1 && rvar(to_process))
+		if(mindeg(current_derivative) == 1)
 		{
 
 			poly simplified = simplify(current_derivative, 1); // divide by the leading coefficient
 			dbprint("hypersurface_max_contact | result is:" + string(simplified));
-			return(simplified);
-		}	
-		else
-		{
-			//add all partial derivatives of the current polynomial to the start of the
-			//processing list, except those partial derivatives of order d or more.
-			if(current_order < d-1)
+
+			if(rvar(simplified))
 			{
-				for(int j = 1; j <= nvars(basering); j++)
+				return(simplified);
+			}
+
+			dbprint("hypersurface_max_contact | " + string(simplified) + " is suitable, but not a ring variable. discarding.");
+		}	
+
+		//add all partial derivatives of the current polynomial to the start of the
+		//processing list, except those partial derivatives of order d or more.
+		if(current_order < d-1)
+		{
+			for(int j = 1; j <= nvars(basering); j++)
+			{
+				poly g = diff(current_derivative, var(j));
+				if(mindeg(g) > 0)
 				{
-					poly g = diff(current_derivative, var(j));
-					if(mindeg(g) > 0)
-					{
-						to_process = insert(to_process, list(g, current_order + 1));
-					}
+					to_process = insert(to_process, list(g, current_order + 1));
 				}
 			}
 		}
+	
 	}	
 
 	dbprint("hypersurface_max_contact | Error: could not find a hypersurface of max contact");
