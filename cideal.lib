@@ -67,13 +67,12 @@ example
 static proc format_polynomial(poly f, poly hypersurface_variable, int d)
 {
 
-	dbprint("Formatting polynomial : " + string(f));
-	dbprint("Hypersurface variable : " + string(hypersurface_variable));
-	dbprint("Degree : " + string(d));
+	dbprint("format_polynomial | f: " + string(f) + " hypersurface_of_max_contact:" + string(hypersurface_variable) + " d:" + string(d));
 
 	poly z = hypersurface_variable; //shorten the name a little
 
 	matrix m = coef(f, z);
+
 	poly g = 0;
 
 	int num_terms = size(m) div 2;
@@ -88,17 +87,18 @@ static proc format_polynomial(poly f, poly hypersurface_variable, int d)
 
 		if(term_deg == d-1)
 		{
-			has_d_minus_1_term = 1;
+			has_d_min_1_term = 1;
 			c_d_min_1 = coefficient;
 		}
 
-		if(term_deg == d && coefficient != poly(0))
+		if(term_deg == d && coefficient != poly(1))
 		{
-			dbprint("Coefficient of c^d is not 1");
+			dbprint("format_polynomial | warning: coefficient of " + string(hypersurface_variable) + "^" + string(d) + " is not 1");
 		}
 
 		if(term_deg > d)
 		{
+			i++;
 			continue;
 		}
 		else
@@ -110,12 +110,17 @@ static proc format_polynomial(poly f, poly hypersurface_variable, int d)
 	if(has_d_min_1_term)
 	{
 		// this change of variables gets rid of the c_(d-1) term
-		g = subst(g, z, z - c_d_min_1 / d);
+		poly s = z - c_d_min_1 / d;
+		dbprint("format_polynomial | substituting " + string(z) + " with " + string(s));
+		g = subst(g, z, s);
 	}
 
-	dbprint("Polynomial formatting result is : " + string(g));
-	return(g);
+	//divide by leading coefficient if it is a unit
+	g = simplify(g, 1);
 
+	dbprint("format_polynomial | result is :" + string(g));
+
+	return(g);
 }
 
 //helper function for process_coeff_ideal
@@ -126,7 +131,8 @@ static proc process_coeff_ideal_principal(coeff_ideal J, poly hypersurface_varia
 	poly f = format_polynomial(generator, hypersurface_variable, J.d);
 
 	matrix m = coef(f, hypersurface_variable);
-
+	
+	dbprint("process_coeff_ideal_principal | " + string(f) + " as a polynomial in " + string(hypersurface_variable) + ":");
 	dbprint(m);
 
 	// now, for each coefficient, we sum all coefficient ideals.
@@ -137,13 +143,8 @@ static proc process_coeff_ideal_principal(coeff_ideal J, poly hypersurface_varia
 	for(int i = 1; i <= num_terms; i++)
 	{
 		int term_deg = deg(m[1,i]);
-
-		dbprint("term : " + string(m[1,i]));
-		dbprint("coefficient of the term : " + string(m[2,i]));
-
 		if (term_deg == J.d)
 		{
-			dbprint("Skipping the d-th term");
 			//need the i++ before continue in Singular, not like C.
 			i++;
 			continue;
@@ -154,10 +155,11 @@ static proc process_coeff_ideal_principal(coeff_ideal J, poly hypersurface_varia
 		K.I = ideal(m[2,i]);
 		K.d = J.d - deg(m[1,i]);
 
+		string term_str = "(" + string(m[2,i]) + ")" + string(hypersurface_variable) + "^" + string(term_deg);
+		dbprint("process_coeff_ideal_principal | term: " + term_str + " ideal:" + string(K));
+
 		out = out + K;
 
-		dbprint("marked ideal to add is : " + string(K));
-		dbprint("resulting marked ideal is now : " + string(out));
 	}
 
 	return(out);
@@ -175,7 +177,6 @@ returns:
 	0 if failed. Otherwise, the coefficient ideal required for the algorithm that computes the centre of blowup.
 	
 */ 
-//TODO: needs some more tests too.
 proc process_coeff_ideal(coeff_ideal J, poly hypersurface_variable)
 {
 	coeff_ideal out = ideal(0), 1;
@@ -183,12 +184,13 @@ proc process_coeff_ideal(coeff_ideal J, poly hypersurface_variable)
 	for(int i = 1; i <= size(J.I); i++)
 	{
 		coeff_ideal K = J.I[i], J.d;
-		dbprint("Processing the principal coefficient ideal : " + string(K));
+		dbprint("process_coeff_ideal | Processing the principal coefficient ideal : " + string(K));
 		coeff_ideal processed = process_coeff_ideal_principal(K, hypersurface_variable);
-		dbprint("After processing, result is :" + string(processed));
+		dbprint("process_coeff_ideal | result is :" + string(processed));
 		out = out + processed;
 	}
 
+	dbprint("process_coeff_ideal | final result is :" + string(out));
 	return(out);
 }
 example
@@ -210,6 +212,11 @@ proc compute_invariant_0(ideal I)
 
 	poly hypersurface_var = hypersurface_max_contact(smallest_deg);
 
+	if(!rvar(hypersurface_var))
+	{
+		ERROR("compute_invariant_0 | " + string(hypersurface_var) + " is not a ring variable");
+	}
+
 	// order of vanishing of f_1,...,f_m at the origin corresponds to the f_i with smallest minimum degree
 	int d = mindeg(smallest_deg);
 
@@ -220,16 +227,12 @@ proc compute_invariant_0(ideal I)
 	// terminate when J has the zero ideal
 	while(size(J.I) > 0)
 	{
-		dbprint("Current coefficient ideal is : " + string(J));
-
-		dbprint("Invariant is : " + string(invariant));
+		dbprint("compute_invariant_0 | ideal:" + string(J) + " hypersurface of max contact:" + string(hypersurface_var) + " invariant:" + string(invariant));
 
 		coeff_ideal res = process_coeff_ideal(J, hypersurface_var);
 
 		I = res.I;
 		d = res.d;
-
-		dbprint("After processing, coefficient ideal is : " + string(res));
 
 		if(size(I) == 0)
 		{

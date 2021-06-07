@@ -2,21 +2,31 @@ LIB "cideal.lib";
 
 ring R = (0,complex),(x,y,z,w),lp;
 
-printlevel=10; //not sure what the appropriate print level is, but want everything printed
+// printlevel=10; //not sure what the appropriate print level is, but want everything printed
 
-example add_coeff_ideal;
-example process_coeff_ideal;
-example compute_invariant_0;
+printlevel = 10;
 
+proc print_border()
+{
+	print("=====================================================================");
+}
 proc test_coeff_ideal(coeff_ideal J, poly hypersurface_var)
 {
-	printlevel = 10;
-	print("=================================================");
+	print_border();
 	print("Testing coefficient ideal : " + string(J));
 	print("Hypersurface of max contact variable: " + string(hypersurface_var));
 
 	print("Output is: " + string(process_coeff_ideal(J, hypersurface_var)));
-	print("=================================================");
+	print_border();
+}
+
+proc test_invariant_0(ideal J)
+{
+	print_border();
+	print("Computing invariant of the ideal : " + string(J));
+
+	print("Invariant (year 0) is: " + string(compute_invariant_0(J)));
+	print_border();
 }
 
 coeff_ideal J0 = ideal(0),1;
@@ -24,6 +34,16 @@ coeff_ideal J1 = ideal(x2+yz2),2;
 coeff_ideal J2 = ideal(x2+yz2+w4), 2;
 coeff_ideal J3 = ideal(x5),5;
 coeff_ideal J4 = ideal(x6y3, x8), 8;
+coeff_ideal J5 = ideal(x6,x7,x8), 6;
+coeff_ideal J6 = x3+yz2, 3;
+coeff_ideal J7 = z5 + xz4 + y2z3, 5;
+
+ideal K = y2 - x3;
+ideal K1 = x3;
+ideal K2 = z3 - x2yz - x4;
+ideal K3 = x2 + yz2;
+ideal K4 = y2*(x2 + yz2);
+ideal K5 = ideal(x6,x7,x8);
 
 test_coeff_ideal(J0, y);
 test_coeff_ideal(J1, x);
@@ -31,4 +51,16 @@ test_coeff_ideal(J2, x);
 test_coeff_ideal(J3, x);
 test_coeff_ideal(J3, z);
 test_coeff_ideal(J4, x);
+test_coeff_ideal(J5, x); 
+test_coeff_ideal(J6, z); // what should happen here? coefficient of z^3 is 0, but its multiplcitiy at origin is 3.
+test_coeff_ideal(J7, z); // this forces the substitution of c_(d-1) variable.
 
+test_invariant_0(K);
+test_invariant_0(K1);
+test_invariant_0(K2);
+test_invariant_0(K3);
+test_invariant_0(K4);
+test_invariant_0(K5);
+test_invariant_0(J7.I); 
+//this runs into an error, it computes the hypersurface of max contact as (x+5)*z
+//but this is not a ring variable.
