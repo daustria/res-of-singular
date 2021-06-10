@@ -1,0 +1,6 @@
+LIB "resolvebm.lib";
+
+
+ideal I = x2 + yz2;
+
+dfs_resolve(I, 5);

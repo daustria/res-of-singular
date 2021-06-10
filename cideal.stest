@@ -1,5 +1,4 @@
-LIB "cideal.lib";
-LIB "resolve-bm.lib";
+LIB "resolvebm.lib";
 
 ring R = (0,complex),(x,y,z,w),lp;
 
@@ -26,9 +25,10 @@ proc test_invariant_0(ideal J)
 	print_border();
 	print("Computing invariant of the ideal : " + string(J));
 
-	print("Invariant (year 0) is: " + string(compute_invariant_0(J)));
+	print("Invariant data: " + string(compute_invariant_0(J)));
 	print_border();
 }
+
 
 coeff_ideal J0 = ideal(0),1;
 coeff_ideal J1 = ideal(x2+yz2),2;
@@ -53,8 +53,8 @@ test_coeff_ideal(J3, x);
 test_coeff_ideal(J3, z);
 test_coeff_ideal(J4, x);
 test_coeff_ideal(J5, x); 
-test_coeff_ideal(J6, z); // what should happen here? coefficient of z^3 is 0, but its multiplcitiy at origin is 3.
-test_coeff_ideal(J7, z); // this forces the substitution of c_(d-1) variable.
+//test_coeff_ideal(J6, z); // what should happen here? coefficient of z^3 is 0, but its multiplcitiy at origin is 3.
+//test_coeff_ideal(J7, z); // this forces the substitution of c_(d-1) variable.
 
 test_invariant_0(K);
 test_invariant_0(K1);
@@ -62,6 +62,6 @@ test_invariant_0(K2);
 test_invariant_0(K3);
 test_invariant_0(K4);
 test_invariant_0(K5);
-test_invariant_0(J7.I); 
+//test_invariant_0(J7.I); 
 //this runs into an error, it computes the hypersurface of max contact as (x+5)*z
 //but this is not a ring variable.

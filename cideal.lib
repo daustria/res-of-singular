@@ -7,8 +7,6 @@ AUTHOR:    Dominic Austria, email: dgaustri@uwaterloo.ca
 ////////////////////////////////////////////////////////////////
 static proc mod_init()
 {
-	LIB "hypersurface.lib";
-
 	newstruct("coeff_ideal", "ideal I, int d");
 
 	system("install", "coeff_ideal", "+", add_coeff_ideal, 2); 
