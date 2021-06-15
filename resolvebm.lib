@@ -1,0 +1,450 @@
+////////////////////////////////////////////////////////////////
+info="
+LIBRARY:   resolvebm.lib
+AUTHOR:    Dominic Austria, email: dgaustri@uwaterloo.ca
+
+";
+////////////////////////////////////////////////////////////////
+
+static proc mod_init()
+{
+	LIB "cideal.lib";
+	LIB "hypersurface.lib";
+	LIB "resolve.lib";
+
+	//inv_data will be the data we need to do the resolution of singularities algorithm
+	//after computing the invariant.
+	newstruct("inv_data", "list invariant, list hypersurfaces");
+
+	system("install", "inv_data", "string", string_inv_data, 1);
+	system("install", "inv_data", "print", pretty_print_inv_data, 1);
+	system("install", "inv_data", "=", make_inv_data, 1);
+
+	newstruct("chart_data", "string ideal, int depth, list invariant, string centre_blowup");
+	system("install", "chart_data", "=", make_chart_data, 1);
+
+	newstruct("blowup_data", "string ringvars, string ambient_space, string strict_transform, string exceptional_divisor, string blow_map");
+	system("install", "blowup_data", "=", make_blowup_data, 1);
+
+	newstruct("tree_node", "chart_data chart, blowup_data blowup");
+	system("install", "tree_node", "=", make_tree_node, 1);
+}
+
+proc string_inv_data(inv_data data)
+{
+	string out = "(invariant:"+string(data.invariant)+" hypersurfaces of max contact:"+string(data.hypersurfaces)+")";
+
+	return(out);
+}
+
+proc pretty_print_inv_data(inv_data data)
+{
+	print(string(data));
+}
+
+proc update_invariant(inv_data data, poly hypersurface_max_cont, list new_data)
+{
+	if(hypersurface_max_cont != poly(0))
+	{
+		data.hypersurfaces = insert(data.hypersurfaces, hypersurface_max_cont);
+	}
+
+	data.invariant = data.invariant + new_data;
+	return(data);
+}
+
+proc is_null(inv_data data)
+{
+	return(size(data.invariant) == 0);
+}
+
+proc make_inv_data(list invariant, list hypersurfaces)
+{
+	inv_data data;
+	data.invariant = invariant;
+	data.hypersurfaces = hypersurfaces;
+	return(data);
+}
+
+proc make_null_inv_data()
+{
+	inv_data null_data = list(), list();
+	return(null_data);
+}
+
+// returns 1 if left < right, false otherwise
+proc inv_data_cmp_lt(inv_data left, inv_data right)
+{
+	list left_inv = left.invariant;
+	list right_inv = right.invariant;
+
+	int min_size = min(size(left_inv), size(right_inv));
+
+	for(int i = 1; i <= min_size; i++)
+	{
+		if(left_inv[i] < right_inv[i])
+		{
+			return(1);
+		}
+	}
+
+	if(size(left_inv) < size(right_inv))
+	{
+		return(1);
+	}
+
+	return(0);
+}
+
+proc make_chart_data(string ideal, int depth, list invariant, string centre_blowup)
+{
+	chart_data data;
+	data.ideal = ideal;
+	data.depth = depth;
+	data.invariant = invariant;
+	data.centre_blowup = centre_blowup;
+	return(data);
+}
+
+proc make_blowup_data(string ringvars, string ambient_space, string strict_transform, 
+		string exceptional_divisor, string blow_map)
+{
+	blowup_data data;
+	blowup_data.ringvars = ringvars;
+	blowup_data.ambient_space = ambient_space;
+	blowup_data.strict_transform = strict_transform;
+	blowup_data.exceptional_divisor = exceptional_divisor;
+	blowup_data.blow_map = blow_map;
+	return(data);
+}
+
+proc make_tree_node(chart_data chart, blowup_data blowup)
+{
+	tree_node node;
+	node.chart = chart;
+	node.blowup = blowup;
+	return(node);
+}
+
+
+// let z be the hypersurface_variable, and let e denote the degree of f as
+// a polynomial in z.
+//
+// this helper function returns the polynomial by taking 
+// f and removing all of its all monomial terms with degree greater 
+// than d (as a z- polynomial) :
+//
+// f = z^d + c_(d-1)z^(d-1) + ... + c_1 z + c_0
+//
+// and then, if c_(d-1) is non-zero, make the substitution z = z - (c_(d-1) / d)
+// to remove the c_(d-1) term.
+// 
+// this could be inefficient, as we process the terms of f linearly.
+static proc format_polynomial(poly f, poly hypersurface_variable, int d)
+{
+	dbprint("format_polynomial | f: " + string(f) + " hypersurface_of_max_contact:" + string(hypersurface_variable) + " d:" + string(d));
+
+	poly z = hypersurface_variable; //shorten the name a little
+
+	matrix m = coef(f, z);
+
+	poly g = 0;
+
+	int num_terms = size(m) div 2;
+
+	int has_d_min_1_term = 0;
+	poly c_d_min_1 = 0;
+
+	for(int i = 1; i <= num_terms; i++)
+	{
+		int term_deg = deg(m[1,i]);
+		poly coefficient = m[2,i];
+
+		if(term_deg == d-1)
+		{
+			has_d_min_1_term = 1;
+			c_d_min_1 = coefficient;
+		}
+
+		if(term_deg == d && coefficient != poly(1))
+		{
+			dbprint("format_polynomial | warning: coefficient of " + string(hypersurface_variable) + "^" + string(d) + " is not 1");
+		}
+
+		if(term_deg > d)
+		{
+			i++;
+			continue;
+		}
+		else
+		{
+			g = g + coefficient * m[1,i];
+		}
+	}
+
+	if(has_d_min_1_term)
+	{
+		// this change of variables gets rid of the c_(d-1) term
+		poly s = z - c_d_min_1 / d;
+		dbprint("format_polynomial | substituting " + string(z) + " with " + string(s));
+		g = subst(g, z, s);
+	}
+
+	//divide by leading coefficient if it is a unit
+	g = simplify(g, 1);
+
+	dbprint("format_polynomial | result is :" + string(g));
+
+	return(g);
+}
+
+//helper function for process_coeff_ideal
+static proc process_coeff_ideal_principal(coeff_ideal J, poly hypersurface_variable)
+{
+	poly generator = J.I[1]; // we assume J has exactly one non-zero generator
+
+	poly f = format_polynomial(generator, hypersurface_variable, J.d);
+
+	matrix m = coef(f, hypersurface_variable);
+	
+	dbprint("process_coeff_ideal_principal | " + string(f) + " as a polynomial in " + string(hypersurface_variable) + ":");
+	dbprint(m);
+
+	// now, for each coefficient, we sum all coefficient ideals.
+	coeff_ideal out = ideal(0), 1;
+
+	int num_terms = size(m) div 2;
+
+	for(int i = 1; i <= num_terms; i++)
+	{
+		int term_deg = deg(m[1,i]);
+		if (term_deg == J.d)
+		{
+			//need the i++ before continue in Singular, not like C.
+			i++;
+			continue;
+		}
+
+		coeff_ideal K;
+
+		K.I = ideal(m[2,i]);
+		K.d = J.d - deg(m[1,i]);
+
+		string term_str = "(" + string(m[2,i]) + ")" + string(hypersurface_variable) + "^" + string(term_deg);
+		dbprint("process_coeff_ideal_principal | term: " + term_str + " ideal:" + string(K));
+
+		out = out + K;
+
+	}
+
+	return(out);
+}
+
+/*
+This processes a certain kind of coefficient ideals for the algorithm described for computing the centre of blowup.
+
+requires:
+	-hypersurface_variable is just a coordinate variable, say z.
+	-Label the ideal J.I as (f_1,...,f_m). Then z = 0 is the hypersurface of max contact of J.I
+	-The generator f can be expressed as z^d + (c_(d-2))z^(d-2) + ... + c_1 z + c_0, where the c_i's are polynomials in the remaining ring variables
+
+returns:
+	0 if failed. Otherwise, the coefficient ideal required for the algorithm that computes the centre of blowup.
+	
+*/ 
+proc process_coeff_ideal(coeff_ideal J, poly hypersurface_variable)
+{
+	coeff_ideal out = ideal(0), 1;
+
+	for(int i = 1; i <= size(J.I); i++)
+	{
+		coeff_ideal K = J.I[i], J.d;
+		dbprint("process_coeff_ideal | processing ideal: " + string(K));
+		coeff_ideal processed = process_coeff_ideal_principal(K, hypersurface_variable);
+		dbprint("process_coeff_ideal | result is :" + string(processed));
+		out = out + processed;
+	}
+
+	dbprint("process_coeff_ideal | final result is :" + string(out));
+	return(out);
+}
+example
+{
+	ring R = 0,(x,y,z),dp;
+	// coeff_ideal J = ideal(z3-x2yz-x4), 3;
+	coeff_ideal J;
+	J.I = ideal(z3-x2yz-x4);
+	J.d = 3;
+	process_coeff_ideal(J, z); // ((-x6y3,x8), 6)
+}
+
+//assume I is non-zero
+//computes the invariant of I at year 0
+//
+//TODO: i can make this cleaner by doing all the work in a simple loop
+proc compute_invariant_0(ideal I)
+{
+	if(size(I) == 0)
+	{
+		dbprint("compute_invariant_0 | input:"+string(I)+" has size 0");
+		return(make_null_inv_data());
+	}
+
+	list generators = I[1..size(I)]; //the list with f_i, where I = (f_1,...,f_m)
+	poly smallest_deg = smallest_total_degree_polynomial(generators);
+
+	poly hypersurface_var = hypersurface_max_contact(smallest_deg);
+
+	if(!rvar(hypersurface_var))
+	{
+		dbprint("compute_invariant_0 | could not find a hypersurface of max contact for " + string(smallest_deg));
+		return(make_null_inv_data());
+	}
+
+	// order of vanishing of f_1,...,f_m at the origin corresponds to the f_i with smallest minimum degree
+	int d = mindeg(smallest_deg);
+
+	inv_data data;
+	data = update_invariant(data, hypersurface_var, list(d,0));
+
+	coeff_ideal J = I, d;
+
+	// terminate when J has the zero ideal
+	while(size(J.I) > 0)
+	{
+		dbprint("compute_invariant_0 | ideal:" + string(J) + " hypersurface of max contact:" + string(hypersurface_var) + " invariant data:" + string(data));
+
+		coeff_ideal res = process_coeff_ideal(J, hypersurface_var);
+
+
+		I = res.I;
+		d = res.d;
+
+		if(size(I) == 0)
+		{
+			break;
+		}
+
+		generators = I[1..size(I)];
+
+		smallest_deg = smallest_total_degree_polynomial(generators);
+		int e = mindeg(smallest_deg);
+
+		//update the hypersurface of max contact
+		hypersurface_var = hypersurface_max_contact(smallest_deg);
+
+		if(!rvar(hypersurface_var))
+		{
+			dbprint("compute_invariant_0 | could not find a hypersurface of max contact for " + string(smallest_deg));
+			return(make_null_inv_data());
+		}
+
+		res.d = e;
+		//update the coefficient ideal
+		J = res;
+
+		//update the invariant data
+		data = update_invariant(data, hypersurface_var, list(number(e)/number(d), 0));
+	}
+
+	// update the invariant with -1 denoting infinity
+	data = update_invariant(data, 0, list(-1));
+	return(data);
+}
+example
+{
+	ideal I = z3 - x2yz - x4;
+	inv_data data = compute_invariant_0(I);
+	string(l);
+}
+
+static proc print_chart_info(int depth, int chart_number, string indent)
+{
+	print(indent + "==================CHART " + string(chart_number) + "=================");
+	print("");
+	print(indent+" ring variables: " + varstr(basering));
+	print("");
+	print(indent+" ideal of blownup ambient space:"+string(aS));
+	print("");
+	print(indent+" ideal of strict transform:"+string(sT));	
+	print("");
+	print(indent+" ideal of exceptional divisor:"+string(eD));	
+	print("");
+	print(indent+" ideal of blowup map:"+string(bM));
+	print(indent + "==========================================");
+}
+
+static proc print_parameters(ideal K, int depth, list invariant, ideal centre_of_blowup, string indent)
+{
+	print(indent + "=================PARAMETERS===============");
+	print("");
+	print(indent + "ideal: " + string(K));
+	print("");
+	print(indent + "depth: " + string(depth));
+	print("");
+	print(indent + "invariant: " + string(invariant));
+	print("");
+	print(indent + "centre of blowup: " + string(centre_of_blowup));
+	print(indent + "==========================================");
+}
+
+static proc dfs_resolve_core(ideal K, int depth, int max_depth, inv_data previous_invariant, string indent) 
+{
+	print(indent + "//////////////////////////////////////////");
+
+	if(depth >= max_depth)
+	{
+		print(indent+" max depth reached. terminating..");
+		return();
+	}
+
+
+	if(size(K) == 0)
+	{
+		print(indent+" received zero ideal. terminating..");
+		return();
+	}
+
+	inv_data data = compute_invariant_0(K);
+
+	if(is_null(data)) 
+	{
+		print(indent+ " unable to compute invariant for " + string(K) + ". terminating...");
+		return();
+	}
+
+
+	list hypersurfaces = data.hypersurfaces;
+	ideal centre_of_blowup = hypersurfaces[1..size(hypersurfaces)]; 
+
+	//print_parameters(K, depth, data.invariant, centre_of_blowup, indent);
+
+	if(!is_null(previous_invariant) && !inv_data_cmp_lt(data, previous_invariant))
+	{
+		print(indent + " current invariant is not less than previous");
+		print(indent + " terminating..");
+		return();
+	}
+
+	print_parameters(K, depth, data.invariant, centre_of_blowup, indent);
+
+	list blow = blowUp(K, centre_of_blowup);
+
+	string original_ideal_str = string(K);
+
+	for(int i = 1; i <= size(blow); i++)
+	{
+		def Q = blow[i];
+		setring(Q);
+		print_chart_info(depth, i, indent);
+		// proceed with the strict transform
+		dfs_resolve_core(sT, depth + 1, max_depth, data, indent + "		");
+	}	
+}
+
+proc dfs_resolve(ideal K, int max_depth)
+{
+	inv_data null_data = list(), list();
+
+	dfs_resolve_core(K, 0, max_depth, null_data, "");
+}
