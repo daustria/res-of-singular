@@ -45,8 +45,8 @@ proc smallest_total_degree_polynomial(list polynomials)
 		}	
 	}
 
-	sort(candidates);
-	return(candidates[1]);
+	candidates = sort(candidates);
+	return(candidates[1][1]);
 }
 example
 {
@@ -65,14 +65,38 @@ example
 
 proc smallest_total_degree(list polynomials)
 {
-	return mindeg(smallest_total_degree_polynomial(polynomials));
+	return(mindeg(smallest_total_degree_polynomial(polynomials)));
 }
 
+// sort the ring variables x_i in order of the degree of f when expressed
+// as a polynomial in x_i
+static proc sort_ringvars(poly f)
+{
+	list degrees_of_f = list();
+
+	for(int i = 1; i <= nvars(basering); i++)
+	{
+		matrix m = coef(f, var(i));
+		int d = deg(m[1,1]);
+
+		degrees_of_f = insert(degrees_of_f, d, size(degrees_of_f));
+	}
+
+	//now, degrees_of_f[i] is the degree of f as a polynomial in x_i
+	// we produce the list of ring variables with the same ordering
+	list permutation = sort(degrees_of_f);
+
+	list sorted_ringvars = list();
+
+	for(int i = 1; i <= nvars(basering); i++)
+	{
+		sorted_ringvars = insert(sorted_ringvars, var(permutation[2][i]), size(sorted_ringvars));
+	}
+
+	return(sorted_ringvars);
+}
 
 /*
- * TODO: Should I make this compute the derivatives until it returns
- * a suitable one that is also a coordinate variable??
- *
  * Computes the hypersurface of maximum contact of f at the origin, such that
  * the result is a coordinate variable.
  *
@@ -90,7 +114,7 @@ proc hypersurface_max_contact(poly f)
 		return(poly(0));
 	}
 
-	dbprint("hypersurface_max_contact | processing :" + string(f));
+	dbprint("hypersurface_max_contact | processing: " + string(f));
 
 	//consider the tree f and its partial derivatives of orders 0 to d-1.
 	//to_process is a list of derivatives to process:
@@ -105,7 +129,7 @@ proc hypersurface_max_contact(poly f)
 		poly current_derivative = current_node[1];
 		int current_order = current_node[2];
 
-		dbprint("hypersurface_max_contact | current_derivative:"+string(current_derivative) + " current_order:"+string(current_order) + " polynomial:" + string(f));
+		dbprint("hypersurface_max_contact | current_derivative:"+string(current_derivative) + " current_order:"+string(current_order));
 
 		to_process = delete(to_process, 1);
 		
@@ -127,12 +151,14 @@ proc hypersurface_max_contact(poly f)
 		//processing list, except those partial derivatives of order d or more.
 		if(current_order < d-1)
 		{
-			for(int j = 1; j <= nvars(basering); j++)
+			list sorted_ringvars = sort_ringvars(current_derivative);
+
+			for(int j = 1; j <= size(sorted_ringvars); j++)
 			{
-				poly g = diff(current_derivative, var(j));
+				poly g = diff(current_derivative, sorted_ringvars[j]);
 				if(mindeg(g) > 0)
 				{
-					to_process = insert(to_process, list(g, current_order + 1));
+					to_process = insert(to_process, list(simplify(g, 1), current_order + 1));
 				}
 			}
 		}

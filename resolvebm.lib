@@ -12,37 +12,39 @@ static proc mod_init()
 	LIB "hypersurface.lib";
 	LIB "resolve.lib";
 
-	//inv_data will be the data we need to do the resolution of singularities algorithm
+	//invData will be the data we need to do the resolution of singularities algorithm
 	//after computing the invariant.
-	newstruct("inv_data", "list invariant, list hypersurfaces");
+	newstruct("invData", "list invariant, list hypersurfaces");
 
-	system("install", "inv_data", "string", string_inv_data, 1);
-	system("install", "inv_data", "print", pretty_print_inv_data, 1);
-	system("install", "inv_data", "=", make_inv_data, 1);
+	system("install", "invData", "string", string_inv_data, 1);
+	system("install", "invData", "print", pretty_print_inv_data, 1);
+	system("install", "invData", "=", make_inv_data, 1);
 
-	newstruct("chart_data", "string ideal, int depth, list invariant, string centre_blowup");
-	system("install", "chart_data", "=", make_chart_data, 1);
+	newstruct("nodeData", "string idealStr, int depth, invData invariant");
+	system("install", "nodeData", "=", make_node_data, 1);
+	system("install", "nodeData", "print", print_node_data, 1);
 
-	newstruct("blowup_data", "string ringvars, string ambient_space, string strict_transform, string exceptional_divisor, string blow_map");
-	system("install", "blowup_data", "=", make_blowup_data, 1);
+	newstruct("blowUpData", "string ringvars, string ambientSpace, string strictTransform, string exceptionalDivisor, string blowUpMap");
+	system("install", "blowUpData", "=", make_blowup_data, 1);
+	system("install", "blowUpData", "print", print_blowup_data, 1);
 
-	newstruct("tree_node", "chart_data chart, blowup_data blowup");
+	newstruct("tree_node", "nodeData params, blowUpData blowup");
 	system("install", "tree_node", "=", make_tree_node, 1);
+	system("install", "tree_node", "print", print_tree_node, 1);
 }
 
-proc string_inv_data(inv_data data)
+proc string_inv_data(invData data)
 {
 	string out = "(invariant:"+string(data.invariant)+" hypersurfaces of max contact:"+string(data.hypersurfaces)+")";
-
 	return(out);
 }
 
-proc pretty_print_inv_data(inv_data data)
+proc pretty_print_inv_data(invData data)
 {
 	print(string(data));
 }
 
-proc update_invariant(inv_data data, poly hypersurface_max_cont, list new_data)
+proc update_invariant(invData data, poly hypersurface_max_cont, list new_data)
 {
 	if(hypersurface_max_cont != poly(0))
 	{
@@ -53,14 +55,14 @@ proc update_invariant(inv_data data, poly hypersurface_max_cont, list new_data)
 	return(data);
 }
 
-proc is_null(inv_data data)
+proc is_null(invData data)
 {
 	return(size(data.invariant) == 0);
 }
 
 proc make_inv_data(list invariant, list hypersurfaces)
 {
-	inv_data data;
+	invData data;
 	data.invariant = invariant;
 	data.hypersurfaces = hypersurfaces;
 	return(data);
@@ -68,12 +70,12 @@ proc make_inv_data(list invariant, list hypersurfaces)
 
 proc make_null_inv_data()
 {
-	inv_data null_data = list(), list();
+	invData null_data = list(), list();
 	return(null_data);
 }
 
 // returns 1 if left < right, false otherwise
-proc inv_data_cmp_lt(inv_data left, inv_data right)
+proc inv_datacmp_lt(invData left, invData right)
 {
 	list left_inv = left.invariant;
 	list right_inv = right.invariant;
@@ -96,34 +98,65 @@ proc inv_data_cmp_lt(inv_data left, inv_data right)
 	return(0);
 }
 
-proc make_chart_data(string ideal, int depth, list invariant, string centre_blowup)
+proc make_node_data(string idealStr, int depth, invData invariant)
 {
-	chart_data data;
-	data.ideal = ideal;
+	nodeData data;
+	data.idealStr = idealStr;
 	data.depth = depth;
 	data.invariant = invariant;
-	data.centre_blowup = centre_blowup;
 	return(data);
 }
 
-proc make_blowup_data(string ringvars, string ambient_space, string strict_transform, 
-		string exceptional_divisor, string blow_map)
+proc make_blowup_data(string ringvars, string ambientSpace, string strictTransform, 
+		string exceptionalDivisor, string blowUpMap)
 {
-	blowup_data data;
-	blowup_data.ringvars = ringvars;
-	blowup_data.ambient_space = ambient_space;
-	blowup_data.strict_transform = strict_transform;
-	blowup_data.exceptional_divisor = exceptional_divisor;
-	blowup_data.blow_map = blow_map;
+	blowUpData data;
+	data.ringvars = ringvars;
+	data.ambientSpace = ambientSpace;
+	data.strictTransform = strictTransform;
+	data.exceptionalDivisor = exceptionalDivisor;
+	data.blowUpMap = blowUpMap;
 	return(data);
 }
 
-proc make_tree_node(chart_data chart, blowup_data blowup)
+proc make_tree_node(nodeData params, blowUpData blowup)
 {
 	tree_node node;
-	node.chart = chart;
+	node.params = params;
 	node.blowup = blowup;
 	return(node);
+}
+
+proc print_node_data(nodeData node)
+{
+        print("=================PARAMETERS===============");
+        print("");
+        print("ideal: " + node.idealStr);
+        print("");
+        print("depth: " + string(node.depth));
+        print("");
+        print("invariant: " + string(node.invariant.invariant));
+}
+
+proc print_blowup_data(blowUpData blowup)
+{
+        print("==================BLOWUP==================");
+        print("");
+        print("ring variables: " + varstr(basering));
+        print("");
+        print("ideal of blownup ambient space:"+string(blowup.ambientSpace));
+        print("");
+        print("ideal of strict transform:"+string(blowup.strictTransform));
+        print("");
+        print("ideal of exceptional divisor:"+string(exceptionalDivisor));
+        print("");
+        print("ideal of blowup map:"+string(blowUpMap));
+}
+
+proc print_tree_node(tree_node node)
+{
+	print(node.params);
+	print(node.blowup);
 }
 
 
@@ -160,26 +193,33 @@ static proc format_polynomial(poly f, poly hypersurface_variable, int d)
 		int term_deg = deg(m[1,i]);
 		poly coefficient = m[2,i];
 
-		if(term_deg == d-1)
-		{
-			has_d_min_1_term = 1;
-			c_d_min_1 = coefficient;
-		}
-
-		if(term_deg == d && coefficient != poly(1))
-		{
-			dbprint("format_polynomial | warning: coefficient of " + string(hypersurface_variable) + "^" + string(d) + " is not 1");
-		}
-
 		if(term_deg > d)
 		{
 			i++;
 			continue;
 		}
+		
+
+		if(term_deg == d)
+		{
+			if(coefficient != poly(1))
+			{
+				dbprint("format_polynomial | warning: coefficient of " + string(hypersurface_variable) + "^" + string(d) + " is not 1");
+			}
+
+		}
+
 		else
 		{
-			g = g + coefficient * m[1,i];
+			if(term_deg == d-1)
+			{
+				has_d_min_1_term = 1;
+				c_d_min_1 = coefficient;
+			}
+
 		}
+
+		g = g + coefficient * m[1,i];
 	}
 
 	if(has_d_min_1_term)
@@ -304,7 +344,7 @@ proc compute_invariant_0(ideal I)
 	// order of vanishing of f_1,...,f_m at the origin corresponds to the f_i with smallest minimum degree
 	int d = mindeg(smallest_deg);
 
-	inv_data data;
+	invData data;
 	data = update_invariant(data, hypersurface_var, list(d,0));
 
 	coeff_ideal J = I, d;
@@ -354,97 +394,99 @@ proc compute_invariant_0(ideal I)
 example
 {
 	ideal I = z3 - x2yz - x4;
-	inv_data data = compute_invariant_0(I);
+	invData data = compute_invariant_0(I);
 	string(l);
 }
 
-static proc print_chart_info(int depth, int chart_number, string indent)
+static proc dfs_resolve_core(ideal K, int depth, int max_depth, list tree_path)
 {
-	print(indent + "==================CHART " + string(chart_number) + "=================");
-	print("");
-	print(indent+" ring variables: " + varstr(basering));
-	print("");
-	print(indent+" ideal of blownup ambient space:"+string(aS));
-	print("");
-	print(indent+" ideal of strict transform:"+string(sT));	
-	print("");
-	print(indent+" ideal of exceptional divisor:"+string(eD));	
-	print("");
-	print(indent+" ideal of blowup map:"+string(bM));
-	print(indent + "==========================================");
-}
 
-static proc print_parameters(ideal K, int depth, list invariant, ideal centre_of_blowup, string indent)
-{
-	print(indent + "=================PARAMETERS===============");
-	print("");
-	print(indent + "ideal: " + string(K));
-	print("");
-	print(indent + "depth: " + string(depth));
-	print("");
-	print(indent + "invariant: " + string(invariant));
-	print("");
-	print(indent + "centre of blowup: " + string(centre_of_blowup));
-	print(indent + "==========================================");
-}
+	dbprint("dfs_resolve_core | K:"+string(K));
 
-static proc dfs_resolve_core(ideal K, int depth, int max_depth, inv_data previous_invariant, string indent) 
-{
-	print(indent + "//////////////////////////////////////////");
+	// first, update the farthest path
+	if(size(tree_path) > size(farthest_path))
+	{
+		farthest_path = tree_path;
+	}
 
 	if(depth >= max_depth)
 	{
-		print(indent+" max depth reached. terminating..");
+		dbprint("max depth reached. terminating..");
 		return();
 	}
 
 
 	if(size(K) == 0)
 	{
-		print(indent+" received zero ideal. terminating..");
+		dbprint("received zero ideal. terminating..");
 		return();
 	}
+	else
+	{
+		list generators = K[1..size(K)];
+		if(smallest_total_degree(generators) < 1)
+		{
+			dbprint("One of the generators have min degree less than 1, terminating..");
+			return();
+		}
+	}
 
-	inv_data data = compute_invariant_0(K);
+	invData data = compute_invariant_0(K);
 
 	if(is_null(data)) 
 	{
-		print(indent+ " unable to compute invariant for " + string(K) + ". terminating...");
+		dbprint(" unable to compute invariant for " + string(K) + ". terminating...");
 		return();
 	}
-
 
 	list hypersurfaces = data.hypersurfaces;
 	ideal centre_of_blowup = hypersurfaces[1..size(hypersurfaces)]; 
 
-	//print_parameters(K, depth, data.invariant, centre_of_blowup, indent);
-
-	if(!is_null(previous_invariant) && !inv_data_cmp_lt(data, previous_invariant))
+	// Compare the current invariant to the parent node
+	if(size(tree_path) >= 1)
 	{
-		print(indent + " current invariant is not less than previous");
-		print(indent + " terminating..");
-		return();
+		tree_node previous_node = tree_path[size(tree_path)];
+		invData previous_invariant = previous_node.params.invariant;
+
+		if(!is_null(previous_invariant) && !inv_datacmp_lt(data, previous_invariant))
+		{
+			dbprint("current invariant is not less than previous");
+			dbprint("terminating..");
+			return();
+		}
 	}
 
-	print_parameters(K, depth, data.invariant, centre_of_blowup, indent);
+	//Record non blowup-related information about this node.
+	nodeData params = string(K), depth, data;
 
 	list blow = blowUp(K, centre_of_blowup);
-
-	string original_ideal_str = string(K);
 
 	for(int i = 1; i <= size(blow); i++)
 	{
 		def Q = blow[i];
 		setring(Q);
-		print_chart_info(depth, i, indent);
+
+		blowUpData blowup = varstr(Q), string(aS), string(sT), string(eD), string(bM);
+		tree_node node = params,blowup;
+
+		sT = simplify(sT, 1+2+4);
 		// proceed with the strict transform
-		dfs_resolve_core(sT, depth + 1, max_depth, data, indent + "		");
+		dfs_resolve_core(sT, depth + 1, max_depth, tree_path + list(node));
 	}	
 }
 
 proc dfs_resolve(ideal K, int max_depth)
 {
-	inv_data null_data = list(), list();
+	list farthest_path = list();
+	export farthest_path;
 
-	dfs_resolve_core(K, 0, max_depth, null_data, "");
+	invData null_data = list(), list();
+
+	dfs_resolve_core(K, 0, max_depth, list());
+
+	for(int i = 1; i <= size(farthest_path); i++)
+	{
+		print("///////////////////NODE "+string(i)+"//////////////////");
+		print(farthest_path[i]);
+	}
 }

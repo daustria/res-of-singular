@@ -36,8 +36,8 @@ proc pretty_print_coeff_ideal(coeff_ideal J)
 proc add_coeff_ideal(coeff_ideal L, coeff_ideal R)
 {
 	coeff_ideal K; 
-	K.I = ideal(L.I^R.d + R.I^L.d);
 	K.d = lcm(L.d, R.d);
+	K.I = ideal(L.I^(K.d div L.d) + R.I^(K.d div R.d));
 	return(K);
 }
 example
