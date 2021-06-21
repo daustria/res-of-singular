@@ -176,6 +176,9 @@ proc hypersurface_max_contact(poly f)
 		{
 			ideal first_partials = jacob(previous_order_d_ideal[j]);
 			derivative_ideal_order_i = derivative_ideal_order_i + first_partials;
+			derivative_ideal_order_i = simplify(derivative_ideal_order_i, 1+2+4+8);
+
+			//dbprint(sprintf("hypersurface_max_contact | derivative_ideal_order_%s:%s", i, derivative_ideal_order_i));
 		}
 
 		derivative_ideal_order_i = derivative_ideal_order_i + previous_order_d_ideal;
