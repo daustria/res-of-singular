@@ -9,6 +9,7 @@ AUTHOR:    Dominic Austria, email: dgaustri@uwaterloo.ca
 static proc mod_init()
 {
 	LIB "general.lib";
+	LIB "zeroset.lib";
 }
 
 /*
@@ -68,86 +69,11 @@ proc smallest_total_degree(list polynomials)
 	return(mindeg(smallest_total_degree_polynomial(polynomials)));
 }
 
-// sort the ring variables x_i in order of the degree of f when expressed
-// as a polynomial in x_i
-static proc sort_ringvars(poly f)
-{
-	list degrees_of_f = list();
-
-	for(int i = 1; i <= nvars(basering); i++)
-	{
-		matrix m = coef(f, var(i));
-		int d = deg(m[1,1]);
-
-		degrees_of_f = insert(degrees_of_f, d, size(degrees_of_f));
-	}
-
-	//now, degrees_of_f[i] is the degree of f as a polynomial in x_i
-	// we produce the list of ring variables with the same ordering
-	list permutation = sort(degrees_of_f);
-
-	list sorted_ringvars = list();
-
-	for(int i = 1; i <= nvars(basering); i++)
-	{
-		sorted_ringvars = insert(sorted_ringvars, var(permutation[2][i]), size(sorted_ringvars));
-	}
-
-	return(sorted_ringvars);
-}
-
-
 // returns the degree of f as a polynomial in the ring variable z
 static proc degree_in(poly f, poly z)
 {
 	matrix m = coef(f, z);
 	return(deg(m[1,1]));
-}
-
-static proc hypersurface_max_contact_core(poly f, int current_order, int max_order)
-{
-
-	if(result != poly(0))
-	{
-		return();	
-	}
-
-	// maintain the print level
-	printlevel = printlevel + current_order;
-
-	if(current_order >= max_order)
-	{
-		return();
-	}
-
-	dbprint("hypersurface_max_contact_core | f:"+string(f) + " order: "+string(current_order) + " max_order: "+string(max_order));
-
-	f = simplify(f, 1);
-
-	if(mindeg(f) == 1)
-	{
-		if(rvar(f))
-		{
-			dbprint("hypersurface_max_contact_core | terminating with:"+string(f));
-			result = f;
-			return();
-		}
-	}
-
-	ideal j = jacob(f); //all possible candidates
-
-	j = simplify(j,1+2+4+8);
-
-	for(int i = 1; i <= size(j); i++)
-	{
-		poly g = j[i];
-
-		if(mindeg(g) > 0)
-		{
-			hypersurface_max_contact_core(g, current_order + 1, max_order);
-		}
-	}
-
 }
 
 /*
@@ -160,55 +86,53 @@ static proc hypersurface_max_contact_core(poly f, int current_order, int max_ord
 */
 proc hypersurface_max_contact(poly f)
 {
-	//derivative ideal of order 1
-	ideal derivative_ideal = jacob(f) + ideal(f);
-
-	ideal previous_order_d_ideal = derivative_ideal;
-
-	//sum the derivative ideals starting from 1
-	for(int i = 2; i < mindeg(f); i++)
-	{
-		ideal derivative_ideal_order_i = 0;	
-
-		//construct the first derivative ideal of the previous order, which consists of 
-		//its generators and first partial derivatives
-		for(int j = 1; j <= size(previous_order_d_ideal); j++)
-		{
-			ideal first_partials = jacob(previous_order_d_ideal[j]);
-			derivative_ideal_order_i = derivative_ideal_order_i + first_partials;
-			derivative_ideal_order_i = simplify(derivative_ideal_order_i, 1+2+4+8);
-
-			//dbprint(sprintf("hypersurface_max_contact | derivative_ideal_order_%s:%s", i, derivative_ideal_order_i));
-		}
-
-		derivative_ideal_order_i = derivative_ideal_order_i + previous_order_d_ideal;
-
-		previous_order_d_ideal = derivative_ideal_order_i;
-
-		previous_order_d_ideal = simplify(previous_order_d_ideal, 1+2+4+8);
-
-		derivative_ideal = derivative_ideal + derivative_ideal_order_i;
-		derivative_ideal = simplify(derivative_ideal, 1+2+4+8);
-
-		dbprint(sprintf("hypersurface_max_contact | f:%s derivative_ideal:%s", f, derivative_ideal));
-	}
-
+	//a partial derivative of f is a coordinate variable if and only if
+	//it has degree 1 in a single variabe, and 0 everywhere else.
 	
-	dbprint(sprintf("hypersurface_max_contact | f:%s + derivative_ideal:%s", f, derivative_ideal));
-
-	//now find an element of order 1, which should exist
-	for(int i = 1; i <= size(derivative_ideal); i++)
+	//for each variable x_i of f, differentiate f with respect to x_i until it has degree 1 in x_i.
+	//then , for each x_j , j != i, differentiate f with respect to x_j until f has degree 0 in x_j.
+	
+	for(int i = 1; i <= nvars(basering); i++)
 	{
-		poly f = derivative_ideal[i];
+		//but first, check that x_i actually is a variable of f
+		poly r = remainder(f, var(i));
 
-		f = simplify(f, 1);
-		if(rvar(f))
+		if(r != poly(0))
 		{
-			return(f);
+			i++;
+			continue;
+		}
+
+		poly g = f;
+
+		while(degree_in(g, var(i)) > 1)
+		{
+			g = diff(g, var(i));
+			g = simplify(g, 1);
+		}
+
+		for(int j = 1; j <= nvars(basering); j++)
+		{
+			if(j == i)
+			{
+				j++;
+				continue;
+			}
+
+			while(degree_in(g, var(j)) > 0)
+			{
+				g = diff(g, var(j));
+				g = simplify(g, 1);
+			}
+		}	
+
+		if(rvar(g))
+		{
+			return(g);
 		}
 	}
+	//zero polynomial in case no such hypersurface of max contact is found
 	return(poly(0));
-
 }
 example
 {
