@@ -160,21 +160,51 @@ static proc hypersurface_max_contact_core(poly f, int current_order, int max_ord
 */
 proc hypersurface_max_contact(poly f)
 {
-	int d = mindeg(f);
+	//derivative ideal of order 1
+	ideal derivative_ideal = jacob(f) + ideal(f);
 
-	// we want f to have at least degree 0, so just terminate with poly(0) otherwise.
-	if (mindeg(f) < d)
+	ideal previous_order_d_ideal = derivative_ideal;
+
+	//sum the derivative ideals starting from 1
+	for(int i = 2; i < mindeg(f); i++)
 	{
-		return(poly(0));
+		ideal derivative_ideal_order_i = 0;	
+
+		//construct the first derivative ideal of the previous order, which consists of 
+		//its generators and first partial derivatives
+		for(int j = 1; j <= size(previous_order_d_ideal); j++)
+		{
+			ideal first_partials = jacob(previous_order_d_ideal[j]);
+			derivative_ideal_order_i = derivative_ideal_order_i + first_partials;
+		}
+
+		derivative_ideal_order_i = derivative_ideal_order_i + previous_order_d_ideal;
+
+		previous_order_d_ideal = derivative_ideal_order_i;
+
+		previous_order_d_ideal = simplify(previous_order_d_ideal, 1+2+4+8);
+
+		derivative_ideal = derivative_ideal + derivative_ideal_order_i;
+		derivative_ideal = simplify(derivative_ideal, 1+2+4+8);
+
+		dbprint(sprintf("hypersurface_max_contact | f:%s derivative_ideal:%s", f, derivative_ideal));
 	}
 
-	dbprint("hypersurface_max_contact | processing: " + string(f));
+	
+	dbprint(sprintf("hypersurface_max_contact | f:%s + derivative_ideal:%s", f, derivative_ideal));
 
-	poly result = poly(0);
-	export result;
+	//now find an element of order 1, which should exist
+	for(int i = 1; i <= size(derivative_ideal); i++)
+	{
+		poly f = derivative_ideal[i];
 
-	hypersurface_max_contact_core(f, 0, d);
-	return(result);
+		f = simplify(f, 1);
+		if(rvar(f))
+		{
+			return(f);
+		}
+	}
+	return(poly(0));
 
 }
 example
