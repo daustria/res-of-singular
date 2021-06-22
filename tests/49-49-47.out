@@ -1,0 +1,77 @@
+dfs_resolve_core | K:y^49*z^47+x^49
+compute_invariant_0 | ideal:((y^49*z^47+x^49), 49) hypersurface of max contact:y invariant data:(invariant:49,0 hypersurfaces of max contact:y)
+compute_invariant_0 | ideal:((x^49), 49) hypersurface of max contact:x invariant data:(invariant:49,0,1,0 hypersurfaces of max contact:x,y)
+dfs_resolve_core | K:y(1)^49+x(3)^47
+compute_invariant_0 | ideal:((y(1)^49+x(3)^47), 47) hypersurface of max contact:x(3) invariant data:(invariant:47,0 hypersurfaces of max contact:x(3))
+compute_invariant_0 | ideal:((y(1)^49), 49) hypersurface of max contact:y(1) invariant data:(invariant:47,0,49/47,0 hypersurfaces of max contact:y(1),x(3))
+dfs_resolve_core | K:y(1)^47+x(2)^2
+compute_invariant_0 | ideal:((y(1)^47+x(2)^2), 2) hypersurface of max contact:y(1) invariant data:(invariant:2,0 hypersurfaces of max contact:y(1))
+compute_invariant_0 | ideal:((x(2)^2), 2) hypersurface of max contact:x(2) invariant data:(invariant:2,0,1,0 hypersurfaces of max contact:x(2),y(1))
+dfs_resolve_core | K:x(2)^45+y(1)^2
+compute_invariant_0 | ideal:((x(2)^45+y(1)^2), 2) hypersurface of max contact:y(1) invariant data:(invariant:2,0 hypersurfaces of max contact:y(1))
+compute_invariant_0 | ideal:((x(2)^45), 45) hypersurface of max contact:x(2) invariant data:(invariant:2,0,45/2,0 hypersurfaces of max contact:x(2),y(1))
+current invariant is not less than previous
+terminating..
+///////////////////NODE 1//////////////////
+=================PARAMETERS===============
+
+ideal: y^49*z^47+x^49
+
+depth: 0
+
+invariant: 49,0,1,0,-1
+
+centre of blowup: x,y
+==================BLOWUP==================
+
+ring variables: x(2),x(3),y(1)
+
+ideal of blownup ambient space:0
+
+ideal of strict transform:y(1)^49+x(3)^47
+
+ideal of exceptional divisor:x(2)
+
+ideal of blowup map:x(2)*y(1),x(2),x(3)
+///////////////////NODE 2//////////////////
+=================PARAMETERS===============
+
+ideal: y(1)^49+x(3)^47
+
+depth: 1
+
+invariant: 47,0,49/47,0,-1
+
+centre of blowup: y(1),x(3)
+==================BLOWUP==================
+
+ring variables: x(2),y(1)
+
+ideal of blownup ambient space:0
+
+ideal of strict transform:y(1)^47+x(2)^2
+
+ideal of exceptional divisor:x(2)
+
+ideal of blowup map:0,x(2)*y(1),x(2)
+///////////////////NODE 3//////////////////
+=================PARAMETERS===============
+
+ideal: y(1)^47+x(2)^2
+
+depth: 2
+
+invariant: 2,0,1,0,-1
+
+centre of blowup: x(2),y(1)
+==================BLOWUP==================
+
+ring variables: x(2),y(1)
+
+ideal of blownup ambient space:0
+
+ideal of strict transform:x(2)^45+y(1)^2
+
+ideal of exceptional divisor:x(2)
+
+ideal of blowup map:x(2)*y(1),x(2)

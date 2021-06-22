@@ -1,0 +1,29 @@
+dfs_resolve_core | K:y^50*z^50+x^48
+compute_invariant_0 | ideal:((y^50*z^50+x^48), 48) hypersurface of max contact:y invariant data:(invariant:48,0 hypersurfaces of max contact:y)
+compute_invariant_0 | ideal:((x^48), 48) hypersurface of max contact:x invariant data:(invariant:48,0,1,0 hypersurfaces of max contact:x,y)
+dfs_resolve_core | K:x(2)^2*x(3)^50+y(1)^48
+compute_invariant_0 | ideal:((x(2)^2*x(3)^50+y(1)^48), 48) hypersurface of max contact:x(3) invariant data:(invariant:48,0 hypersurfaces of max contact:x(3))
+compute_invariant_0 | ideal:((y(1)^48), 48) hypersurface of max contact:y(1) invariant data:(invariant:48,0,1,0 hypersurfaces of max contact:y(1),x(3))
+current invariant is not less than previous
+terminating..
+///////////////////NODE 1//////////////////
+=================PARAMETERS===============
+
+ideal: y^50*z^50+x^48
+
+depth: 0
+
+invariant: 48,0,1,0,-1
+
+centre of blowup: x,y
+==================BLOWUP==================
+
+ring variables: x(2),x(3),y(1)
+
+ideal of blownup ambient space:0
+
+ideal of strict transform:x(2)^2*x(3)^50+y(1)^48
+
+ideal of exceptional divisor:x(2)
+
+ideal of blowup map:x(2)*y(1),x(2),x(3)

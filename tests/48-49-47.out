@@ -1,0 +1,16 @@
+dfs_resolve_core | K:y^49*z^47+x^48
+compute_invariant_0 | ideal:((y^49*z^47+x^48), 48) hypersurface of max contact:y invariant data:(invariant:48,0 hypersurfaces of max contact:y)
+compute_invariant_0 | ideal:((x^48), 48) hypersurface of max contact:x invariant data:(invariant:48,0,1,0 hypersurfaces of max contact:x,y)
+dfs_resolve_core | K:x(2)*x(3)^47+y(1)^48
+compute_invariant_0 | ideal:((x(2)*x(3)^47+y(1)^48), 48) hypersurface of max contact:x(3) invariant data:(invariant:48,0 hypersurfaces of max contact:x(3))
+   ? exponent 720720 is too large, max. is 65535
+   ? error occurred in or before cideal.lib::add_coeff_ideal line 40: `	K.I = ideal(L.I^(K.d div L.d) + R.I^(K.d div R.d));`
+   ? wrong type declaration. type 'help ideal;'
+   ? leaving cideal.lib::add_coeff_ideal
+ error at token `;`
+   ? leaving /home/dominic/singular/resolvebm.lib::process_coeff_ideal_principal
+   ? leaving /home/dominic/singular/resolvebm.lib::process_coeff_ideal
+   ? leaving /home/dominic/singular/resolvebm.lib::compute_invariant_0
+   ? leaving /home/dominic/singular/resolvebm.lib::dfs_resolve_core
+   ? leaving /home/dominic/singular/resolvebm.lib::dfs_resolve_core
+   ? leaving /home/dominic/singular/resolvebm.lib::dfs_resolve
