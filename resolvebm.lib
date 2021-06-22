@@ -20,7 +20,7 @@ static proc mod_init()
 	system("install", "invData", "print", pretty_print_inv_data, 1);
 	system("install", "invData", "=", make_inv_data, 1);
 
-	newstruct("nodeData", "string idealStr, int depth, invData invariant");
+	newstruct("nodeData", "string idealStr, int depth, list invariant, string centreBlowup");
 	system("install", "nodeData", "=", make_node_data, 1);
 	system("install", "nodeData", "print", print_node_data, 1);
 
@@ -75,22 +75,19 @@ proc make_null_inv_data()
 }
 
 // returns 1 if left < right, false otherwise
-proc inv_datacmp_lt(invData left, invData right)
+proc invCompare(list left, list right)
 {
-	list left_inv = left.invariant;
-	list right_inv = right.invariant;
-
-	int min_size = min(size(left_inv), size(right_inv));
+	int min_size = min(size(left), size(right));
 
 	for(int i = 1; i <= min_size; i++)
 	{
-		if(left_inv[i] < right_inv[i])
+		if(left[i] < right[i])
 		{
 			return(1);
 		}
 	}
 
-	if(size(left_inv) < size(right_inv))
+	if(size(left) < size(right))
 	{
 		return(1);
 	}
@@ -98,17 +95,17 @@ proc inv_datacmp_lt(invData left, invData right)
 	return(0);
 }
 
-proc make_node_data(string idealStr, int depth, invData invariant)
+proc make_node_data(string idealStr, int depth, list invariant, string centreBlowup)
 {
 	nodeData data;
 	data.idealStr = idealStr;
 	data.depth = depth;
 	data.invariant = invariant;
+	data.centreBlowup = centreBlowup;
 	return(data);
 }
 
-proc make_blowup_data(string ringvars, string ambientSpace, string strictTransform, 
-		string exceptionalDivisor, string blowUpMap)
+proc make_blowup_data(string ringvars, string ambientSpace, string strictTransform, string exceptionalDivisor, string blowUpMap)
 {
 	blowUpData data;
 	data.ringvars = ringvars;
@@ -136,21 +133,23 @@ proc print_node_data(nodeData node)
         print("depth: " + string(node.depth));
         print("");
         print("invariant: " + string(node.invariant));
+	print("");
+        printf("centre of blowup: %s", node.centreBlowup); 
 }
 
 proc print_blowup_data(blowUpData blowup)
 {
         print("==================BLOWUP==================");
         print("");
-        print("ring variables: " + varstr(basering));
+        print("ring variables: " + blowup.ringvars);
         print("");
         print("ideal of blownup ambient space:"+string(blowup.ambientSpace));
         print("");
         print("ideal of strict transform:"+string(blowup.strictTransform));
         print("");
-        print("ideal of exceptional divisor:"+string(exceptionalDivisor));
+        print("ideal of exceptional divisor:"+string(blowup.exceptionalDivisor));
         print("");
-        print("ideal of blowup map:"+string(blowUpMap));
+        print("ideal of blowup map:"+string(blowup.blowUpMap));
 }
 
 proc print_tree_node(tree_node node)
@@ -268,14 +267,19 @@ static proc process_coeff_ideal_principal(coeff_ideal J, poly hypersurface_varia
 		coeff_ideal K;
 
 		K.I = ideal(m[2,i]);
+		K.I = simplify(K.I, 1);
 		K.d = J.d - deg(m[1,i]);
 
-		string term_str = "(" + string(m[2,i]) + ")" + string(hypersurface_variable) + "^" + string(term_deg);
-		dbprint("process_coeff_ideal_principal | term: " + term_str + " ideal:" + string(K));
+		dbprint(sprintf("process_coeff_ideal_principal | adding in ideal:%s",K));
 
 		out = out + K;
+		out.I = simplify(out.I, 1+2+4+8);
 
+		dbprint(sprintf("process_coeff_ideal_principal | result so far:%s", out));
 	}
+
+
+	dbprint(sprintf("process_coeff_ideal_principal | result:%s",out));
 
 	return(out);
 }
@@ -448,9 +452,9 @@ static proc dfs_resolve_core(ideal K, int depth, int max_depth, list tree_path)
 	if(size(tree_path) >= 1)
 	{
 		tree_node previous_node = tree_path[size(tree_path)];
-		invData previous_invariant = previous_node.params.invariant;
+		list previous_invariant = previous_node.params.invariant;
 
-		if(!is_null(previous_invariant) && !inv_datacmp_lt(data, previous_invariant))
+		if(size(previous_invariant) > 1 && !invCompare(data.invariant, previous_invariant))
 		{
 			dbprint("current invariant is not less than previous");
 			dbprint("terminating..");
@@ -459,7 +463,7 @@ static proc dfs_resolve_core(ideal K, int depth, int max_depth, list tree_path)
 	}
 
 	//Record non blowup-related information about this node.
-	nodeData params = string(K), depth, data;
+	nodeData params = string(K), depth, data.invariant, string(data.hypersurfaces);
 
 	list blow = blowUp(K, centre_of_blowup);
 
@@ -467,6 +471,7 @@ static proc dfs_resolve_core(ideal K, int depth, int max_depth, list tree_path)
 	{
 		def Q = blow[i];
 		setring(Q);
+		keepring Q;
 
 		blowUpData blowup = varstr(Q), string(aS), string(sT), string(eD), string(bM);
 		tree_node node = params,blowup;

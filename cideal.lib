@@ -25,12 +25,12 @@ proc make_coeff_ideal(ideal I, int d)
 
 proc string_coeff_ideal(coeff_ideal J)
 {
-	return("((" + string(J.I) + "), " + string(J.d) + ")");
+	return(sprintf("((%s), %s)", J.I, J.d));
 }
 
 proc pretty_print_coeff_ideal(coeff_ideal J)
 {
-	"((" + string(J.I) + "), " + string(J.d) + ")";
+	sprintf("((%s), %s)", J.I, J.d);
 }
 
 proc add_coeff_ideal(coeff_ideal L, coeff_ideal R)
