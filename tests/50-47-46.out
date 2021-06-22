@@ -1,0 +1,1332 @@
+dfs_resolve_core | K:y^47*z^46+x^50
+compute_invariant_0 | ideal:((y^47*z^46+x^50), 50) hypersurface of max contact:y invariant data:(invariant:50,0 hypersurfaces of max contact:y)
+compute_invariant_0 | ideal:((z^2300,x^150), 150) hypersurface of max contact:x invariant data:(invariant:50,0,1,0 hypersurfaces of max contact:x,y)
+compute_invariant_0 | ideal:((z^2300), 2300) hypersurface of max contact:z invariant data:(invariant:50,0,1,0,46/3,0 hypersurfaces of max contact:z,x,y)
+dfs_resolve_core | K:x(3)^43*y(1)^47+y(2)^50
+compute_invariant_0 | ideal:((x(3)^43*y(1)^47+y(2)^50), 50) hypersurface of max contact:y(1) invariant data:(invariant:50,0 hypersurfaces of max contact:y(1))
+compute_invariant_0 | ideal:((x(3)^2150,y(2)^150), 150) hypersurface of max contact:y(2) invariant data:(invariant:50,0,1,0 hypersurfaces of max contact:y(2),y(1))
+compute_invariant_0 | ideal:((x(3)^2150), 2150) hypersurface of max contact:x(3) invariant data:(invariant:50,0,1,0,43/3,0 hypersurfaces of max contact:x(3),y(2),y(1))
+dfs_resolve_core | K:x(2)^40*y(2)^43+y(0)^50
+compute_invariant_0 | ideal:((x(2)^40*y(2)^43+y(0)^50), 50) hypersurface of max contact:y(0) invariant data:(invariant:50,0 hypersurfaces of max contact:y(0))
+compute_invariant_0 | ideal:((x(2)^40*y(2)^43), 83) hypersurface of max contact:x(2) invariant data:(invariant:50,0,83/50,0 hypersurfaces of max contact:x(2),y(0))
+compute_invariant_0 | ideal:((y(2)^43), 43) hypersurface of max contact:y(2) invariant data:(invariant:50,0,83/50,0,1,0 hypersurfaces of max contact:y(2),x(2),y(0))
+dfs_resolve_core | K:x(3)^33*y(2)^40+y(1)^50
+compute_invariant_0 | ideal:((x(3)^33*y(2)^40+y(1)^50), 50) hypersurface of max contact:y(1) invariant data:(invariant:50,0 hypersurfaces of max contact:y(1))
+compute_invariant_0 | ideal:((x(3)^33*y(2)^40), 73) hypersurface of max contact:x(3) invariant data:(invariant:50,0,73/50,0 hypersurfaces of max contact:x(3),y(1))
+compute_invariant_0 | ideal:((y(2)^40), 40) hypersurface of max contact:y(2) invariant data:(invariant:50,0,73/50,0,1,0 hypersurfaces of max contact:y(2),x(3),y(1))
+dfs_resolve_core | K:x(3)^23*y(2)^33+y(1)^50
+compute_invariant_0 | ideal:((x(3)^23*y(2)^33+y(1)^50), 50) hypersurface of max contact:y(1) invariant data:(invariant:50,0 hypersurfaces of max contact:y(1))
+compute_invariant_0 | ideal:((x(3)^23*y(2)^33), 56) hypersurface of max contact:x(3) invariant data:(invariant:50,0,28/25,0 hypersurfaces of max contact:x(3),y(1))
+compute_invariant_0 | ideal:((y(2)^33), 33) hypersurface of max contact:y(2) invariant data:(invariant:50,0,28/25,0,1,0 hypersurfaces of max contact:y(2),x(3),y(1))
+dfs_resolve_core | K:y(1)^50+x(3)^6*y(2)^23
+compute_invariant_0 | ideal:((y(1)^50+x(3)^6*y(2)^23), 29) hypersurface of max contact:y(1) invariant data:(invariant:29,0 hypersurfaces of max contact:y(1))
+compute_invariant_0 | ideal:((x(3)^6*y(2)^23), 29) hypersurface of max contact:x(3) invariant data:(invariant:29,0,1,0 hypersurfaces of max contact:x(3),y(1))
+compute_invariant_0 | ideal:((y(2)^23), 23) hypersurface of max contact:y(2) invariant data:(invariant:29,0,1,0,1,0 hypersurfaces of max contact:y(2),x(3),y(1))
+dfs_resolve_core | K:x(3)^21*y(1)^50+y(2)^6
+compute_invariant_0 | ideal:((x(3)^21*y(1)^50+y(2)^6), 6) hypersurface of max contact:y(1) invariant data:(invariant:6,0 hypersurfaces of max contact:y(1))
+compute_invariant_0 | ideal:((y(2)^6), 6) hypersurface of max contact:y(2) invariant data:(invariant:6,0,1,0 hypersurfaces of max contact:y(2),y(1))
+dfs_resolve_core | K:x(1)^21*x(2)^44+y(0)^6
+compute_invariant_0 | ideal:((x(1)^21*x(2)^44+y(0)^6), 6) hypersurface of max contact:x(2) invariant data:(invariant:6,0 hypersurfaces of max contact:x(2))
+compute_invariant_0 | ideal:((y(0)^6), 6) hypersurface of max contact:y(0) invariant data:(invariant:6,0,1,0 hypersurfaces of max contact:y(0),x(2))
+current invariant is not less than previous
+terminating..
+dfs_resolve_core | K:y(0)^23*y(2)^6+x(2)^21
+compute_invariant_0 | ideal:((y(0)^23*y(2)^6+x(2)^21), 21) hypersurface of max contact:y(0) invariant data:(invariant:21,0 hypersurfaces of max contact:y(0))
+process_coeff_ideal | processing ideal: ((y(0)^23*y(2)^6+x(2)^21), 21)
+process_coeff_ideal_principal | x(2)^21 as a polynomial in y(0):
+1,     
+x(2)^21
+process_coeff_ideal_principal | adding in ideal:((x(2)^21), 21)
+process_coeff_ideal_principal | result so far:((x(2)^21), 21)
+process_coeff_ideal_principal | result:((x(2)^21), 21)
+process_coeff_ideal | result is :((x(2)^21), 21)
+process_coeff_ideal | final result is :((x(2)^21), 21)
+compute_invariant_0 | ideal:((x(2)^21), 21) hypersurface of max contact:x(2) invariant data:(invariant:21,0,1,0 hypersurfaces of max contact:x(2),y(0))
+process_coeff_ideal | processing ideal: ((x(2)^21), 21)
+process_coeff_ideal_principal | x(2)^21 as a polynomial in x(2):
+x(2)^21,
+1       
+process_coeff_ideal_principal | result:((0), 1)
+process_coeff_ideal | result is :((0), 1)
+process_coeff_ideal | final result is :((0), 1)
+// compute quotient 1
+// compute quotient 2
+// compute quotient 3
+// compute quotient 4
+// compute quotient 5
+// compute quotient 6
+// compute quotient 7
+// compute quotient 8
+// compute quotient 9
+// compute quotient 10
+// compute quotient 11
+// compute quotient 12
+// compute quotient 13
+// compute quotient 14
+// compute quotient 15
+// compute quotient 16
+// compute quotient 17
+// compute quotient 18
+// compute quotient 19
+// compute quotient 20
+// compute quotient 21
+// compute quotient 22
+// saturation becomes stable after 21 iteration(s)
+
+// compute quotient 1
+// compute quotient 2
+// compute quotient 3
+// compute quotient 4
+// compute quotient 5
+// compute quotient 6
+// compute quotient 7
+// compute quotient 8
+// compute quotient 9
+// compute quotient 10
+// compute quotient 11
+// compute quotient 12
+// compute quotient 13
+// compute quotient 14
+// compute quotient 15
+// compute quotient 16
+// compute quotient 17
+// compute quotient 18
+// compute quotient 19
+// compute quotient 20
+// compute quotient 21
+// compute quotient 22
+// saturation becomes stable after 21 iteration(s)
+
+dfs_resolve_core | K:y(1)^21+x(2)^2*x(3)^6
+compute_invariant_0 | ideal:((y(1)^21+x(2)^2*x(3)^6), 8) hypersurface of max contact:x(3) invariant data:(invariant:8,0 hypersurfaces of max contact:x(3))
+process_coeff_ideal | processing ideal: ((y(1)^21+x(2)^2*x(3)^6), 8)
+process_coeff_ideal_principal | y(1)^21+x(2)^2*x(3)^6 as a polynomial in x(3):
+x(3)^6,1,     
+x(2)^2,y(1)^21
+process_coeff_ideal_principal | adding in ideal:((x(2)^2), 2)
+process_coeff_ideal_principal | result so far:((x(2)^2), 2)
+process_coeff_ideal_principal | adding in ideal:((y(1)^21), 8)
+process_coeff_ideal_principal | result so far:((x(2)^8,y(1)^21), 8)
+process_coeff_ideal_principal | result:((x(2)^8,y(1)^21), 8)
+process_coeff_ideal | result is :((x(2)^8,y(1)^21), 8)
+process_coeff_ideal | final result is :((x(2)^8,y(1)^21), 8)
+compute_invariant_0 | ideal:((x(2)^8,y(1)^21), 8) hypersurface of max contact:x(2) invariant data:(invariant:8,0,1,0 hypersurfaces of max contact:x(2),x(3))
+process_coeff_ideal | processing ideal: ((x(2)^8), 8)
+process_coeff_ideal_principal | x(2)^8 as a polynomial in x(2):
+x(2)^8,
+1      
+process_coeff_ideal_principal | result:((0), 1)
+process_coeff_ideal | result is :((0), 1)
+process_coeff_ideal | processing ideal: ((y(1)^21), 8)
+process_coeff_ideal_principal | y(1)^21 as a polynomial in x(2):
+1,     
+y(1)^21
+process_coeff_ideal_principal | adding in ideal:((y(1)^21), 8)
+process_coeff_ideal_principal | result so far:((y(1)^21), 8)
+process_coeff_ideal_principal | result:((y(1)^21), 8)
+process_coeff_ideal | result is :((y(1)^21), 8)
+process_coeff_ideal | final result is :((y(1)^21), 8)
+compute_invariant_0 | ideal:((y(1)^21), 21) hypersurface of max contact:y(1) invariant data:(invariant:8,0,1,0,21/8,0 hypersurfaces of max contact:y(1),x(2),x(3))
+process_coeff_ideal | processing ideal: ((y(1)^21), 21)
+process_coeff_ideal_principal | y(1)^21 as a polynomial in y(1):
+y(1)^21,
+1       
+process_coeff_ideal_principal | result:((0), 1)
+process_coeff_ideal | result is :((0), 1)
+process_coeff_ideal | final result is :((0), 1)
+// compute quotient 1
+// compute quotient 2
+// compute quotient 3
+// compute quotient 4
+// compute quotient 5
+// compute quotient 6
+// compute quotient 7
+// compute quotient 8
+// compute quotient 9
+// saturation becomes stable after 8 iteration(s)
+
+// compute quotient 1
+// compute quotient 2
+// compute quotient 3
+// compute quotient 4
+// compute quotient 5
+// compute quotient 6
+// compute quotient 7
+// compute quotient 8
+// compute quotient 9
+// saturation becomes stable after 8 iteration(s)
+
+// compute quotient 1
+// compute quotient 2
+// compute quotient 3
+// compute quotient 4
+// compute quotient 5
+// compute quotient 6
+// compute quotient 7
+// compute quotient 8
+// compute quotient 9
+// saturation becomes stable after 8 iteration(s)
+
+dfs_resolve_core | K:x(3)^13+y(1)^6*y(2)^2
+compute_invariant_0 | ideal:((x(3)^13+y(1)^6*y(2)^2), 8) hypersurface of max contact:y(1) invariant data:(invariant:8,0 hypersurfaces of max contact:y(1))
+process_coeff_ideal | processing ideal: ((x(3)^13+y(1)^6*y(2)^2), 8)
+process_coeff_ideal_principal | x(3)^13+y(1)^6*y(2)^2 as a polynomial in y(1):
+y(1)^6,1,     
+y(2)^2,x(3)^13
+process_coeff_ideal_principal | adding in ideal:((y(2)^2), 2)
+process_coeff_ideal_principal | result so far:((y(2)^2), 2)
+process_coeff_ideal_principal | adding in ideal:((x(3)^13), 8)
+process_coeff_ideal_principal | result so far:((y(2)^8,x(3)^13), 8)
+process_coeff_ideal_principal | result:((y(2)^8,x(3)^13), 8)
+process_coeff_ideal | result is :((y(2)^8,x(3)^13), 8)
+process_coeff_ideal | final result is :((y(2)^8,x(3)^13), 8)
+compute_invariant_0 | ideal:((y(2)^8,x(3)^13), 8) hypersurface of max contact:y(2) invariant data:(invariant:8,0,1,0 hypersurfaces of max contact:y(2),y(1))
+process_coeff_ideal | processing ideal: ((y(2)^8), 8)
+process_coeff_ideal_principal | y(2)^8 as a polynomial in y(2):
+y(2)^8,
+1      
+process_coeff_ideal_principal | result:((0), 1)
+process_coeff_ideal | result is :((0), 1)
+process_coeff_ideal | processing ideal: ((x(3)^13), 8)
+process_coeff_ideal_principal | x(3)^13 as a polynomial in y(2):
+1,     
+x(3)^13
+process_coeff_ideal_principal | adding in ideal:((x(3)^13), 8)
+process_coeff_ideal_principal | result so far:((x(3)^13), 8)
+process_coeff_ideal_principal | result:((x(3)^13), 8)
+process_coeff_ideal | result is :((x(3)^13), 8)
+process_coeff_ideal | final result is :((x(3)^13), 8)
+compute_invariant_0 | ideal:((x(3)^13), 13) hypersurface of max contact:x(3) invariant data:(invariant:8,0,1,0,13/8,0 hypersurfaces of max contact:x(3),y(2),y(1))
+process_coeff_ideal | processing ideal: ((x(3)^13), 13)
+process_coeff_ideal_principal | x(3)^13 as a polynomial in x(3):
+x(3)^13,
+1       
+process_coeff_ideal_principal | result:((0), 1)
+process_coeff_ideal | result is :((0), 1)
+process_coeff_ideal | final result is :((0), 1)
+// compute quotient 1
+// compute quotient 2
+// compute quotient 3
+// compute quotient 4
+// compute quotient 5
+// compute quotient 6
+// compute quotient 7
+// compute quotient 8
+// compute quotient 9
+// saturation becomes stable after 8 iteration(s)
+
+// compute quotient 1
+// compute quotient 2
+// compute quotient 3
+// compute quotient 4
+// compute quotient 5
+// compute quotient 6
+// compute quotient 7
+// compute quotient 8
+// compute quotient 9
+// saturation becomes stable after 8 iteration(s)
+
+// compute quotient 1
+// compute quotient 2
+// compute quotient 3
+// compute quotient 4
+// compute quotient 5
+// compute quotient 6
+// compute quotient 7
+// compute quotient 8
+// compute quotient 9
+// saturation becomes stable after 8 iteration(s)
+
+dfs_resolve_core | K:x(3)^5*y(2)^13+y(1)^6
+compute_invariant_0 | ideal:((x(3)^5*y(2)^13+y(1)^6), 6) hypersurface of max contact:y(1) invariant data:(invariant:6,0 hypersurfaces of max contact:y(1))
+process_coeff_ideal | processing ideal: ((x(3)^5*y(2)^13+y(1)^6), 6)
+process_coeff_ideal_principal | x(3)^5*y(2)^13+y(1)^6 as a polynomial in y(1):
+y(1)^6,1,            
+1,     x(3)^5*y(2)^13
+process_coeff_ideal_principal | adding in ideal:((x(3)^5*y(2)^13), 6)
+process_coeff_ideal_principal | result so far:((x(3)^5*y(2)^13), 6)
+process_coeff_ideal_principal | result:((x(3)^5*y(2)^13), 6)
+process_coeff_ideal | result is :((x(3)^5*y(2)^13), 6)
+process_coeff_ideal | final result is :((x(3)^5*y(2)^13), 6)
+compute_invariant_0 | ideal:((x(3)^5*y(2)^13), 18) hypersurface of max contact:x(3) invariant data:(invariant:6,0,3,0 hypersurfaces of max contact:x(3),y(1))
+process_coeff_ideal | processing ideal: ((x(3)^5*y(2)^13), 18)
+process_coeff_ideal_principal | x(3)^5*y(2)^13 as a polynomial in x(3):
+x(3)^5,
+y(2)^13
+process_coeff_ideal_principal | adding in ideal:((y(2)^13), 13)
+process_coeff_ideal_principal | result so far:((y(2)^13), 13)
+process_coeff_ideal_principal | result:((y(2)^13), 13)
+process_coeff_ideal | result is :((y(2)^13), 13)
+process_coeff_ideal | final result is :((y(2)^13), 13)
+compute_invariant_0 | ideal:((y(2)^13), 13) hypersurface of max contact:y(2) invariant data:(invariant:6,0,3,0,1,0 hypersurfaces of max contact:y(2),x(3),y(1))
+process_coeff_ideal | processing ideal: ((y(2)^13), 13)
+process_coeff_ideal_principal | y(2)^13 as a polynomial in y(2):
+y(2)^13,
+1       
+process_coeff_ideal_principal | result:((0), 1)
+process_coeff_ideal | result is :((0), 1)
+process_coeff_ideal | final result is :((0), 1)
+// compute quotient 1
+// compute quotient 2
+// compute quotient 3
+// compute quotient 4
+// compute quotient 5
+// compute quotient 6
+// compute quotient 7
+// saturation becomes stable after 6 iteration(s)
+
+// compute quotient 1
+// compute quotient 2
+// compute quotient 3
+// compute quotient 4
+// compute quotient 5
+// compute quotient 6
+// compute quotient 7
+// saturation becomes stable after 6 iteration(s)
+
+// compute quotient 1
+// compute quotient 2
+// compute quotient 3
+// compute quotient 4
+// compute quotient 5
+// compute quotient 6
+// compute quotient 7
+// saturation becomes stable after 6 iteration(s)
+
+dfs_resolve_core | K:x(3)^12*y(2)^5+y(1)^6
+compute_invariant_0 | ideal:((x(3)^12*y(2)^5+y(1)^6), 6) hypersurface of max contact:y(1) invariant data:(invariant:6,0 hypersurfaces of max contact:y(1))
+process_coeff_ideal | processing ideal: ((x(3)^12*y(2)^5+y(1)^6), 6)
+process_coeff_ideal_principal | x(3)^12*y(2)^5+y(1)^6 as a polynomial in y(1):
+y(1)^6,1,            
+1,     x(3)^12*y(2)^5
+process_coeff_ideal_principal | adding in ideal:((x(3)^12*y(2)^5), 6)
+process_coeff_ideal_principal | result so far:((x(3)^12*y(2)^5), 6)
+process_coeff_ideal_principal | result:((x(3)^12*y(2)^5), 6)
+process_coeff_ideal | result is :((x(3)^12*y(2)^5), 6)
+process_coeff_ideal | final result is :((x(3)^12*y(2)^5), 6)
+compute_invariant_0 | ideal:((x(3)^12*y(2)^5), 17) hypersurface of max contact:x(3) invariant data:(invariant:6,0,17/6,0 hypersurfaces of max contact:x(3),y(1))
+process_coeff_ideal | processing ideal: ((x(3)^12*y(2)^5), 17)
+process_coeff_ideal_principal | x(3)^12*y(2)^5 as a polynomial in x(3):
+x(3)^12,
+y(2)^5  
+process_coeff_ideal_principal | adding in ideal:((y(2)^5), 5)
+process_coeff_ideal_principal | result so far:((y(2)^5), 5)
+process_coeff_ideal_principal | result:((y(2)^5), 5)
+process_coeff_ideal | result is :((y(2)^5), 5)
+process_coeff_ideal | final result is :((y(2)^5), 5)
+compute_invariant_0 | ideal:((y(2)^5), 5) hypersurface of max contact:y(2) invariant data:(invariant:6,0,17/6,0,1,0 hypersurfaces of max contact:y(2),x(3),y(1))
+process_coeff_ideal | processing ideal: ((y(2)^5), 5)
+process_coeff_ideal_principal | y(2)^5 as a polynomial in y(2):
+y(2)^5,
+1      
+process_coeff_ideal_principal | result:((0), 1)
+process_coeff_ideal | result is :((0), 1)
+process_coeff_ideal | final result is :((0), 1)
+// compute quotient 1
+// compute quotient 2
+// compute quotient 3
+// compute quotient 4
+// compute quotient 5
+// compute quotient 6
+// compute quotient 7
+// saturation becomes stable after 6 iteration(s)
+
+// compute quotient 1
+// compute quotient 2
+// compute quotient 3
+// compute quotient 4
+// compute quotient 5
+// compute quotient 6
+// compute quotient 7
+// saturation becomes stable after 6 iteration(s)
+
+// compute quotient 1
+// compute quotient 2
+// compute quotient 3
+// compute quotient 4
+// compute quotient 5
+// compute quotient 6
+// compute quotient 7
+// saturation becomes stable after 6 iteration(s)
+
+dfs_resolve_core | K:x(3)^11*y(2)^12+y(1)^6
+compute_invariant_0 | ideal:((x(3)^11*y(2)^12+y(1)^6), 6) hypersurface of max contact:y(1) invariant data:(invariant:6,0 hypersurfaces of max contact:y(1))
+process_coeff_ideal | processing ideal: ((x(3)^11*y(2)^12+y(1)^6), 6)
+process_coeff_ideal_principal | x(3)^11*y(2)^12+y(1)^6 as a polynomial in y(1):
+y(1)^6,1,             
+1,     x(3)^11*y(2)^12
+process_coeff_ideal_principal | adding in ideal:((x(3)^11*y(2)^12), 6)
+process_coeff_ideal_principal | result so far:((x(3)^11*y(2)^12), 6)
+process_coeff_ideal_principal | result:((x(3)^11*y(2)^12), 6)
+process_coeff_ideal | result is :((x(3)^11*y(2)^12), 6)
+process_coeff_ideal | final result is :((x(3)^11*y(2)^12), 6)
+compute_invariant_0 | ideal:((x(3)^11*y(2)^12), 23) hypersurface of max contact:x(3) invariant data:(invariant:6,0,23/6,0 hypersurfaces of max contact:x(3),y(1))
+process_coeff_ideal | processing ideal: ((x(3)^11*y(2)^12), 23)
+process_coeff_ideal_principal | x(3)^11*y(2)^12 as a polynomial in x(3):
+x(3)^11,
+y(2)^12 
+process_coeff_ideal_principal | adding in ideal:((y(2)^12), 12)
+process_coeff_ideal_principal | result so far:((y(2)^12), 12)
+process_coeff_ideal_principal | result:((y(2)^12), 12)
+process_coeff_ideal | result is :((y(2)^12), 12)
+process_coeff_ideal | final result is :((y(2)^12), 12)
+compute_invariant_0 | ideal:((y(2)^12), 12) hypersurface of max contact:y(2) invariant data:(invariant:6,0,23/6,0,1,0 hypersurfaces of max contact:y(2),x(3),y(1))
+process_coeff_ideal | processing ideal: ((y(2)^12), 12)
+process_coeff_ideal_principal | y(2)^12 as a polynomial in y(2):
+y(2)^12,
+1       
+process_coeff_ideal_principal | result:((0), 1)
+process_coeff_ideal | result is :((0), 1)
+process_coeff_ideal | final result is :((0), 1)
+current invariant is not less than previous
+terminating..
+dfs_resolve_core | K:x(1)^11*y(0)^5+y(1)^6
+compute_invariant_0 | ideal:((x(1)^11*y(0)^5+y(1)^6), 6) hypersurface of max contact:y(0) invariant data:(invariant:6,0 hypersurfaces of max contact:y(0))
+process_coeff_ideal | processing ideal: ((x(1)^11*y(0)^5+y(1)^6), 6)
+format_polynomial | f: x(1)^11*y(0)^5+y(1)^6 hypersurface_of_max_contact:y(0) d:6
+format_polynomial | substituting y(0) with -1/6*x(1)^11+y(0)
+format_polynomial | result is :x(1)^66-30*x(1)^55*y(0)+360*x(1)^44*y(0)^2-2160*x(1)^33*y(0)^3+6480*x(1)^22*y(0)^4-7776*x(1)^11*y(0)^5-7776*y(1)^6
+process_coeff_ideal_principal | x(1)^66-30*x(1)^55*y(0)+360*x(1)^44*y(0)^2-2160*x(1)^33*y(0)^3+6480*x(1)^22*y(0)^4-7776*x(1)^11*y(0)^5-7776*y(1)^6 as a polynomial in y(0):
+y(0)^5,y(0)^4,      y(0)^3,y(0)^2,     y(0),       1,    
+m[2,1],6480*x(1)^22,m[2,3],360*x(1)^44,-30*x(1)^55,m[2,6]
+process_coeff_ideal_principal | adding in ideal:((x(1)^11), 1)
+process_coeff_ideal_principal | result so far:((x(1)^11), 1)
+process_coeff_ideal_principal | adding in ideal:((x(1)^22), 2)
+process_coeff_ideal_principal | result so far:((x(1)^22), 2)
+process_coeff_ideal_principal | adding in ideal:((x(1)^33), 3)
+process_coeff_ideal_principal | result so far:((x(1)^66), 6)
+process_coeff_ideal_principal | adding in ideal:((x(1)^44), 4)
+process_coeff_ideal_principal | result so far:((x(1)^132), 12)
+process_coeff_ideal_principal | adding in ideal:((x(1)^55), 5)
+process_coeff_ideal_principal | result so far:((x(1)^660), 60)
+process_coeff_ideal_principal | adding in ideal:((x(1)^66-7776*y(1)^6), 6)
+process_coeff_ideal_principal | result so far:((x(1)^660,x(1)^660-77760*x(1)^594*y(1)^6+2720977920*x(1)^528*y(1)^12-56422198149120*x(1)^462*y(1)^18+767793272413224960*x(1)^396*y(1)^24-7164432583542284746752*x(1)^330*y(1)^30+46425523141354005158952960*x(1)^264*y(1)^36-206288495969810710923438981120*x(1)^198*y(1)^42+601537254247968033052748068945920*x(1)^132*y(1)^48-1039456375340488761115148663138549760*x(1)^66*y(1)^54+808281277464764060643139600456536293376*y(1)^60), 60)
+process_coeff_ideal_principal | result:((x(1)^660,x(1)^660-77760*x(1)^594*y(1)^6+2720977920*x(1)^528*y(1)^12-56422198149120*x(1)^462*y(1)^18+767793272413224960*x(1)^396*y(1)^24-7164432583542284746752*x(1)^330*y(1)^30+46425523141354005158952960*x(1)^264*y(1)^36-206288495969810710923438981120*x(1)^198*y(1)^42+601537254247968033052748068945920*x(1)^132*y(1)^48-1039456375340488761115148663138549760*x(1)^66*y(1)^54+808281277464764060643139600456536293376*y(1)^60), 60)
+process_coeff_ideal | result is :((x(1)^660,x(1)^660-77760*x(1)^594*y(1)^6+2720977920*x(1)^528*y(1)^12-56422198149120*x(1)^462*y(1)^18+767793272413224960*x(1)^396*y(1)^24-7164432583542284746752*x(1)^330*y(1)^30+46425523141354005158952960*x(1)^264*y(1)^36-206288495969810710923438981120*x(1)^198*y(1)^42+601537254247968033052748068945920*x(1)^132*y(1)^48-1039456375340488761115148663138549760*x(1)^66*y(1)^54+808281277464764060643139600456536293376*y(1)^60), 60)
+process_coeff_ideal | final result is :((x(1)^660,x(1)^660-77760*x(1)^594*y(1)^6+2720977920*x(1)^528*y(1)^12-56422198149120*x(1)^462*y(1)^18+767793272413224960*x(1)^396*y(1)^24-7164432583542284746752*x(1)^330*y(1)^30+46425523141354005158952960*x(1)^264*y(1)^36-206288495969810710923438981120*x(1)^198*y(1)^42+601537254247968033052748068945920*x(1)^132*y(1)^48-1039456375340488761115148663138549760*x(1)^66*y(1)^54+808281277464764060643139600456536293376*y(1)^60), 60)
+compute_invariant_0 | ideal:((x(1)^660,x(1)^660-77760*x(1)^594*y(1)^6+2720977920*x(1)^528*y(1)^12-56422198149120*x(1)^462*y(1)^18+767793272413224960*x(1)^396*y(1)^24-7164432583542284746752*x(1)^330*y(1)^30+46425523141354005158952960*x(1)^264*y(1)^36-206288495969810710923438981120*x(1)^198*y(1)^42+601537254247968033052748068945920*x(1)^132*y(1)^48-1039456375340488761115148663138549760*x(1)^66*y(1)^54+808281277464764060643139600456536293376*y(1)^60), 60) hypersurface of max contact:y(1) invariant data:(invariant:6,0,1,0 hypersurfaces of max contact:y(1),y(0))
+process_coeff_ideal | processing ideal: ((x(1)^660), 60)
+format_polynomial | f: x(1)^660 hypersurface_of_max_contact:y(1) d:60
+format_polynomial | result is :x(1)^660
+process_coeff_ideal_principal | x(1)^660 as a polynomial in y(1):
+1,      
+x(1)^660
+process_coeff_ideal_principal | adding in ideal:((x(1)^660), 60)
+process_coeff_ideal_principal | result so far:((x(1)^660), 60)
+process_coeff_ideal_principal | result:((x(1)^660), 60)
+process_coeff_ideal | result is :((x(1)^660), 60)
+process_coeff_ideal | processing ideal: ((x(1)^660-77760*x(1)^594*y(1)^6+2720977920*x(1)^528*y(1)^12-56422198149120*x(1)^462*y(1)^18+767793272413224960*x(1)^396*y(1)^24-7164432583542284746752*x(1)^330*y(1)^30+46425523141354005158952960*x(1)^264*y(1)^36-206288495969810710923438981120*x(1)^198*y(1)^42+601537254247968033052748068945920*x(1)^132*y(1)^48-1039456375340488761115148663138549760*x(1)^66*y(1)^54+808281277464764060643139600456536293376*y(1)^60), 60)
+format_polynomial | f: x(1)^660-77760*x(1)^594*y(1)^6+2720977920*x(1)^528*y(1)^12-56422198149120*x(1)^462*y(1)^18+767793272413224960*x(1)^396*y(1)^24-7164432583542284746752*x(1)^330*y(1)^30+46425523141354005158952960*x(1)^264*y(1)^36-206288495969810710923438981120*x(1)^198*y(1)^42+601537254247968033052748068945920*x(1)^132*y(1)^48-1039456375340488761115148663138549760*x(1)^66*y(1)^54+808281277464764060643139600456536293376*y(1)^60 hypersurface_of_max_contact:y(1) d:60
+format_polynomial | warning: coefficient of y(1)^60 is not 1
+format_polynomial | result is :x(1)^660-77760*x(1)^594*y(1)^6+2720977920*x(1)^528*y(1)^12-56422198149120*x(1)^462*y(1)^18+767793272413224960*x(1)^396*y(1)^24-7164432583542284746752*x(1)^330*y(1)^30+46425523141354005158952960*x(1)^264*y(1)^36-206288495969810710923438981120*x(1)^198*y(1)^42+601537254247968033052748068945920*x(1)^132*y(1)^48-1039456375340488761115148663138549760*x(1)^66*y(1)^54+808281277464764060643139600456536293376*y(1)^60
+process_coeff_ideal_principal | x(1)^660-77760*x(1)^594*y(1)^6+2720977920*x(1)^528*y(1)^12-56422198149120*x(1)^462*y(1)^18+767793272413224960*x(1)^396*y(1)^24-7164432583542284746752*x(1)^330*y(1)^30+46425523141354005158952960*x(1)^264*y(1)^36-206288495969810710923438981120*x(1)^198*y(1)^42+601537254247968033052748068945920*x(1)^132*y(1)^48-1039456375340488761115148663138549760*x(1)^66*y(1)^54+808281277464764060643139600456536293376*y(1)^60 as a polynomial in y(1):
+y(1)^60,y(1)^54,y(1)^48,y(1)^42,y(1)^36,y(1)^30,y(1)^24,y(1)^18,y(1)^12,y(1)^6, 
+  1,      
+m[2,1], m[2,2], m[2,3], m[2,4], m[2,5], m[2,6], m[2,7], m[2,8], m[2,9], m[2,10],
+  x(1)^660
+process_coeff_ideal_principal | adding in ideal:((x(1)^66), 6)
+process_coeff_ideal_principal | result so far:((x(1)^66), 6)
+process_coeff_ideal_principal | adding in ideal:((x(1)^132), 12)
+process_coeff_ideal_principal | result so far:((x(1)^132), 12)
+process_coeff_ideal_principal | adding in ideal:((x(1)^198), 18)
+process_coeff_ideal_principal | result so far:((x(1)^396), 36)
+process_coeff_ideal_principal | adding in ideal:((x(1)^264), 24)
+process_coeff_ideal_principal | result so far:((x(1)^792), 72)
+process_coeff_ideal_principal | adding in ideal:((x(1)^330), 30)
+process_coeff_ideal_principal | result so far:((x(1)^3960), 360)
+process_coeff_ideal_principal | adding in ideal:((x(1)^396), 36)
+process_coeff_ideal_principal | result so far:((x(1)^3960), 360)
+process_coeff_ideal_principal | adding in ideal:((x(1)^462), 42)
+process_coeff_ideal_principal | result so far:((x(1)^27720), 2520)
+process_coeff_ideal_principal | adding in ideal:((x(1)^528), 48)
+process_coeff_ideal_principal | result so far:((x(1)^55440), 5040)
+process_coeff_ideal_principal | adding in ideal:((x(1)^594), 54)
+process_coeff_ideal_principal | result so far:((x(1)^35248*y(0)^2), 15120)
+process_coeff_ideal_principal | adding in ideal:((x(1)^660), 60)
+process_coeff_ideal_principal | result so far:((x(1)^35248*y(0)^2), 15120)
+process_coeff_ideal_principal | result:((x(1)^35248*y(0)^2), 15120)
+process_coeff_ideal | result is :((x(1)^35248*y(0)^2), 15120)
+process_coeff_ideal | final result is :((x(1)^35248*y(0)^2), 15120)
+compute_invariant_0 | ideal:((x(1)^35248*y(0)^2), 35250) hypersurface of max contact:x(1) invariant data:(invariant:6,0,1,0,1175/504,0 hypersurfaces of max contact:x(1),y(1),y(0))
+process_coeff_ideal | processing ideal: ((x(1)^35248*y(0)^2), 35250)
+format_polynomial | f: x(1)^35248*y(0)^2 hypersurface_of_max_contact:x(1) d:35250
+format_polynomial | result is :x(1)^35248*y(0)^2
+process_coeff_ideal_principal | x(1)^35248*y(0)^2 as a polynomial in x(1):
+x(1)^35248,
+y(0)^2     
+process_coeff_ideal_principal | adding in ideal:((y(0)^2), 2)
+process_coeff_ideal_principal | result so far:((y(0)^2), 2)
+process_coeff_ideal_principal | result:((y(0)^2), 2)
+process_coeff_ideal | result is :((y(0)^2), 2)
+process_coeff_ideal | final result is :((y(0)^2), 2)
+compute_invariant_0 | ideal:((y(0)^2), 2) hypersurface of max contact:y(0) invariant data:(invariant:6,0,1,0,1175/504,0,1,0 hypersurfaces of max contact:y(0),x(1),y(1),y(0))
+process_coeff_ideal | processing ideal: ((y(0)^2), 2)
+format_polynomial | f: y(0)^2 hypersurface_of_max_contact:y(0) d:2
+format_polynomial | result is :y(0)^2
+process_coeff_ideal_principal | y(0)^2 as a polynomial in y(0):
+y(0)^2,
+1      
+process_coeff_ideal_principal | result:((0), 1)
+process_coeff_ideal | result is :((0), 1)
+process_coeff_ideal | final result is :((0), 1)
+// compute quotient 1
+// compute quotient 2
+// compute quotient 3
+// compute quotient 4
+// compute quotient 5
+// compute quotient 6
+// compute quotient 7
+// saturation becomes stable after 6 iteration(s)
+
+// compute quotient 1
+// compute quotient 2
+// compute quotient 3
+// compute quotient 4
+// compute quotient 5
+// compute quotient 6
+// compute quotient 7
+// saturation becomes stable after 6 iteration(s)
+
+// compute quotient 1
+// compute quotient 2
+// compute quotient 3
+// compute quotient 4
+// compute quotient 5
+// compute quotient 6
+// compute quotient 7
+// saturation becomes stable after 6 iteration(s)
+
+dfs_resolve_core | K:x(2)^10*y(2)^11+y(0)^6
+compute_invariant_0 | ideal:((x(2)^10*y(2)^11+y(0)^6), 6) hypersurface of max contact:y(0) invariant data:(invariant:6,0 hypersurfaces of max contact:y(0))
+process_coeff_ideal | processing ideal: ((x(2)^10*y(2)^11+y(0)^6), 6)
+format_polynomial | f: x(2)^10*y(2)^11+y(0)^6 hypersurface_of_max_contact:y(0) d:6
+format_polynomial | result is :x(2)^10*y(2)^11+y(0)^6
+process_coeff_ideal_principal | x(2)^10*y(2)^11+y(0)^6 as a polynomial in y(0):
+y(0)^6,1,             
+1,     x(2)^10*y(2)^11
+process_coeff_ideal_principal | adding in ideal:((x(2)^10*y(2)^11), 6)
+process_coeff_ideal_principal | result so far:((x(2)^10*y(2)^11), 6)
+process_coeff_ideal_principal | result:((x(2)^10*y(2)^11), 6)
+process_coeff_ideal | result is :((x(2)^10*y(2)^11), 6)
+process_coeff_ideal | final result is :((x(2)^10*y(2)^11), 6)
+compute_invariant_0 | ideal:((x(2)^10*y(2)^11), 21) hypersurface of max contact:x(2) invariant data:(invariant:6,0,7/2,0 hypersurfaces of max contact:x(2),y(0))
+process_coeff_ideal | processing ideal: ((x(2)^10*y(2)^11), 21)
+format_polynomial | f: x(2)^10*y(2)^11 hypersurface_of_max_contact:x(2) d:21
+format_polynomial | result is :x(2)^10*y(2)^11
+process_coeff_ideal_principal | x(2)^10*y(2)^11 as a polynomial in x(2):
+x(2)^10,
+y(2)^11 
+process_coeff_ideal_principal | adding in ideal:((y(2)^11), 11)
+process_coeff_ideal_principal | result so far:((y(2)^11), 11)
+process_coeff_ideal_principal | result:((y(2)^11), 11)
+process_coeff_ideal | result is :((y(2)^11), 11)
+process_coeff_ideal | final result is :((y(2)^11), 11)
+compute_invariant_0 | ideal:((y(2)^11), 11) hypersurface of max contact:y(2) invariant data:(invariant:6,0,7/2,0,1,0 hypersurfaces of max contact:y(2),x(2),y(0))
+process_coeff_ideal | processing ideal: ((y(2)^11), 11)
+format_polynomial | f: y(2)^11 hypersurface_of_max_contact:y(2) d:11
+format_polynomial | result is :y(2)^11
+process_coeff_ideal_principal | y(2)^11 as a polynomial in y(2):
+y(2)^11,
+1       
+process_coeff_ideal_principal | result:((0), 1)
+process_coeff_ideal | result is :((0), 1)
+process_coeff_ideal | final result is :((0), 1)
+// compute quotient 1
+// compute quotient 2
+// compute quotient 3
+// compute quotient 4
+// compute quotient 5
+// compute quotient 6
+// compute quotient 7
+// saturation becomes stable after 6 iteration(s)
+
+// compute quotient 1
+// compute quotient 2
+// compute quotient 3
+// compute quotient 4
+// compute quotient 5
+// compute quotient 6
+// compute quotient 7
+// saturation becomes stable after 6 iteration(s)
+
+// compute quotient 1
+// compute quotient 2
+// compute quotient 3
+// compute quotient 4
+// compute quotient 5
+// compute quotient 6
+// compute quotient 7
+// saturation becomes stable after 6 iteration(s)
+
+dfs_resolve_core | K:x(3)^15*y(2)^10+y(1)^6
+compute_invariant_0 | ideal:((x(3)^15*y(2)^10+y(1)^6), 6) hypersurface of max contact:y(1) invariant data:(invariant:6,0 hypersurfaces of max contact:y(1))
+process_coeff_ideal | processing ideal: ((x(3)^15*y(2)^10+y(1)^6), 6)
+format_polynomial | f: x(3)^15*y(2)^10+y(1)^6 hypersurface_of_max_contact:y(1) d:6
+format_polynomial | result is :x(3)^15*y(2)^10+y(1)^6
+process_coeff_ideal_principal | x(3)^15*y(2)^10+y(1)^6 as a polynomial in y(1):
+y(1)^6,1,             
+1,     x(3)^15*y(2)^10
+process_coeff_ideal_principal | adding in ideal:((x(3)^15*y(2)^10), 6)
+process_coeff_ideal_principal | result so far:((x(3)^15*y(2)^10), 6)
+process_coeff_ideal_principal | result:((x(3)^15*y(2)^10), 6)
+process_coeff_ideal | result is :((x(3)^15*y(2)^10), 6)
+process_coeff_ideal | final result is :((x(3)^15*y(2)^10), 6)
+compute_invariant_0 | ideal:((x(3)^15*y(2)^10), 25) hypersurface of max contact:x(3) invariant data:(invariant:6,0,25/6,0 hypersurfaces of max contact:x(3),y(1))
+process_coeff_ideal | processing ideal: ((x(3)^15*y(2)^10), 25)
+format_polynomial | f: x(3)^15*y(2)^10 hypersurface_of_max_contact:x(3) d:25
+format_polynomial | result is :x(3)^15*y(2)^10
+process_coeff_ideal_principal | x(3)^15*y(2)^10 as a polynomial in x(3):
+x(3)^15,
+y(2)^10 
+process_coeff_ideal_principal | adding in ideal:((y(2)^10), 10)
+process_coeff_ideal_principal | result so far:((y(2)^10), 10)
+process_coeff_ideal_principal | result:((y(2)^10), 10)
+process_coeff_ideal | result is :((y(2)^10), 10)
+process_coeff_ideal | final result is :((y(2)^10), 10)
+compute_invariant_0 | ideal:((y(2)^10), 10) hypersurface of max contact:y(2) invariant data:(invariant:6,0,25/6,0,1,0 hypersurfaces of max contact:y(2),x(3),y(1))
+process_coeff_ideal | processing ideal: ((y(2)^10), 10)
+format_polynomial | f: y(2)^10 hypersurface_of_max_contact:y(2) d:10
+format_polynomial | result is :y(2)^10
+process_coeff_ideal_principal | y(2)^10 as a polynomial in y(2):
+y(2)^10,
+1       
+process_coeff_ideal_principal | result:((0), 1)
+process_coeff_ideal | result is :((0), 1)
+process_coeff_ideal | final result is :((0), 1)
+current invariant is not less than previous
+terminating..
+dfs_resolve_core | K:x(1)^15*y(0)^11+y(1)^6
+compute_invariant_0 | ideal:((x(1)^15*y(0)^11+y(1)^6), 6) hypersurface of max contact:y(0) invariant data:(invariant:6,0 hypersurfaces of max contact:y(0))
+process_coeff_ideal | processing ideal: ((x(1)^15*y(0)^11+y(1)^6), 6)
+format_polynomial | f: x(1)^15*y(0)^11+y(1)^6 hypersurface_of_max_contact:y(0) d:6
+format_polynomial | result is :y(1)^6
+process_coeff_ideal_principal | y(1)^6 as a polynomial in y(0):
+1,    
+y(1)^6
+process_coeff_ideal_principal | adding in ideal:((y(1)^6), 6)
+process_coeff_ideal_principal | result so far:((y(1)^6), 6)
+process_coeff_ideal_principal | result:((y(1)^6), 6)
+process_coeff_ideal | result is :((y(1)^6), 6)
+process_coeff_ideal | final result is :((y(1)^6), 6)
+compute_invariant_0 | ideal:((y(1)^6), 6) hypersurface of max contact:y(1) invariant data:(invariant:6,0,1,0 hypersurfaces of max contact:y(1),y(0))
+process_coeff_ideal | processing ideal: ((y(1)^6), 6)
+format_polynomial | f: y(1)^6 hypersurface_of_max_contact:y(1) d:6
+format_polynomial | result is :y(1)^6
+process_coeff_ideal_principal | y(1)^6 as a polynomial in y(1):
+y(1)^6,
+1      
+process_coeff_ideal_principal | result:((0), 1)
+process_coeff_ideal | result is :((0), 1)
+process_coeff_ideal | final result is :((0), 1)
+// compute quotient 1
+// compute quotient 2
+// compute quotient 3
+// compute quotient 4
+// compute quotient 5
+// compute quotient 6
+// compute quotient 7
+// saturation becomes stable after 6 iteration(s)
+
+// compute quotient 1
+// compute quotient 2
+// compute quotient 3
+// compute quotient 4
+// compute quotient 5
+// compute quotient 6
+// compute quotient 7
+// saturation becomes stable after 6 iteration(s)
+
+dfs_resolve_core | K:x(1)^15*x(2)^5+y(0)^6
+compute_invariant_0 | ideal:((x(1)^15*x(2)^5+y(0)^6), 6) hypersurface of max contact:x(2) invariant data:(invariant:6,0 hypersurfaces of max contact:x(2))
+process_coeff_ideal | processing ideal: ((x(1)^15*x(2)^5+y(0)^6), 6)
+format_polynomial | f: x(1)^15*x(2)^5+y(0)^6 hypersurface_of_max_contact:x(2) d:6
+format_polynomial | substituting x(2) with -1/6*x(1)^15+x(2)
+format_polynomial | result is :x(1)^90-30*x(1)^75*x(2)+360*x(1)^60*x(2)^2-2160*x(1)^45*x(2)^3+6480*x(1)^30*x(2)^4-7776*x(1)^15*x(2)^5-7776*y(0)^6
+process_coeff_ideal_principal | x(1)^90-30*x(1)^75*x(2)+360*x(1)^60*x(2)^2-2160*x(1)^45*x(2)^3+6480*x(1)^30*x(2)^4-7776*x(1)^15*x(2)^5-7776*y(0)^6 as a polynomial in x(2):
+x(2)^5,x(2)^4,      x(2)^3,x(2)^2,     x(2),       1,    
+m[2,1],6480*x(1)^30,m[2,3],360*x(1)^60,-30*x(1)^75,m[2,6]
+process_coeff_ideal_principal | adding in ideal:((x(1)^15), 1)
+process_coeff_ideal_principal | result so far:((x(1)^15), 1)
+process_coeff_ideal_principal | adding in ideal:((x(1)^30), 2)
+process_coeff_ideal_principal | result so far:((x(1)^30), 2)
+process_coeff_ideal_principal | adding in ideal:((x(1)^45), 3)
+process_coeff_ideal_principal | result so far:((x(1)^90), 6)
+process_coeff_ideal_principal | adding in ideal:((x(1)^60), 4)
+process_coeff_ideal_principal | result so far:((x(1)^180), 12)
+process_coeff_ideal_principal | adding in ideal:((x(1)^75), 5)
+process_coeff_ideal_principal | result so far:((x(1)^900), 60)
+process_coeff_ideal_principal | adding in ideal:((x(1)^90-7776*y(0)^6), 6)
+process_coeff_ideal_principal | result so far:((x(1)^900,x(1)^900-77760*x(1)^810*y(0)^6+2720977920*x(1)^720*y(0)^12-56422198149120*x(1)^630*y(0)^18+767793272413224960*x(1)^540*y(0)^24-7164432583542284746752*x(1)^450*y(0)^30+46425523141354005158952960*x(1)^360*y(0)^36-206288495969810710923438981120*x(1)^270*y(0)^42+601537254247968033052748068945920*x(1)^180*y(0)^48-1039456375340488761115148663138549760*x(1)^90*y(0)^54+808281277464764060643139600456536293376*y(0)^60), 60)
+process_coeff_ideal_principal | result:((x(1)^900,x(1)^900-77760*x(1)^810*y(0)^6+2720977920*x(1)^720*y(0)^12-56422198149120*x(1)^630*y(0)^18+767793272413224960*x(1)^540*y(0)^24-7164432583542284746752*x(1)^450*y(0)^30+46425523141354005158952960*x(1)^360*y(0)^36-206288495969810710923438981120*x(1)^270*y(0)^42+601537254247968033052748068945920*x(1)^180*y(0)^48-1039456375340488761115148663138549760*x(1)^90*y(0)^54+808281277464764060643139600456536293376*y(0)^60), 60)
+process_coeff_ideal | result is :((x(1)^900,x(1)^900-77760*x(1)^810*y(0)^6+2720977920*x(1)^720*y(0)^12-56422198149120*x(1)^630*y(0)^18+767793272413224960*x(1)^540*y(0)^24-7164432583542284746752*x(1)^450*y(0)^30+46425523141354005158952960*x(1)^360*y(0)^36-206288495969810710923438981120*x(1)^270*y(0)^42+601537254247968033052748068945920*x(1)^180*y(0)^48-1039456375340488761115148663138549760*x(1)^90*y(0)^54+808281277464764060643139600456536293376*y(0)^60), 60)
+process_coeff_ideal | final result is :((x(1)^900,x(1)^900-77760*x(1)^810*y(0)^6+2720977920*x(1)^720*y(0)^12-56422198149120*x(1)^630*y(0)^18+767793272413224960*x(1)^540*y(0)^24-7164432583542284746752*x(1)^450*y(0)^30+46425523141354005158952960*x(1)^360*y(0)^36-206288495969810710923438981120*x(1)^270*y(0)^42+601537254247968033052748068945920*x(1)^180*y(0)^48-1039456375340488761115148663138549760*x(1)^90*y(0)^54+808281277464764060643139600456536293376*y(0)^60), 60)
+compute_invariant_0 | ideal:((x(1)^900,x(1)^900-77760*x(1)^810*y(0)^6+2720977920*x(1)^720*y(0)^12-56422198149120*x(1)^630*y(0)^18+767793272413224960*x(1)^540*y(0)^24-7164432583542284746752*x(1)^450*y(0)^30+46425523141354005158952960*x(1)^360*y(0)^36-206288495969810710923438981120*x(1)^270*y(0)^42+601537254247968033052748068945920*x(1)^180*y(0)^48-1039456375340488761115148663138549760*x(1)^90*y(0)^54+808281277464764060643139600456536293376*y(0)^60), 60) hypersurface of max contact:y(0) invariant data:(invariant:6,0,1,0 hypersurfaces of max contact:y(0),x(2))
+process_coeff_ideal | processing ideal: ((x(1)^900), 60)
+format_polynomial | f: x(1)^900 hypersurface_of_max_contact:y(0) d:60
+format_polynomial | result is :x(1)^900
+process_coeff_ideal_principal | x(1)^900 as a polynomial in y(0):
+1,      
+x(1)^900
+process_coeff_ideal_principal | adding in ideal:((x(1)^900), 60)
+process_coeff_ideal_principal | result so far:((x(1)^900), 60)
+process_coeff_ideal_principal | result:((x(1)^900), 60)
+process_coeff_ideal | result is :((x(1)^900), 60)
+process_coeff_ideal | processing ideal: ((x(1)^900-77760*x(1)^810*y(0)^6+2720977920*x(1)^720*y(0)^12-56422198149120*x(1)^630*y(0)^18+767793272413224960*x(1)^540*y(0)^24-7164432583542284746752*x(1)^450*y(0)^30+46425523141354005158952960*x(1)^360*y(0)^36-206288495969810710923438981120*x(1)^270*y(0)^42+601537254247968033052748068945920*x(1)^180*y(0)^48-1039456375340488761115148663138549760*x(1)^90*y(0)^54+808281277464764060643139600456536293376*y(0)^60), 60)
+format_polynomial | f: x(1)^900-77760*x(1)^810*y(0)^6+2720977920*x(1)^720*y(0)^12-56422198149120*x(1)^630*y(0)^18+767793272413224960*x(1)^540*y(0)^24-7164432583542284746752*x(1)^450*y(0)^30+46425523141354005158952960*x(1)^360*y(0)^36-206288495969810710923438981120*x(1)^270*y(0)^42+601537254247968033052748068945920*x(1)^180*y(0)^48-1039456375340488761115148663138549760*x(1)^90*y(0)^54+808281277464764060643139600456536293376*y(0)^60 hypersurface_of_max_contact:y(0) d:60
+format_polynomial | warning: coefficient of y(0)^60 is not 1
+format_polynomial | result is :x(1)^900-77760*x(1)^810*y(0)^6+2720977920*x(1)^720*y(0)^12-56422198149120*x(1)^630*y(0)^18+767793272413224960*x(1)^540*y(0)^24-7164432583542284746752*x(1)^450*y(0)^30+46425523141354005158952960*x(1)^360*y(0)^36-206288495969810710923438981120*x(1)^270*y(0)^42+601537254247968033052748068945920*x(1)^180*y(0)^48-1039456375340488761115148663138549760*x(1)^90*y(0)^54+808281277464764060643139600456536293376*y(0)^60
+process_coeff_ideal_principal | x(1)^900-77760*x(1)^810*y(0)^6+2720977920*x(1)^720*y(0)^12-56422198149120*x(1)^630*y(0)^18+767793272413224960*x(1)^540*y(0)^24-7164432583542284746752*x(1)^450*y(0)^30+46425523141354005158952960*x(1)^360*y(0)^36-206288495969810710923438981120*x(1)^270*y(0)^42+601537254247968033052748068945920*x(1)^180*y(0)^48-1039456375340488761115148663138549760*x(1)^90*y(0)^54+808281277464764060643139600456536293376*y(0)^60 as a polynomial in y(0):
+y(0)^60,y(0)^54,y(0)^48,y(0)^42,y(0)^36,y(0)^30,y(0)^24,y(0)^18,y(0)^12,y(0)^6, 
+  1,      
+m[2,1], m[2,2], m[2,3], m[2,4], m[2,5], m[2,6], m[2,7], m[2,8], m[2,9], m[2,10],
+  x(1)^900
+process_coeff_ideal_principal | adding in ideal:((x(1)^90), 6)
+process_coeff_ideal_principal | result so far:((x(1)^90), 6)
+process_coeff_ideal_principal | adding in ideal:((x(1)^180), 12)
+process_coeff_ideal_principal | result so far:((x(1)^180), 12)
+process_coeff_ideal_principal | adding in ideal:((x(1)^270), 18)
+process_coeff_ideal_principal | result so far:((x(1)^540), 36)
+process_coeff_ideal_principal | adding in ideal:((x(1)^360), 24)
+process_coeff_ideal_principal | result so far:((x(1)^1080), 72)
+process_coeff_ideal_principal | adding in ideal:((x(1)^450), 30)
+process_coeff_ideal_principal | result so far:((x(1)^5400), 360)
+process_coeff_ideal_principal | adding in ideal:((x(1)^540), 36)
+process_coeff_ideal_principal | result so far:((x(1)^5400), 360)
+process_coeff_ideal_principal | adding in ideal:((x(1)^630), 42)
+process_coeff_ideal_principal | result so far:((x(1)^37800), 2520)
+process_coeff_ideal_principal | adding in ideal:((x(1)^720), 48)
+process_coeff_ideal_principal | result so far:((x(1)^10064*x(2),x(1)^10064*x(2)), 5040)
+process_coeff_ideal_principal | adding in ideal:((x(1)^810), 54)
+process_coeff_ideal_principal | result so far:((x(1)^30192*x(2)^3,x(1)^30192*x(2)^3,x(1)^30192*x(2)^3), 15120)
+process_coeff_ideal_principal | adding in ideal:((x(1)^900), 60)
+process_coeff_ideal_principal | result so far:((x(1)^30192*x(2)^3,x(1)^30192*x(2)^3,x(1)^30192*x(2)^3), 15120)
+process_coeff_ideal_principal | result:((x(1)^30192*x(2)^3,x(1)^30192*x(2)^3,x(1)^30192*x(2)^3), 15120)
+process_coeff_ideal | result is :((x(1)^30192*x(2)^3,x(1)^30192*x(2)^3,x(1)^30192*x(2)^3), 15120)
+process_coeff_ideal | final result is :((x(1)^30192*x(2)^3,x(1)^30192*x(2)^3,x(1)^30192*x(2)^3), 15120)
+compute_invariant_0 | ideal:((x(1)^30192*x(2)^3,x(1)^30192*x(2)^3,x(1)^30192*x(2)^3), 30195) hypersurface of max contact:x(1) invariant data:(invariant:6,0,1,0,671/336,0 hypersurfaces of max contact:x(1),y(0),x(2))
+process_coeff_ideal | processing ideal: ((x(1)^30192*x(2)^3), 30195)
+format_polynomial | f: x(1)^30192*x(2)^3 hypersurface_of_max_contact:x(1) d:30195
+format_polynomial | result is :x(1)^30192*x(2)^3
+process_coeff_ideal_principal | x(1)^30192*x(2)^3 as a polynomial in x(1):
+x(1)^30192,
+x(2)^3     
+process_coeff_ideal_principal | adding in ideal:((x(2)^3), 3)
+process_coeff_ideal_principal | result so far:((x(2)^3), 3)
+process_coeff_ideal_principal | result:((x(2)^3), 3)
+process_coeff_ideal | result is :((x(2)^3), 3)
+process_coeff_ideal | processing ideal: ((x(1)^30192*x(2)^3), 30195)
+format_polynomial | f: x(1)^30192*x(2)^3 hypersurface_of_max_contact:x(1) d:30195
+format_polynomial | result is :x(1)^30192*x(2)^3
+process_coeff_ideal_principal | x(1)^30192*x(2)^3 as a polynomial in x(1):
+x(1)^30192,
+x(2)^3     
+process_coeff_ideal_principal | adding in ideal:((x(2)^3), 3)
+process_coeff_ideal_principal | result so far:((x(2)^3), 3)
+process_coeff_ideal_principal | result:((x(2)^3), 3)
+process_coeff_ideal | result is :((x(2)^3), 3)
+process_coeff_ideal | processing ideal: ((x(1)^30192*x(2)^3), 30195)
+format_polynomial | f: x(1)^30192*x(2)^3 hypersurface_of_max_contact:x(1) d:30195
+format_polynomial | result is :x(1)^30192*x(2)^3
+process_coeff_ideal_principal | x(1)^30192*x(2)^3 as a polynomial in x(1):
+x(1)^30192,
+x(2)^3     
+process_coeff_ideal_principal | adding in ideal:((x(2)^3), 3)
+process_coeff_ideal_principal | result so far:((x(2)^3), 3)
+process_coeff_ideal_principal | result:((x(2)^3), 3)
+process_coeff_ideal | result is :((x(2)^3), 3)
+process_coeff_ideal | final result is :((x(2)^3), 3)
+compute_invariant_0 | ideal:((x(2)^3), 3) hypersurface of max contact:x(2) invariant data:(invariant:6,0,1,0,671/336,0,1,0 hypersurfaces of max contact:x(2),x(1),y(0),x(2))
+process_coeff_ideal | processing ideal: ((x(2)^3), 3)
+format_polynomial | f: x(2)^3 hypersurface_of_max_contact:x(2) d:3
+format_polynomial | result is :x(2)^3
+process_coeff_ideal_principal | x(2)^3 as a polynomial in x(2):
+x(2)^3,
+1      
+process_coeff_ideal_principal | result:((0), 1)
+process_coeff_ideal | result is :((0), 1)
+process_coeff_ideal | final result is :((0), 1)
+current invariant is not less than previous
+terminating..
+dfs_resolve_core | K:x(1)^10*y(1)^5+y(0)^6
+compute_invariant_0 | ideal:((x(1)^10*y(1)^5+y(0)^6), 6) hypersurface of max contact:y(0) invariant data:(invariant:6,0 hypersurfaces of max contact:y(0))
+process_coeff_ideal | processing ideal: ((x(1)^10*y(1)^5+y(0)^6), 6)
+format_polynomial | f: x(1)^10*y(1)^5+y(0)^6 hypersurface_of_max_contact:y(0) d:6
+format_polynomial | result is :x(1)^10*y(1)^5+y(0)^6
+process_coeff_ideal_principal | x(1)^10*y(1)^5+y(0)^6 as a polynomial in y(0):
+y(0)^6,1,            
+1,     x(1)^10*y(1)^5
+process_coeff_ideal_principal | adding in ideal:((x(1)^10*y(1)^5), 6)
+process_coeff_ideal_principal | result so far:((x(1)^10*y(1)^5), 6)
+process_coeff_ideal_principal | result:((x(1)^10*y(1)^5), 6)
+process_coeff_ideal | result is :((x(1)^10*y(1)^5), 6)
+process_coeff_ideal | final result is :((x(1)^10*y(1)^5), 6)
+compute_invariant_0 | ideal:((x(1)^10*y(1)^5), 15) hypersurface of max contact:x(1) invariant data:(invariant:6,0,5/2,0 hypersurfaces of max contact:x(1),y(0))
+process_coeff_ideal | processing ideal: ((x(1)^10*y(1)^5), 15)
+format_polynomial | f: x(1)^10*y(1)^5 hypersurface_of_max_contact:x(1) d:15
+format_polynomial | result is :x(1)^10*y(1)^5
+process_coeff_ideal_principal | x(1)^10*y(1)^5 as a polynomial in x(1):
+x(1)^10,
+y(1)^5  
+process_coeff_ideal_principal | adding in ideal:((y(1)^5), 5)
+process_coeff_ideal_principal | result so far:((y(1)^5), 5)
+process_coeff_ideal_principal | result:((y(1)^5), 5)
+process_coeff_ideal | result is :((y(1)^5), 5)
+process_coeff_ideal | final result is :((y(1)^5), 5)
+compute_invariant_0 | ideal:((y(1)^5), 5) hypersurface of max contact:y(1) invariant data:(invariant:6,0,5/2,0,1,0 hypersurfaces of max contact:y(1),x(1),y(0))
+process_coeff_ideal | processing ideal: ((y(1)^5), 5)
+format_polynomial | f: y(1)^5 hypersurface_of_max_contact:y(1) d:5
+format_polynomial | result is :y(1)^5
+process_coeff_ideal_principal | y(1)^5 as a polynomial in y(1):
+y(1)^5,
+1      
+process_coeff_ideal_principal | result:((0), 1)
+process_coeff_ideal | result is :((0), 1)
+process_coeff_ideal | final result is :((0), 1)
+// compute quotient 1
+// compute quotient 2
+// compute quotient 3
+// compute quotient 4
+// compute quotient 5
+// compute quotient 6
+// compute quotient 7
+// saturation becomes stable after 6 iteration(s)
+
+// compute quotient 1
+// compute quotient 2
+// compute quotient 3
+// compute quotient 4
+// compute quotient 5
+// compute quotient 6
+// compute quotient 7
+// saturation becomes stable after 6 iteration(s)
+
+// compute quotient 1
+// compute quotient 2
+// compute quotient 3
+// compute quotient 4
+// compute quotient 5
+// compute quotient 6
+// compute quotient 7
+// saturation becomes stable after 6 iteration(s)
+
+dfs_resolve_core | K:x(3)^9*y(2)^10+y(1)^6
+compute_invariant_0 | ideal:((x(3)^9*y(2)^10+y(1)^6), 6) hypersurface of max contact:y(1) invariant data:(invariant:6,0 hypersurfaces of max contact:y(1))
+process_coeff_ideal | processing ideal: ((x(3)^9*y(2)^10+y(1)^6), 6)
+format_polynomial | f: x(3)^9*y(2)^10+y(1)^6 hypersurface_of_max_contact:y(1) d:6
+format_polynomial | result is :x(3)^9*y(2)^10+y(1)^6
+process_coeff_ideal_principal | x(3)^9*y(2)^10+y(1)^6 as a polynomial in y(1):
+y(1)^6,1,            
+1,     x(3)^9*y(2)^10
+process_coeff_ideal_principal | adding in ideal:((x(3)^9*y(2)^10), 6)
+process_coeff_ideal_principal | result so far:((x(3)^9*y(2)^10), 6)
+process_coeff_ideal_principal | result:((x(3)^9*y(2)^10), 6)
+process_coeff_ideal | result is :((x(3)^9*y(2)^10), 6)
+process_coeff_ideal | final result is :((x(3)^9*y(2)^10), 6)
+compute_invariant_0 | ideal:((x(3)^9*y(2)^10), 19) hypersurface of max contact:x(3) invariant data:(invariant:6,0,19/6,0 hypersurfaces of max contact:x(3),y(1))
+process_coeff_ideal | processing ideal: ((x(3)^9*y(2)^10), 19)
+format_polynomial | f: x(3)^9*y(2)^10 hypersurface_of_max_contact:x(3) d:19
+format_polynomial | result is :x(3)^9*y(2)^10
+process_coeff_ideal_principal | x(3)^9*y(2)^10 as a polynomial in x(3):
+x(3)^9,
+y(2)^10
+process_coeff_ideal_principal | adding in ideal:((y(2)^10), 10)
+process_coeff_ideal_principal | result so far:((y(2)^10), 10)
+process_coeff_ideal_principal | result:((y(2)^10), 10)
+process_coeff_ideal | result is :((y(2)^10), 10)
+process_coeff_ideal | final result is :((y(2)^10), 10)
+compute_invariant_0 | ideal:((y(2)^10), 10) hypersurface of max contact:y(2) invariant data:(invariant:6,0,19/6,0,1,0 hypersurfaces of max contact:y(2),x(3),y(1))
+process_coeff_ideal | processing ideal: ((y(2)^10), 10)
+format_polynomial | f: y(2)^10 hypersurface_of_max_contact:y(2) d:10
+format_polynomial | result is :y(2)^10
+process_coeff_ideal_principal | y(2)^10 as a polynomial in y(2):
+y(2)^10,
+1       
+process_coeff_ideal_principal | result:((0), 1)
+process_coeff_ideal | result is :((0), 1)
+process_coeff_ideal | final result is :((0), 1)
+current invariant is not less than previous
+terminating..
+dfs_resolve_core | K:x(1)^9*y(0)^5+y(1)^6
+compute_invariant_0 | ideal:((x(1)^9*y(0)^5+y(1)^6), 6) hypersurface of max contact:y(0) invariant data:(invariant:6,0 hypersurfaces of max contact:y(0))
+process_coeff_ideal | processing ideal: ((x(1)^9*y(0)^5+y(1)^6), 6)
+format_polynomial | f: x(1)^9*y(0)^5+y(1)^6 hypersurface_of_max_contact:y(0) d:6
+format_polynomial | substituting y(0) with -1/6*x(1)^9+y(0)
+format_polynomial | result is :x(1)^54-30*x(1)^45*y(0)+360*x(1)^36*y(0)^2-2160*x(1)^27*y(0)^3+6480*x(1)^18*y(0)^4-7776*x(1)^9*y(0)^5-7776*y(1)^6
+process_coeff_ideal_principal | x(1)^54-30*x(1)^45*y(0)+360*x(1)^36*y(0)^2-2160*x(1)^27*y(0)^3+6480*x(1)^18*y(0)^4-7776*x(1)^9*y(0)^5-7776*y(1)^6 as a polynomial in y(0):
+y(0)^5,      y(0)^4,      y(0)^3,y(0)^2,     y(0),       1,    
+-7776*x(1)^9,6480*x(1)^18,m[2,3],360*x(1)^36,-30*x(1)^45,m[2,6]
+process_coeff_ideal_principal | adding in ideal:((x(1)^9), 1)
+process_coeff_ideal_principal | result so far:((x(1)^9), 1)
+process_coeff_ideal_principal | adding in ideal:((x(1)^18), 2)
+process_coeff_ideal_principal | result so far:((x(1)^18), 2)
+process_coeff_ideal_principal | adding in ideal:((x(1)^27), 3)
+process_coeff_ideal_principal | result so far:((x(1)^54), 6)
+process_coeff_ideal_principal | adding in ideal:((x(1)^36), 4)
+process_coeff_ideal_principal | result so far:((x(1)^108), 12)
+process_coeff_ideal_principal | adding in ideal:((x(1)^45), 5)
+process_coeff_ideal_principal | result so far:((x(1)^540), 60)
+process_coeff_ideal_principal | adding in ideal:((x(1)^54-7776*y(1)^6), 6)
+process_coeff_ideal_principal | result so far:((x(1)^540,x(1)^540-77760*x(1)^486*y(1)^6+2720977920*x(1)^432*y(1)^12-56422198149120*x(1)^378*y(1)^18+767793272413224960*x(1)^324*y(1)^24-7164432583542284746752*x(1)^270*y(1)^30+46425523141354005158952960*x(1)^216*y(1)^36-206288495969810710923438981120*x(1)^162*y(1)^42+601537254247968033052748068945920*x(1)^108*y(1)^48-1039456375340488761115148663138549760*x(1)^54*y(1)^54+808281277464764060643139600456536293376*y(1)^60), 60)
+process_coeff_ideal_principal | result:((x(1)^540,x(1)^540-77760*x(1)^486*y(1)^6+2720977920*x(1)^432*y(1)^12-56422198149120*x(1)^378*y(1)^18+767793272413224960*x(1)^324*y(1)^24-7164432583542284746752*x(1)^270*y(1)^30+46425523141354005158952960*x(1)^216*y(1)^36-206288495969810710923438981120*x(1)^162*y(1)^42+601537254247968033052748068945920*x(1)^108*y(1)^48-1039456375340488761115148663138549760*x(1)^54*y(1)^54+808281277464764060643139600456536293376*y(1)^60), 60)
+process_coeff_ideal | result is :((x(1)^540,x(1)^540-77760*x(1)^486*y(1)^6+2720977920*x(1)^432*y(1)^12-56422198149120*x(1)^378*y(1)^18+767793272413224960*x(1)^324*y(1)^24-7164432583542284746752*x(1)^270*y(1)^30+46425523141354005158952960*x(1)^216*y(1)^36-206288495969810710923438981120*x(1)^162*y(1)^42+601537254247968033052748068945920*x(1)^108*y(1)^48-1039456375340488761115148663138549760*x(1)^54*y(1)^54+808281277464764060643139600456536293376*y(1)^60), 60)
+process_coeff_ideal | final result is :((x(1)^540,x(1)^540-77760*x(1)^486*y(1)^6+2720977920*x(1)^432*y(1)^12-56422198149120*x(1)^378*y(1)^18+767793272413224960*x(1)^324*y(1)^24-7164432583542284746752*x(1)^270*y(1)^30+46425523141354005158952960*x(1)^216*y(1)^36-206288495969810710923438981120*x(1)^162*y(1)^42+601537254247968033052748068945920*x(1)^108*y(1)^48-1039456375340488761115148663138549760*x(1)^54*y(1)^54+808281277464764060643139600456536293376*y(1)^60), 60)
+compute_invariant_0 | ideal:((x(1)^540,x(1)^540-77760*x(1)^486*y(1)^6+2720977920*x(1)^432*y(1)^12-56422198149120*x(1)^378*y(1)^18+767793272413224960*x(1)^324*y(1)^24-7164432583542284746752*x(1)^270*y(1)^30+46425523141354005158952960*x(1)^216*y(1)^36-206288495969810710923438981120*x(1)^162*y(1)^42+601537254247968033052748068945920*x(1)^108*y(1)^48-1039456375340488761115148663138549760*x(1)^54*y(1)^54+808281277464764060643139600456536293376*y(1)^60), 60) hypersurface of max contact:y(1) invariant data:(invariant:6,0,1,0 hypersurfaces of max contact:y(1),y(0))
+process_coeff_ideal | processing ideal: ((x(1)^540), 60)
+format_polynomial | f: x(1)^540 hypersurface_of_max_contact:y(1) d:60
+format_polynomial | result is :x(1)^540
+process_coeff_ideal_principal | x(1)^540 as a polynomial in y(1):
+1,      
+x(1)^540
+process_coeff_ideal_principal | adding in ideal:((x(1)^540), 60)
+process_coeff_ideal_principal | result so far:((x(1)^540), 60)
+process_coeff_ideal_principal | result:((x(1)^540), 60)
+process_coeff_ideal | result is :((x(1)^540), 60)
+process_coeff_ideal | processing ideal: ((x(1)^540-77760*x(1)^486*y(1)^6+2720977920*x(1)^432*y(1)^12-56422198149120*x(1)^378*y(1)^18+767793272413224960*x(1)^324*y(1)^24-7164432583542284746752*x(1)^270*y(1)^30+46425523141354005158952960*x(1)^216*y(1)^36-206288495969810710923438981120*x(1)^162*y(1)^42+601537254247968033052748068945920*x(1)^108*y(1)^48-1039456375340488761115148663138549760*x(1)^54*y(1)^54+808281277464764060643139600456536293376*y(1)^60), 60)
+format_polynomial | f: x(1)^540-77760*x(1)^486*y(1)^6+2720977920*x(1)^432*y(1)^12-56422198149120*x(1)^378*y(1)^18+767793272413224960*x(1)^324*y(1)^24-7164432583542284746752*x(1)^270*y(1)^30+46425523141354005158952960*x(1)^216*y(1)^36-206288495969810710923438981120*x(1)^162*y(1)^42+601537254247968033052748068945920*x(1)^108*y(1)^48-1039456375340488761115148663138549760*x(1)^54*y(1)^54+808281277464764060643139600456536293376*y(1)^60 hypersurface_of_max_contact:y(1) d:60
+format_polynomial | warning: coefficient of y(1)^60 is not 1
+format_polynomial | result is :x(1)^540-77760*x(1)^486*y(1)^6+2720977920*x(1)^432*y(1)^12-56422198149120*x(1)^378*y(1)^18+767793272413224960*x(1)^324*y(1)^24-7164432583542284746752*x(1)^270*y(1)^30+46425523141354005158952960*x(1)^216*y(1)^36-206288495969810710923438981120*x(1)^162*y(1)^42+601537254247968033052748068945920*x(1)^108*y(1)^48-1039456375340488761115148663138549760*x(1)^54*y(1)^54+808281277464764060643139600456536293376*y(1)^60
+process_coeff_ideal_principal | x(1)^540-77760*x(1)^486*y(1)^6+2720977920*x(1)^432*y(1)^12-56422198149120*x(1)^378*y(1)^18+767793272413224960*x(1)^324*y(1)^24-7164432583542284746752*x(1)^270*y(1)^30+46425523141354005158952960*x(1)^216*y(1)^36-206288495969810710923438981120*x(1)^162*y(1)^42+601537254247968033052748068945920*x(1)^108*y(1)^48-1039456375340488761115148663138549760*x(1)^54*y(1)^54+808281277464764060643139600456536293376*y(1)^60 as a polynomial in y(1):
+y(1)^60,y(1)^54,y(1)^48,y(1)^42,y(1)^36,y(1)^30,y(1)^24,y(1)^18,y(1)^12,y(1)^6, 
+  1,      
+m[2,1], m[2,2], m[2,3], m[2,4], m[2,5], m[2,6], m[2,7], m[2,8], m[2,9], m[2,10],
+  x(1)^540
+process_coeff_ideal_principal | adding in ideal:((x(1)^54), 6)
+process_coeff_ideal_principal | result so far:((x(1)^54), 6)
+process_coeff_ideal_principal | adding in ideal:((x(1)^108), 12)
+process_coeff_ideal_principal | result so far:((x(1)^108), 12)
+process_coeff_ideal_principal | adding in ideal:((x(1)^162), 18)
+process_coeff_ideal_principal | result so far:((x(1)^324), 36)
+process_coeff_ideal_principal | adding in ideal:((x(1)^216), 24)
+process_coeff_ideal_principal | result so far:((x(1)^648), 72)
+process_coeff_ideal_principal | adding in ideal:((x(1)^270), 30)
+process_coeff_ideal_principal | result so far:((x(1)^3240), 360)
+process_coeff_ideal_principal | adding in ideal:((x(1)^324), 36)
+process_coeff_ideal_principal | result so far:((x(1)^3240), 360)
+process_coeff_ideal_principal | adding in ideal:((x(1)^378), 42)
+process_coeff_ideal_principal | result so far:((x(1)^22680), 2520)
+process_coeff_ideal_principal | adding in ideal:((x(1)^432), 48)
+process_coeff_ideal_principal | result so far:((x(1)^45360), 5040)
+process_coeff_ideal_principal | adding in ideal:((x(1)^486), 54)
+process_coeff_ideal_principal | result so far:((x(1)^5008*y(0)^2), 15120)
+process_coeff_ideal_principal | adding in ideal:((x(1)^540), 60)
+process_coeff_ideal_principal | result so far:((x(1)^5008*y(0)^2), 15120)
+process_coeff_ideal_principal | result:((x(1)^5008*y(0)^2), 15120)
+process_coeff_ideal | result is :((x(1)^5008*y(0)^2), 15120)
+process_coeff_ideal | final result is :((x(1)^5008*y(0)^2), 15120)
+compute_invariant_0 | ideal:((x(1)^5008*y(0)^2), 5010) hypersurface of max contact:x(1) invariant data:(invariant:6,0,1,0,167/504,0 hypersurfaces of max contact:x(1),y(1),y(0))
+process_coeff_ideal | processing ideal: ((x(1)^5008*y(0)^2), 5010)
+format_polynomial | f: x(1)^5008*y(0)^2 hypersurface_of_max_contact:x(1) d:5010
+format_polynomial | result is :x(1)^5008*y(0)^2
+process_coeff_ideal_principal | x(1)^5008*y(0)^2 as a polynomial in x(1):
+x(1)^5008,
+y(0)^2    
+process_coeff_ideal_principal | adding in ideal:((y(0)^2), 2)
+process_coeff_ideal_principal | result so far:((y(0)^2), 2)
+process_coeff_ideal_principal | result:((y(0)^2), 2)
+process_coeff_ideal | result is :((y(0)^2), 2)
+process_coeff_ideal | final result is :((y(0)^2), 2)
+compute_invariant_0 | ideal:((y(0)^2), 2) hypersurface of max contact:y(0) invariant data:(invariant:6,0,1,0,167/504,0,1,0 hypersurfaces of max contact:y(0),x(1),y(1),y(0))
+process_coeff_ideal | processing ideal: ((y(0)^2), 2)
+format_polynomial | f: y(0)^2 hypersurface_of_max_contact:y(0) d:2
+format_polynomial | result is :y(0)^2
+process_coeff_ideal_principal | y(0)^2 as a polynomial in y(0):
+y(0)^2,
+1      
+process_coeff_ideal_principal | result:((0), 1)
+process_coeff_ideal | result is :((0), 1)
+process_coeff_ideal | final result is :((0), 1)
+// compute quotient 1
+// compute quotient 2
+// compute quotient 3
+// compute quotient 4
+// compute quotient 5
+// compute quotient 6
+// compute quotient 7
+// saturation becomes stable after 6 iteration(s)
+
+// compute quotient 1
+// compute quotient 2
+// compute quotient 3
+// compute quotient 4
+// compute quotient 5
+// compute quotient 6
+// compute quotient 7
+// saturation becomes stable after 6 iteration(s)
+
+// compute quotient 1
+// compute quotient 2
+// compute quotient 3
+// compute quotient 4
+// compute quotient 5
+// compute quotient 6
+// compute quotient 7
+// saturation becomes stable after 6 iteration(s)
+
+dfs_resolve_core | K:x(2)^8*y(2)^9+y(0)^6
+compute_invariant_0 | ideal:((x(2)^8*y(2)^9+y(0)^6), 6) hypersurface of max contact:y(0) invariant data:(invariant:6,0 hypersurfaces of max contact:y(0))
+process_coeff_ideal | processing ideal: ((x(2)^8*y(2)^9+y(0)^6), 6)
+format_polynomial | f: x(2)^8*y(2)^9+y(0)^6 hypersurface_of_max_contact:y(0) d:6
+format_polynomial | result is :x(2)^8*y(2)^9+y(0)^6
+process_coeff_ideal_principal | x(2)^8*y(2)^9+y(0)^6 as a polynomial in y(0):
+y(0)^6,1,           
+1,     x(2)^8*y(2)^9
+process_coeff_ideal_principal | adding in ideal:((x(2)^8*y(2)^9), 6)
+process_coeff_ideal_principal | result so far:((x(2)^8*y(2)^9), 6)
+process_coeff_ideal_principal | result:((x(2)^8*y(2)^9), 6)
+process_coeff_ideal | result is :((x(2)^8*y(2)^9), 6)
+process_coeff_ideal | final result is :((x(2)^8*y(2)^9), 6)
+compute_invariant_0 | ideal:((x(2)^8*y(2)^9), 17) hypersurface of max contact:x(2) invariant data:(invariant:6,0,17/6,0 hypersurfaces of max contact:x(2),y(0))
+process_coeff_ideal | processing ideal: ((x(2)^8*y(2)^9), 17)
+format_polynomial | f: x(2)^8*y(2)^9 hypersurface_of_max_contact:x(2) d:17
+format_polynomial | result is :x(2)^8*y(2)^9
+process_coeff_ideal_principal | x(2)^8*y(2)^9 as a polynomial in x(2):
+x(2)^8,
+y(2)^9 
+process_coeff_ideal_principal | adding in ideal:((y(2)^9), 9)
+process_coeff_ideal_principal | result so far:((y(2)^9), 9)
+process_coeff_ideal_principal | result:((y(2)^9), 9)
+process_coeff_ideal | result is :((y(2)^9), 9)
+process_coeff_ideal | final result is :((y(2)^9), 9)
+compute_invariant_0 | ideal:((y(2)^9), 9) hypersurface of max contact:y(2) invariant data:(invariant:6,0,17/6,0,1,0 hypersurfaces of max contact:y(2),x(2),y(0))
+process_coeff_ideal | processing ideal: ((y(2)^9), 9)
+format_polynomial | f: y(2)^9 hypersurface_of_max_contact:y(2) d:9
+format_polynomial | result is :y(2)^9
+process_coeff_ideal_principal | y(2)^9 as a polynomial in y(2):
+y(2)^9,
+1      
+process_coeff_ideal_principal | result:((0), 1)
+process_coeff_ideal | result is :((0), 1)
+process_coeff_ideal | final result is :((0), 1)
+// compute quotient 1
+// compute quotient 2
+// compute quotient 3
+// compute quotient 4
+// compute quotient 5
+// compute quotient 6
+// compute quotient 7
+// saturation becomes stable after 6 iteration(s)
+
+// compute quotient 1
+// compute quotient 2
+// compute quotient 3
+// compute quotient 4
+// compute quotient 5
+// compute quotient 6
+// compute quotient 7
+// saturation becomes stable after 6 iteration(s)
+
+// compute quotient 1
+// compute quotient 2
+// compute quotient 3
+// compute quotient 4
+// compute quotient 5
+// compute quotient 6
+// compute quotient 7
+// saturation becomes stable after 6 iteration(s)
+
+dfs_resolve_core | K:x(3)^11*y(2)^8+y(1)^6
+compute_invariant_0 | ideal:((x(3)^11*y(2)^8+y(1)^6), 6) hypersurface of max contact:y(1) invariant data:(invariant:6,0 hypersurfaces of max contact:y(1))
+process_coeff_ideal | processing ideal: ((x(3)^11*y(2)^8+y(1)^6), 6)
+format_polynomial | f: x(3)^11*y(2)^8+y(1)^6 hypersurface_of_max_contact:y(1) d:6
+format_polynomial | result is :x(3)^11*y(2)^8+y(1)^6
+process_coeff_ideal_principal | x(3)^11*y(2)^8+y(1)^6 as a polynomial in y(1):
+y(1)^6,1,            
+1,     x(3)^11*y(2)^8
+process_coeff_ideal_principal | adding in ideal:((x(3)^11*y(2)^8), 6)
+process_coeff_ideal_principal | result so far:((x(3)^11*y(2)^8), 6)
+process_coeff_ideal_principal | result:((x(3)^11*y(2)^8), 6)
+process_coeff_ideal | result is :((x(3)^11*y(2)^8), 6)
+process_coeff_ideal | final result is :((x(3)^11*y(2)^8), 6)
+compute_invariant_0 | ideal:((x(3)^11*y(2)^8), 19) hypersurface of max contact:x(3) invariant data:(invariant:6,0,19/6,0 hypersurfaces of max contact:x(3),y(1))
+process_coeff_ideal | processing ideal: ((x(3)^11*y(2)^8), 19)
+format_polynomial | f: x(3)^11*y(2)^8 hypersurface_of_max_contact:x(3) d:19
+format_polynomial | result is :x(3)^11*y(2)^8
+process_coeff_ideal_principal | x(3)^11*y(2)^8 as a polynomial in x(3):
+x(3)^11,
+y(2)^8  
+process_coeff_ideal_principal | adding in ideal:((y(2)^8), 8)
+process_coeff_ideal_principal | result so far:((y(2)^8), 8)
+process_coeff_ideal_principal | result:((y(2)^8), 8)
+process_coeff_ideal | result is :((y(2)^8), 8)
+process_coeff_ideal | final result is :((y(2)^8), 8)
+compute_invariant_0 | ideal:((y(2)^8), 8) hypersurface of max contact:y(2) invariant data:(invariant:6,0,19/6,0,1,0 hypersurfaces of max contact:y(2),x(3),y(1))
+process_coeff_ideal | processing ideal: ((y(2)^8), 8)
+format_polynomial | f: y(2)^8 hypersurface_of_max_contact:y(2) d:8
+format_polynomial | result is :y(2)^8
+process_coeff_ideal_principal | y(2)^8 as a polynomial in y(2):
+y(2)^8,
+1      
+process_coeff_ideal_principal | result:((0), 1)
+process_coeff_ideal | result is :((0), 1)
+process_coeff_ideal | final result is :((0), 1)
+current invariant is not less than previous
+terminating..
+dfs_resolve_core | K:x(1)^11*y(0)^9+y(1)^6
+compute_invariant_0 | ideal:((x(1)^11*y(0)^9+y(1)^6), 6) hypersurface of max contact:y(0) invariant data:(invariant:6,0 hypersurfaces of max contact:y(0))
+process_coeff_ideal | processing ideal: ((x(1)^11*y(0)^9+y(1)^6), 6)
+format_polynomial | f: x(1)^11*y(0)^9+y(1)^6 hypersurface_of_max_contact:y(0) d:6
+format_polynomial | result is :y(1)^6
+process_coeff_ideal_principal | y(1)^6 as a polynomial in y(0):
+1,    
+y(1)^6
+process_coeff_ideal_principal | adding in ideal:((y(1)^6), 6)
+process_coeff_ideal_principal | result so far:((y(1)^6), 6)
+process_coeff_ideal_principal | result:((y(1)^6), 6)
+process_coeff_ideal | result is :((y(1)^6), 6)
+process_coeff_ideal | final result is :((y(1)^6), 6)
+compute_invariant_0 | ideal:((y(1)^6), 6) hypersurface of max contact:y(1) invariant data:(invariant:6,0,1,0 hypersurfaces of max contact:y(1),y(0))
+process_coeff_ideal | processing ideal: ((y(1)^6), 6)
+format_polynomial | f: y(1)^6 hypersurface_of_max_contact:y(1) d:6
+format_polynomial | result is :y(1)^6
+process_coeff_ideal_principal | y(1)^6 as a polynomial in y(1):
+y(1)^6,
+1      
+process_coeff_ideal_principal | result:((0), 1)
+process_coeff_ideal | result is :((0), 1)
+process_coeff_ideal | final result is :((0), 1)
+// compute quotient 1
+// compute quotient 2
+// compute quotient 3
+// compute quotient 4
+// compute quotient 5
+// compute quotient 6
+// compute quotient 7
+// saturation becomes stable after 6 iteration(s)
+
+// compute quotient 1
+// compute quotient 2
+// compute quotient 3
+// compute quotient 4
+// compute quotient 5
+// compute quotient 6
+// compute quotient 7
+// saturation becomes stable after 6 iteration(s)
+
+dfs_resolve_core | K:x(1)^11*x(2)^3+y(0)^6
+compute_invariant_0 | ideal:((x(1)^11*x(2)^3+y(0)^6), 6) hypersurface of max contact:x(2) invariant data:(invariant:6,0 hypersurfaces of max contact:x(2))
+process_coeff_ideal | processing ideal: ((x(1)^11*x(2)^3+y(0)^6), 6)
+format_polynomial | f: x(1)^11*x(2)^3+y(0)^6 hypersurface_of_max_contact:x(2) d:6
+format_polynomial | result is :x(1)^11*x(2)^3+y(0)^6
+process_coeff_ideal_principal | x(1)^11*x(2)^3+y(0)^6 as a polynomial in x(2):
+x(2)^3, 1,    
+x(1)^11,y(0)^6
+process_coeff_ideal_principal | adding in ideal:((x(1)^11), 3)
+process_coeff_ideal_principal | result so far:((x(1)^11), 3)
+process_coeff_ideal_principal | adding in ideal:((y(0)^6), 6)
+process_coeff_ideal_principal | result so far:((x(1)^22,y(0)^6), 6)
+process_coeff_ideal_principal | result:((x(1)^22,y(0)^6), 6)
+process_coeff_ideal | result is :((x(1)^22,y(0)^6), 6)
+process_coeff_ideal | final result is :((x(1)^22,y(0)^6), 6)
+compute_invariant_0 | ideal:((x(1)^22,y(0)^6), 6) hypersurface of max contact:y(0) invariant data:(invariant:6,0,1,0 hypersurfaces of max contact:y(0),x(2))
+process_coeff_ideal | processing ideal: ((x(1)^22), 6)
+format_polynomial | f: x(1)^22 hypersurface_of_max_contact:y(0) d:6
+format_polynomial | result is :x(1)^22
+process_coeff_ideal_principal | x(1)^22 as a polynomial in y(0):
+1,     
+x(1)^22
+process_coeff_ideal_principal | adding in ideal:((x(1)^22), 6)
+process_coeff_ideal_principal | result so far:((x(1)^22), 6)
+process_coeff_ideal_principal | result:((x(1)^22), 6)
+process_coeff_ideal | result is :((x(1)^22), 6)
+process_coeff_ideal | processing ideal: ((y(0)^6), 6)
+format_polynomial | f: y(0)^6 hypersurface_of_max_contact:y(0) d:6
+format_polynomial | result is :y(0)^6
+process_coeff_ideal_principal | y(0)^6 as a polynomial in y(0):
+y(0)^6,
+1      
+process_coeff_ideal_principal | result:((0), 1)
+process_coeff_ideal | result is :((0), 1)
+process_coeff_ideal | final result is :((x(1)^22), 6)
+compute_invariant_0 | ideal:((x(1)^22), 22) hypersurface of max contact:x(1) invariant data:(invariant:6,0,1,0,11/3,0 hypersurfaces of max contact:x(1),y(0),x(2))
+process_coeff_ideal | processing ideal: ((x(1)^22), 22)
+format_polynomial | f: x(1)^22 hypersurface_of_max_contact:x(1) d:22
+format_polynomial | result is :x(1)^22
+process_coeff_ideal_principal | x(1)^22 as a polynomial in x(1):
+x(1)^22,
+1       
+process_coeff_ideal_principal | result:((0), 1)
+process_coeff_ideal | result is :((0), 1)
+process_coeff_ideal | final result is :((0), 1)
+current invariant is not less than previous
+terminating..
+dfs_resolve_core | K:x(1)^8*y(1)^5+y(0)^6
+compute_invariant_0 | ideal:((x(1)^8*y(1)^5+y(0)^6), 6) hypersurface of max contact:y(0) invariant data:(invariant:6,0 hypersurfaces of max contact:y(0))
+process_coeff_ideal | processing ideal: ((x(1)^8*y(1)^5+y(0)^6), 6)
+format_polynomial | f: x(1)^8*y(1)^5+y(0)^6 hypersurface_of_max_contact:y(0) d:6
+format_polynomial | result is :x(1)^8*y(1)^5+y(0)^6
+process_coeff_ideal_principal | x(1)^8*y(1)^5+y(0)^6 as a polynomial in y(0):
+y(0)^6,1,           
+1,     x(1)^8*y(1)^5
+process_coeff_ideal_principal | adding in ideal:((x(1)^8*y(1)^5), 6)
+process_coeff_ideal_principal | result so far:((x(1)^8*y(1)^5), 6)
+process_coeff_ideal_principal | result:((x(1)^8*y(1)^5), 6)
+process_coeff_ideal | result is :((x(1)^8*y(1)^5), 6)
+process_coeff_ideal | final result is :((x(1)^8*y(1)^5), 6)
+compute_invariant_0 | ideal:((x(1)^8*y(1)^5), 13) hypersurface of max contact:x(1) invariant data:(invariant:6,0,13/6,0 hypersurfaces of max contact:x(1),y(0))
+process_coeff_ideal | processing ideal: ((x(1)^8*y(1)^5), 13)
+format_polynomial | f: x(1)^8*y(1)^5 hypersurface_of_max_contact:x(1) d:13
+format_polynomial | result is :x(1)^8*y(1)^5
+process_coeff_ideal_principal | x(1)^8*y(1)^5 as a polynomial in x(1):
+x(1)^8,
+y(1)^5 
+process_coeff_ideal_principal | adding in ideal:((y(1)^5), 5)
+process_coeff_ideal_principal | result so far:((y(1)^5), 5)
+process_coeff_ideal_principal | result:((y(1)^5), 5)
+process_coeff_ideal | result is :((y(1)^5), 5)
+process_coeff_ideal | final result is :((y(1)^5), 5)
+compute_invariant_0 | ideal:((y(1)^5), 5) hypersurface of max contact:y(1) invariant data:(invariant:6,0,13/6,0,1,0 hypersurfaces of max contact:y(1),x(1),y(0))
+process_coeff_ideal | processing ideal: ((y(1)^5), 5)
+format_polynomial | f: y(1)^5 hypersurface_of_max_contact:y(1) d:5
+format_polynomial | result is :y(1)^5
+process_coeff_ideal_principal | y(1)^5 as a polynomial in y(1):
+y(1)^5,
+1      
+process_coeff_ideal_principal | result:((0), 1)
+process_coeff_ideal | result is :((0), 1)
+process_coeff_ideal | final result is :((0), 1)
+// compute quotient 1
+// compute quotient 2
+// compute quotient 3
+// compute quotient 4
+// compute quotient 5
+// compute quotient 6
+// compute quotient 7
+// saturation becomes stable after 6 iteration(s)
+
+// compute quotient 1
+// compute quotient 2
+// compute quotient 3
+// compute quotient 4
+// compute quotient 5
+// compute quotient 6
+// compute quotient 7
+// saturation becomes stable after 6 iteration(s)
+
+// compute quotient 1
+// compute quotient 2
+// compute quotient 3
+// compute quotient 4
+// compute quotient 5
+// compute quotient 6
+// compute quotient 7
+// saturation becomes stable after 6 iteration(s)
+
+dfs_resolve_core | K:x(3)^7*y(2)^8+y(1)^6
+compute_invariant_0 | ideal:((x(3)^7*y(2)^8+y(1)^6), 6) hypersurface of max contact:y(1) invariant data:(invariant:6,0 hypersurfaces of max contact:y(1))
+process_coeff_ideal | processing ideal: ((x(3)^7*y(2)^8+y(1)^6), 6)
+format_polynomial | f: x(3)^7*y(2)^8+y(1)^6 hypersurface_of_max_contact:y(1) d:6
+format_polynomial | result is :x(3)^7*y(2)^8+y(1)^6
+process_coeff_ideal_principal | x(3)^7*y(2)^8+y(1)^6 as a polynomial in y(1):
+y(1)^6,1,           
+1,     x(3)^7*y(2)^8
+process_coeff_ideal_principal | adding in ideal:((x(3)^7*y(2)^8), 6)
+process_coeff_ideal_principal | result so far:((x(3)^7*y(2)^8), 6)
+process_coeff_ideal_principal | result:((x(3)^7*y(2)^8), 6)
+process_coeff_ideal | result is :((x(3)^7*y(2)^8), 6)
+process_coeff_ideal | final result is :((x(3)^7*y(2)^8), 6)
+compute_invariant_0 | ideal:((x(3)^7*y(2)^8), 15) hypersurface of max contact:x(3) invariant data:(invariant:6,0,5/2,0 hypersurfaces of max contact:x(3),y(1))
+process_coeff_ideal | processing ideal: ((x(3)^7*y(2)^8), 15)
+format_polynomial | f: x(3)^7*y(2)^8 hypersurface_of_max_contact:x(3) d:15
+format_polynomial | result is :x(3)^7*y(2)^8
+process_coeff_ideal_principal | x(3)^7*y(2)^8 as a polynomial in x(3):
+x(3)^7,
+y(2)^8 
+process_coeff_ideal_principal | adding in ideal:((y(2)^8), 8)
+process_coeff_ideal_principal | result so far:((y(2)^8), 8)
+process_coeff_ideal_principal | result:((y(2)^8), 8)
+process_coeff_ideal | result is :((y(2)^8), 8)
+process_coeff_ideal | final result is :((y(2)^8), 8)
+compute_invariant_0 | ideal:((y(2)^8), 8) hypersurface of max contact:y(2) invariant data:(invariant:6,0,5/2,0,1,0 hypersurfaces of max contact:y(2),x(3),y(1))
+process_coeff_ideal | processing ideal: ((y(2)^8), 8)
+format_polynomial | f: y(2)^8 hypersurface_of_max_contact:y(2) d:8
+format_polynomial | result is :y(2)^8
+process_coeff_ideal_principal | y(2)^8 as a polynomial in y(2):
+y(2)^8,
+1      
+process_coeff_ideal_principal | result:((0), 1)
+process_coeff_ideal | result is :((0), 1)
+process_coeff_ideal | final result is :((0), 1)
+current invariant is not less than previous
+terminating..
+dfs_resolve_core | K:x(1)^7*y(0)^5+y(1)^6
+compute_invariant_0 | ideal:((x(1)^7*y(0)^5+y(1)^6), 6) hypersurface of max contact:y(0) invariant data:(invariant:6,0 hypersurfaces of max contact:y(0))
+process_coeff_ideal | processing ideal: ((x(1)^7*y(0)^5+y(1)^6), 6)
+format_polynomial | f: x(1)^7*y(0)^5+y(1)^6 hypersurface_of_max_contact:y(0) d:6
+format_polynomial | substituting y(0) with -1/6*x(1)^7+y(0)
+format_polynomial | result is :x(1)^42-30*x(1)^35*y(0)+360*x(1)^28*y(0)^2-2160*x(1)^21*y(0)^3+6480*x(1)^14*y(0)^4-7776*x(1)^7*y(0)^5-7776*y(1)^6
+process_coeff_ideal_principal | x(1)^42-30*x(1)^35*y(0)+360*x(1)^28*y(0)^2-2160*x(1)^21*y(0)^3+6480*x(1)^14*y(0)^4-7776*x(1)^7*y(0)^5-7776*y(1)^6 as a polynomial in y(0):
+y(0)^5,      y(0)^4,      y(0)^3,y(0)^2,     y(0),       1,    
+-7776*x(1)^7,6480*x(1)^14,m[2,3],360*x(1)^28,-30*x(1)^35,m[2,6]
+process_coeff_ideal_principal | adding in ideal:((x(1)^7), 1)
+process_coeff_ideal_principal | result so far:((x(1)^7), 1)
+process_coeff_ideal_principal | adding in ideal:((x(1)^14), 2)
+process_coeff_ideal_principal | result so far:((x(1)^14), 2)
+process_coeff_ideal_principal | adding in ideal:((x(1)^21), 3)
+process_coeff_ideal_principal | result so far:((x(1)^42), 6)
+process_coeff_ideal_principal | adding in ideal:((x(1)^28), 4)
+process_coeff_ideal_principal | result so far:((x(1)^84), 12)
+process_coeff_ideal_principal | adding in ideal:((x(1)^35), 5)
+process_coeff_ideal_principal | result so far:((x(1)^420), 60)
+process_coeff_ideal_principal | adding in ideal:((x(1)^42-7776*y(1)^6), 6)
+process_coeff_ideal_principal | result so far:((x(1)^420,x(1)^420-77760*x(1)^378*y(1)^6+2720977920*x(1)^336*y(1)^12-56422198149120*x(1)^294*y(1)^18+767793272413224960*x(1)^252*y(1)^24-7164432583542284746752*x(1)^210*y(1)^30+46425523141354005158952960*x(1)^168*y(1)^36-206288495969810710923438981120*x(1)^126*y(1)^42+601537254247968033052748068945920*x(1)^84*y(1)^48-1039456375340488761115148663138549760*x(1)^42*y(1)^54+808281277464764060643139600456536293376*y(1)^60), 60)
+process_coeff_ideal_principal | result:((x(1)^420,x(1)^420-77760*x(1)^378*y(1)^6+2720977920*x(1)^336*y(1)^12-56422198149120*x(1)^294*y(1)^18+767793272413224960*x(1)^252*y(1)^24-7164432583542284746752*x(1)^210*y(1)^30+46425523141354005158952960*x(1)^168*y(1)^36-206288495969810710923438981120*x(1)^126*y(1)^42+601537254247968033052748068945920*x(1)^84*y(1)^48-1039456375340488761115148663138549760*x(1)^42*y(1)^54+808281277464764060643139600456536293376*y(1)^60), 60)
+process_coeff_ideal | result is :((x(1)^420,x(1)^420-77760*x(1)^378*y(1)^6+2720977920*x(1)^336*y(1)^12-56422198149120*x(1)^294*y(1)^18+767793272413224960*x(1)^252*y(1)^24-7164432583542284746752*x(1)^210*y(1)^30+46425523141354005158952960*x(1)^168*y(1)^36-206288495969810710923438981120*x(1)^126*y(1)^42+601537254247968033052748068945920*x(1)^84*y(1)^48-1039456375340488761115148663138549760*x(1)^42*y(1)^54+808281277464764060643139600456536293376*y(1)^60), 60)
+process_coeff_ideal | final result is :((x(1)^420,x(1)^420-77760*x(1)^378*y(1)^6+2720977920*x(1)^336*y(1)^12-56422198149120*x(1)^294*y(1)^18+767793272413224960*x(1)^252*y(1)^24-7164432583542284746752*x(1)^210*y(1)^30+46425523141354005158952960*x(1)^168*y(1)^36-206288495969810710923438981120*x(1)^126*y(1)^42+601537254247968033052748068945920*x(1)^84*y(1)^48-1039456375340488761115148663138549760*x(1)^42*y(1)^54+808281277464764060643139600456536293376*y(1)^60), 60)
+compute_invariant_0 | ideal:((x(1)^420,x(1)^420-77760*x(1)^378*y(1)^6+2720977920*x(1)^336*y(1)^12-56422198149120*x(1)^294*y(1)^18+767793272413224960*x(1)^252*y(1)^24-7164432583542284746752*x(1)^210*y(1)^30+46425523141354005158952960*x(1)^168*y(1)^36-206288495969810710923438981120*x(1)^126*y(1)^42+601537254247968033052748068945920*x(1)^84*y(1)^48-1039456375340488761115148663138549760*x(1)^42*y(1)^54+808281277464764060643139600456536293376*y(1)^60), 60) hypersurface of max contact:y(1) invariant data:(invariant:6,0,1,0 hypersurfaces of max contact:y(1),y(0))
+process_coeff_ideal | processing ideal: ((x(1)^420), 60)
+format_polynomial | f: x(1)^420 hypersurface_of_max_contact:y(1) d:60
+format_polynomial | result is :x(1)^420
+process_coeff_ideal_principal | x(1)^420 as a polynomial in y(1):
+1,      
+x(1)^420
+process_coeff_ideal_principal | adding in ideal:((x(1)^420), 60)
+process_coeff_ideal_principal | result so far:((x(1)^420), 60)
+process_coeff_ideal_principal | result:((x(1)^420), 60)
+process_coeff_ideal | result is :((x(1)^420), 60)
+process_coeff_ideal | processing ideal: ((x(1)^420-77760*x(1)^378*y(1)^6+2720977920*x(1)^336*y(1)^12-56422198149120*x(1)^294*y(1)^18+767793272413224960*x(1)^252*y(1)^24-7164432583542284746752*x(1)^210*y(1)^30+46425523141354005158952960*x(1)^168*y(1)^36-206288495969810710923438981120*x(1)^126*y(1)^42+601537254247968033052748068945920*x(1)^84*y(1)^48-1039456375340488761115148663138549760*x(1)^42*y(1)^54+808281277464764060643139600456536293376*y(1)^60), 60)
+format_polynomial | f: x(1)^420-77760*x(1)^378*y(1)^6+2720977920*x(1)^336*y(1)^12-56422198149120*x(1)^294*y(1)^18+767793272413224960*x(1)^252*y(1)^24-7164432583542284746752*x(1)^210*y(1)^30+46425523141354005158952960*x(1)^168*y(1)^36-206288495969810710923438981120*x(1)^126*y(1)^42+601537254247968033052748068945920*x(1)^84*y(1)^48-1039456375340488761115148663138549760*x(1)^42*y(1)^54+808281277464764060643139600456536293376*y(1)^60 hypersurface_of_max_contact:y(1) d:60
+format_polynomial | warning: coefficient of y(1)^60 is not 1
+format_polynomial | result is :x(1)^420-77760*x(1)^378*y(1)^6+2720977920*x(1)^336*y(1)^12-56422198149120*x(1)^294*y(1)^18+767793272413224960*x(1)^252*y(1)^24-7164432583542284746752*x(1)^210*y(1)^30+46425523141354005158952960*x(1)^168*y(1)^36-206288495969810710923438981120*x(1)^126*y(1)^42+601537254247968033052748068945920*x(1)^84*y(1)^48-1039456375340488761115148663138549760*x(1)^42*y(1)^54+808281277464764060643139600456536293376*y(1)^60
+process_coeff_ideal_principal | x(1)^420-77760*x(1)^378*y(1)^6+2720977920*x(1)^336*y(1)^12-56422198149120*x(1)^294*y(1)^18+767793272413224960*x(1)^252*y(1)^24-7164432583542284746752*x(1)^210*y(1)^30+46425523141354005158952960*x(1)^168*y(1)^36-206288495969810710923438981120*x(1)^126*y(1)^42+601537254247968033052748068945920*x(1)^84*y(1)^48-1039456375340488761115148663138549760*x(1)^42*y(1)^54+808281277464764060643139600456536293376*y(1)^60 as a polynomial in y(1):
+y(1)^60,y(1)^54,y(1)^48,y(1)^42,y(1)^36,y(1)^30,y(1)^24,y(1)^18,y(1)^12,y(1)^6, 
+  1,      
+m[2,1], m[2,2], m[2,3], m[2,4], m[2,5], m[2,6], m[2,7], m[2,8], m[2,9], m[2,10],
+  x(1)^420
+process_coeff_ideal_principal | adding in ideal:((x(1)^42), 6)
+process_coeff_ideal_principal | result so far:((x(1)^42), 6)
+process_coeff_ideal_principal | adding in ideal:((x(1)^84), 12)
+process_coeff_ideal_principal | result so far:((x(1)^84), 12)
+process_coeff_ideal_principal | adding in ideal:((x(1)^126), 18)
+process_coeff_ideal_principal | result so far:((x(1)^252), 36)
+process_coeff_ideal_principal | adding in ideal:((x(1)^168), 24)
+process_coeff_ideal_principal | result so far:((x(1)^504), 72)
+process_coeff_ideal_principal | adding in ideal:((x(1)^210), 30)
+process_coeff_ideal_principal | result so far:((x(1)^2520), 360)
+process_coeff_ideal_principal | adding in ideal:((x(1)^252), 36)
+process_coeff_ideal_principal | result so far:((x(1)^2520), 360)
+process_coeff_ideal_principal | adding in ideal:((x(1)^294), 42)
+process_coeff_ideal_principal | result so far:((x(1)^17640), 2520)
+process_coeff_ideal_principal | adding in ideal:((x(1)^336), 48)
+process_coeff_ideal_principal | result so far:((x(1)^35280), 5040)
+process_coeff_ideal_principal | adding in ideal:((x(1)^378), 54)
+process_coeff_ideal_principal | result so far:((x(1)^40304*y(0)), 15120)
+process_coeff_ideal_principal | adding in ideal:((x(1)^420), 60)
+process_coeff_ideal_principal | result so far:((x(1)^40304*y(0)), 15120)
+process_coeff_ideal_principal | result:((x(1)^40304*y(0)), 15120)
+process_coeff_ideal | result is :((x(1)^40304*y(0)), 15120)
+process_coeff_ideal | final result is :((x(1)^40304*y(0)), 15120)
+compute_invariant_0 | ideal:((x(1)^40304*y(0)), 40305) hypersurface of max contact:x(1) invariant data:(invariant:6,0,1,0,2687/1008,0 hypersurfaces of max contact:x(1),y(1),y(0))
+process_coeff_ideal | processing ideal: ((x(1)^40304*y(0)), 40305)
+format_polynomial | f: x(1)^40304*y(0) hypersurface_of_max_contact:x(1) d:40305
+format_polynomial | substituting x(1) with x(1)-1/40305*y(0)
+Singular : signal 11 (v: 4112):
+current line:>>	dbprint("format_polynomial | result is :" + string(g));<<
+Segment fault/Bus error occurred at 7f441e1950c2 because of 10202 (r:1624382769)
+please inform the authors
+trying to restart...
+   ? error occurred in or before /home/dominic/singular/resolvebm.lib::format_polynomial line 307: `	dbprint("format_polynomial | result is :" + string(g));`
+   ? wrong type declaration. type 'help string;'
+   ? last reserved name was `string`
+   ? leaving /home/dominic/singular/resolvebm.lib::format_polynomial
+   skipping text from `;` error at token `)`
+   ? leaving /home/dominic/singular/resolvebm.lib::format_polynomial
