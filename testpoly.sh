@@ -16,5 +16,14 @@ library="$HOME/singular/resolvebm.lib"
 
 output_file="$a-$b-$c.out"
 
-Singular -q --no-warn -c "LIB \"$library\"; printlevel=voice+2; poly f = x$a + y$b*z$c; dfs_resolve(ideal(f), deg(f)); quit;" | tee $HOME/singular/tests/$output_file
+testfile=$HOME/singular/tests/$output_file
+
+Singular -q --no-warn -c "LIB \"$library\"; poly f = x$a + y$b*z$c; dfs_resolve(ideal(f), deg(f)); quit;" | tee $testfile
+
+
+# next remove the irrelevant lines from the output
+
+sed -i '/quotient/d' $testfile
+sed -i '/iteration/d' $testfile
+sed -i '//d' $testfile
 

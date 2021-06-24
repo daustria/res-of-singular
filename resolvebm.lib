@@ -404,8 +404,6 @@ example
 
 static proc dfs_resolve_core(ideal K, int depth, int max_depth, list tree_path)
 {
-	//maintain the print level
-	printlevel = printlevel + 1;
 
 	dbprint("dfs_resolve_core | K:"+string(K));
 
