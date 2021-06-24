@@ -3,11 +3,11 @@
 
 end=50
 
-for a in $(seq 47 $end)
+for a in $(seq 50 $end)
 do
-	for b in $(seq 47 $end)
+	for b in $(seq 48 50)
 	do
-		for c in $(seq 47 $end)
+		for c in $(seq 48 50)
 		do
 			$HOME/singular/testpoly.sh $a $b $c
 		done

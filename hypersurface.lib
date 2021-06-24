@@ -91,22 +91,22 @@ proc hypersurface_max_contact(poly f)
 	
 	//for each variable x_i of f, differentiate f with respect to x_i until it has degree 1 in x_i.
 	//then , for each x_j , j != i, differentiate f with respect to x_j until f has degree 0 in x_j.
+		
+	int maxOrder = mindeg(f);
+
 	for(int i = 1; i <= nvars(basering); i++)
 	{
+		poly g = f;
+
 		//we only take derivatives of f up to its minimum degree
 		int derivativeOrder = 0;
-		int maxOrder = mindeg(f);
 
 		//first, check that x_i actually is a variable of f
-		poly r = remainder(f, var(i));
-
-		if(r != poly(0))
+		if(degree_in(g, var(i)) == 0)
 		{
 			i++;
 			continue;
 		}
-
-		poly g = f;
 
 		while(degree_in(g, var(i)) > 1)
 		{
@@ -116,6 +116,7 @@ proc hypersurface_max_contact(poly f)
 
 		}
 
+		//then make sure it has degree 0 in all other variables.
 		for(int j = 1; j <= nvars(basering); j++)
 		{
 			if(j == i)
@@ -134,14 +135,10 @@ proc hypersurface_max_contact(poly f)
 
 		if(rvar(g))
 		{
-			//question: do we need to check the order of the derivative or is any fine?
-			/*
 			if(derivativeOrder < maxOrder)
 			{
 				return(g);
 			}
-			*/
-			return(g);
 		}
 	}
 	//zero polynomial in case no such hypersurface of max contact is found
