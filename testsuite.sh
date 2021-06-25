@@ -5,9 +5,9 @@ end=50
 
 for a in $(seq 50 $end)
 do
-	for b in $(seq 49 50)
+	for b in $(seq 22 25)
 	do
-		for c in $(seq 48 50)
+		for c in $(seq 22 25)
 		do
 			$HOME/singular/testpoly.sh $a $b $c
 		done

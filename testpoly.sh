@@ -25,5 +25,3 @@ Singular -q --no-warn -c "LIB \"$library\"; poly f = x$a + y$b*z$c; dfs_resolve(
 
 sed -i '/quotient/d' $testfile
 sed -i '/iteration/d' $testfile
-sed -i '//d' $testfile
-
