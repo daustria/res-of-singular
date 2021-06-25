@@ -1,0 +1,21 @@
+///////////////////NODE 1//////////////////
+=================PARAMETERS===============
+
+ideal: y^50*z^25+x^25
+
+depth: 0
+
+invariant: 25,0,3,0,1,0,-1
+
+centre of blowup: z,y,x
+==================BLOWUP==================
+
+ring variables: x(3),y(1),y(2)
+
+ideal of blownup ambient space:0
+
+ideal of strict transform:x(3)^50*y(1)^50+y(2)^25
+
+ideal of exceptional divisor:x(3)
+
+ideal of blowup map:x(3)*y(2),x(3)*y(1),x(3)
