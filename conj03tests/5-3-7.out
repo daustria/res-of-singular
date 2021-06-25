@@ -1,0 +1,406 @@
+                        
+/////////////////////////// Final Chart 1 /////////////////////////
+======================== History of this chart ======================
+                  
+Blow Up 1 :
+     Center determined in L[2][1],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 2 :
+     Center determined in L[2][2],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 3 :
+     Center determined in L[2][8],
+     Passing to chart  1  in resulting blow up.
+                 
+======================== Data of this chart ========================
+                       
+==== Ambient Space: 
+_[1]=0
+      
+==== Ideal of Variety: 
+_[1]=x(2)^21*y(1)^7+x(3)^21*y(1)^7+x(4)^21*y(1)^7+x(5)^21*y(1)^7+y(1)^7+1
+      
+==== Exceptional Divisors: 
+[1]:
+   _[1]=1
+[2]:
+   _[1]=y(1)
+[3]:
+   _[1]=x(6)
+   
+==== Images of variables of original ring:
+_[1]=x(6)^3*y(1)^2
+_[2]=x(5)*x(6)*y(1)
+_[3]=x(4)*x(6)*y(1)
+_[4]=x(3)*x(6)*y(1)
+_[5]=x(2)*x(6)*y(1)
+_[6]=x(6)*y(1)
+   
+pause>                        
+/////////////////////////// Final Chart 2 /////////////////////////
+======================== History of this chart ======================
+                  
+Blow Up 1 :
+     Center determined in L[2][1],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 2 :
+     Center determined in L[2][2],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 3 :
+     Center determined in L[2][8],
+     Passing to chart  2  in resulting blow up.
+                 
+======================== Data of this chart ========================
+                       
+==== Ambient Space: 
+_[1]=0
+      
+==== Ideal of Variety: 
+_[1]=x(2)^21+x(3)^21+x(4)^21+x(5)^21+y(0)^7+1
+      
+==== Exceptional Divisors: 
+[1]:
+   _[1]=1
+[2]:
+   _[1]=1
+[3]:
+   _[1]=x(1)
+   
+==== Images of variables of original ring:
+_[1]=x(1)^3*y(0)
+_[2]=x(1)*x(5)
+_[3]=x(1)*x(4)
+_[4]=x(1)*x(3)
+_[5]=x(1)*x(2)
+_[6]=x(1)
+   
+pause>                        
+/////////////////////////// Final Chart 3 /////////////////////////
+======================== History of this chart ======================
+                  
+Blow Up 1 :
+     Center determined in L[2][1],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 2 :
+     Center determined in L[2][3],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 3 :
+     Center determined in L[2][10],
+     Passing to chart  1  in resulting blow up.
+                 
+======================== Data of this chart ========================
+                       
+==== Ambient Space: 
+_[1]=0
+      
+==== Ideal of Variety: 
+_[1]=x(2)^21*y(1)^7+x(3)^21*y(1)^7+x(4)^21*y(1)^7+x(5)^21*y(1)^7+y(1)^7+1
+      
+==== Exceptional Divisors: 
+[1]:
+   _[1]=1
+[2]:
+   _[1]=y(1)
+[3]:
+   _[1]=x(6)
+   
+==== Images of variables of original ring:
+_[1]=x(6)^3*y(1)^2
+_[2]=x(5)*x(6)*y(1)
+_[3]=x(4)*x(6)*y(1)
+_[4]=x(3)*x(6)*y(1)
+_[5]=x(6)*y(1)
+_[6]=x(2)*x(6)*y(1)
+   
+pause>                        
+/////////////////////////// Final Chart 4 /////////////////////////
+======================== History of this chart ======================
+                  
+Blow Up 1 :
+     Center determined in L[2][1],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 2 :
+     Center determined in L[2][3],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 3 :
+     Center determined in L[2][10],
+     Passing to chart  2  in resulting blow up.
+                 
+======================== Data of this chart ========================
+                       
+==== Ambient Space: 
+_[1]=0
+      
+==== Ideal of Variety: 
+_[1]=x(2)^21+x(3)^21+x(4)^21+x(5)^21+y(0)^7+1
+      
+==== Exceptional Divisors: 
+[1]:
+   _[1]=1
+[2]:
+   _[1]=1
+[3]:
+   _[1]=x(1)
+   
+==== Images of variables of original ring:
+_[1]=x(1)^3*y(0)
+_[2]=x(1)*x(5)
+_[3]=x(1)*x(4)
+_[4]=x(1)*x(3)
+_[5]=x(1)
+_[6]=x(1)*x(2)
+   
+pause>                        
+/////////////////////////// Final Chart 5 /////////////////////////
+======================== History of this chart ======================
+                  
+Blow Up 1 :
+     Center determined in L[2][1],
+     Passing to chart  3  in resulting blow up.
+                  
+Blow Up 2 :
+     Center determined in L[2][4],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 3 :
+     Center determined in L[2][12],
+     Passing to chart  1  in resulting blow up.
+                 
+======================== Data of this chart ========================
+                       
+==== Ambient Space: 
+_[1]=0
+      
+==== Ideal of Variety: 
+_[1]=x(2)^21*y(1)^7+x(3)^21*y(1)^7+x(4)^21*y(1)^7+x(5)^21*y(1)^7+y(1)^7+1
+      
+==== Exceptional Divisors: 
+[1]:
+   _[1]=1
+[2]:
+   _[1]=y(1)
+[3]:
+   _[1]=x(6)
+   
+==== Images of variables of original ring:
+_[1]=x(6)^3*y(1)^2
+_[2]=x(5)*x(6)*y(1)
+_[3]=x(4)*x(6)*y(1)
+_[4]=x(6)*y(1)
+_[5]=x(3)*x(6)*y(1)
+_[6]=x(2)*x(6)*y(1)
+   
+pause>                        
+/////////////////////////// Final Chart 6 /////////////////////////
+======================== History of this chart ======================
+                  
+Blow Up 1 :
+     Center determined in L[2][1],
+     Passing to chart  3  in resulting blow up.
+                  
+Blow Up 2 :
+     Center determined in L[2][4],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 3 :
+     Center determined in L[2][12],
+     Passing to chart  2  in resulting blow up.
+                 
+======================== Data of this chart ========================
+                       
+==== Ambient Space: 
+_[1]=0
+      
+==== Ideal of Variety: 
+_[1]=x(2)^21+x(3)^21+x(4)^21+x(5)^21+y(0)^7+1
+      
+==== Exceptional Divisors: 
+[1]:
+   _[1]=1
+[2]:
+   _[1]=1
+[3]:
+   _[1]=x(1)
+   
+==== Images of variables of original ring:
+_[1]=x(1)^3*y(0)
+_[2]=x(1)*x(5)
+_[3]=x(1)*x(4)
+_[4]=x(1)
+_[5]=x(1)*x(3)
+_[6]=x(1)*x(2)
+   
+pause>                        
+/////////////////////////// Final Chart 7 /////////////////////////
+======================== History of this chart ======================
+                  
+Blow Up 1 :
+     Center determined in L[2][1],
+     Passing to chart  4  in resulting blow up.
+                  
+Blow Up 2 :
+     Center determined in L[2][5],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 3 :
+     Center determined in L[2][14],
+     Passing to chart  1  in resulting blow up.
+                 
+======================== Data of this chart ========================
+                       
+==== Ambient Space: 
+_[1]=0
+      
+==== Ideal of Variety: 
+_[1]=x(2)^21*y(1)^7+x(3)^21*y(1)^7+x(4)^21*y(1)^7+x(5)^21*y(1)^7+y(1)^7+1
+      
+==== Exceptional Divisors: 
+[1]:
+   _[1]=1
+[2]:
+   _[1]=y(1)
+[3]:
+   _[1]=x(6)
+   
+==== Images of variables of original ring:
+_[1]=x(6)^3*y(1)^2
+_[2]=x(5)*x(6)*y(1)
+_[3]=x(6)*y(1)
+_[4]=x(4)*x(6)*y(1)
+_[5]=x(3)*x(6)*y(1)
+_[6]=x(2)*x(6)*y(1)
+   
+pause>                        
+/////////////////////////// Final Chart 8 /////////////////////////
+======================== History of this chart ======================
+                  
+Blow Up 1 :
+     Center determined in L[2][1],
+     Passing to chart  4  in resulting blow up.
+                  
+Blow Up 2 :
+     Center determined in L[2][5],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 3 :
+     Center determined in L[2][14],
+     Passing to chart  2  in resulting blow up.
+                 
+======================== Data of this chart ========================
+                       
+==== Ambient Space: 
+_[1]=0
+      
+==== Ideal of Variety: 
+_[1]=x(2)^21+x(3)^21+x(4)^21+x(5)^21+y(0)^7+1
+      
+==== Exceptional Divisors: 
+[1]:
+   _[1]=1
+[2]:
+   _[1]=1
+[3]:
+   _[1]=x(1)
+   
+==== Images of variables of original ring:
+_[1]=x(1)^3*y(0)
+_[2]=x(1)*x(5)
+_[3]=x(1)
+_[4]=x(1)*x(4)
+_[5]=x(1)*x(3)
+_[6]=x(1)*x(2)
+   
+pause>                        
+/////////////////////////// Final Chart 9 /////////////////////////
+======================== History of this chart ======================
+                  
+Blow Up 1 :
+     Center determined in L[2][1],
+     Passing to chart  5  in resulting blow up.
+                  
+Blow Up 2 :
+     Center determined in L[2][6],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 3 :
+     Center determined in L[2][16],
+     Passing to chart  1  in resulting blow up.
+                 
+======================== Data of this chart ========================
+                       
+==== Ambient Space: 
+_[1]=0
+      
+==== Ideal of Variety: 
+_[1]=x(2)^21*y(1)^7+x(3)^21*y(1)^7+x(4)^21*y(1)^7+x(5)^21*y(1)^7+y(1)^7+1
+      
+==== Exceptional Divisors: 
+[1]:
+   _[1]=1
+[2]:
+   _[1]=y(1)
+[3]:
+   _[1]=x(6)
+   
+==== Images of variables of original ring:
+_[1]=x(6)^3*y(1)^2
+_[2]=x(6)*y(1)
+_[3]=x(5)*x(6)*y(1)
+_[4]=x(4)*x(6)*y(1)
+_[5]=x(3)*x(6)*y(1)
+_[6]=x(2)*x(6)*y(1)
+   
+pause>                        
+/////////////////////////// Final Chart 10 /////////////////////////
+======================== History of this chart ======================
+                  
+Blow Up 1 :
+     Center determined in L[2][1],
+     Passing to chart  5  in resulting blow up.
+                  
+Blow Up 2 :
+     Center determined in L[2][6],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 3 :
+     Center determined in L[2][16],
+     Passing to chart  2  in resulting blow up.
+                 
+======================== Data of this chart ========================
+                       
+==== Ambient Space: 
+_[1]=0
+      
+==== Ideal of Variety: 
+_[1]=x(2)^21+x(3)^21+x(4)^21+x(5)^21+y(0)^7+1
+      
+==== Exceptional Divisors: 
+[1]:
+   _[1]=1
+[2]:
+   _[1]=1
+[3]:
+   _[1]=x(1)
+   
+==== Images of variables of original ring:
+_[1]=x(1)^3*y(0)
+_[2]=x(1)
+_[3]=x(1)*x(5)
+_[4]=x(1)*x(4)
+_[5]=x(1)*x(3)
+_[6]=x(1)*x(2)
+   
+pause>////////////////////////////////////////////////////////////////////
+For identification of exceptional divisors please use the tools
+provided by reszeta.lib, e.g. collectDiv.
+For viewing an illustration of the tree of charts please use the
+procedure ResTree from resgraph.lib.
+////////////////////////////////////////////////////////////////////
