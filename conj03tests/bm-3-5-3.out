@@ -1,0 +1,23 @@
+x(1)^15+x(2)^15+x(3)^15+x(0)^3
+///////////////////NODE 1//////////////////
+=================PARAMETERS===============
+
+ideal: x(1)^15+x(2)^15+x(3)^15+x(0)^3
+
+depth: 0
+
+invariant: 3,0,5,0,1,0,1,0,-1
+
+centre of blowup: x(3),x(2),x(1),x(0)
+==================BLOWUP==================
+
+ring variables: x(4),y(1),y(2),y(3)
+
+ideal of blownup ambient space:0
+
+ideal of strict transform:x(4)^12*y(1)^15+x(4)^12*y(2)^15+x(4)^12+y(3)^3
+
+ideal of exceptional divisor:x(4)
+
+ideal of blowup map:x(4)*y(3),x(4)*y(2),x(4)*y(1),x(4)
+==========================================

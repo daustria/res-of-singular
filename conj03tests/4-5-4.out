@@ -1,3 +1,5 @@
+Polynomial:x(1)^20+x(2)^20+x(3)^20+x(4)^20+x(0)^4
+First center of blowup:x(4),x(3),x(2),x(1),x(0)
                         
 /////////////////////////// Final Chart 1 /////////////////////////
 ======================== History of this chart ======================
@@ -412,3 +414,4 @@ provided by reszeta.lib, e.g. collectDiv.
 For viewing an illustration of the tree of charts please use the
 procedure ResTree from resgraph.lib.
 ////////////////////////////////////////////////////////////////////
+Time taken:11
