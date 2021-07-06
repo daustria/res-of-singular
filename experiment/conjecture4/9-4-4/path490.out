@@ -1,0 +1,465 @@
+Polynomial:x^9+y^4*z^4
+Time taken to resolve :26
+Showing path 490
+=============================Blow Up 1===========================
+Ring variables: x,y,z
+
+Strict transform: x^9+y^4*z^4
+
+Exceptional divisors:
+
+empty list
+
+Center of blowup: z,y,x
+
+Passing to chart: 2
+// ** redefining Q (            def Q = l[2][mypath[i]];)
+=============================Blow Up 2===========================
+Ring variables: x(2),y(0),y(2)
+
+Last map: x(2)*y(2),x(2),x(2)*y(0)
+
+Strict transform: x(2)*y(2)^9+y(0)^4
+
+Exceptional divisors:
+
+[1]:
+   _[1]=x(2)
+
+Center of blowup: x(2),y(0),y(2)
+
+Passing to chart: 1
+// ** redefining Q (            def Q = l[2][mypath[i]];)
+=============================Blow Up 3===========================
+Ring variables: x(3),y(1),y(2)
+
+Last map: x(3)*y(2),x(3)*y(1),x(3)
+
+Strict transform: x(3)^6*y(2)+y(1)^4
+
+Exceptional divisors:
+
+[1]:
+   _[1]=y(2)
+[2]:
+   _[1]=x(3)
+
+Center of blowup: x(3),y(1),y(2)
+
+Passing to chart: 1
+// ** redefining Q (            def Q = l[2][mypath[i]];)
+=============================Blow Up 4===========================
+Ring variables: x(3),y(1),y(2)
+
+Last map: x(3)*y(2),x(3)*y(1),x(3)
+
+Strict transform: x(3)^3*y(2)^6+y(1)^4
+
+Exceptional divisors:
+
+[1]:
+   _[1]=1
+[2]:
+   _[1]=y(2)
+[3]:
+   _[1]=x(3)
+
+Center of blowup: y(2),y(1)
+
+Passing to chart: 1
+// ** redefining Q (            def Q = l[2][mypath[i]];)
+=============================Blow Up 5===========================
+Ring variables: x(1),x(3),y(1)
+
+Last map: x(1),x(3)*y(1),x(3)
+
+Strict transform: x(1)^3*x(3)^2+y(1)^4
+
+Exceptional divisors:
+
+[1]:
+   _[1]=1
+[2]:
+   _[1]=1
+[3]:
+   _[1]=x(1)
+[4]:
+   _[1]=x(3)
+
+Center of blowup: x(1),x(3),y(1)
+
+Passing to chart: 2
+// ** redefining Q (            def Q = l[2][mypath[i]];)
+=============================Blow Up 6===========================
+Ring variables: x(2),y(0),y(2)
+
+Last map: x(2)*y(2),x(2),x(2)*y(0)
+
+Strict transform: y(0)^4+x(2)*y(2)^3
+
+Exceptional divisors:
+
+[1]:
+   _[1]=1
+[2]:
+   _[1]=1
+[3]:
+   _[1]=y(2)
+[4]:
+   _[1]=1
+[5]:
+   _[1]=x(2)
+
+Center of blowup: x(2),y(0),y(2)
+
+Passing to chart: 3
+// ** redefining Q (            def Q = l[2][mypath[i]];)
+=============================Blow Up 7===========================
+Ring variables: x(1),y(0),y(1)
+
+Last map: x(1),x(1)*y(1),x(1)*y(0)
+
+Strict transform: y(1)^4+y(0)^3
+
+Exceptional divisors:
+
+[1]:
+   _[1]=1
+[2]:
+   _[1]=1
+[3]:
+   _[1]=y(0)
+[4]:
+   _[1]=1
+[5]:
+   _[1]=1
+[6]:
+   _[1]=x(1)
+
+Center of blowup: x(1),y(0),y(1)
+
+Passing to chart: 2
+// ** redefining Q (            def Q = l[2][mypath[i]];)
+=============================Blow Up 8===========================
+Ring variables: x(1),y(0),y(1)
+
+Last map: x(1),x(1)*y(1),x(1)*y(0)
+
+Strict transform: x(1)*y(0)^4+y(1)^3
+
+Exceptional divisors:
+
+[1]:
+   _[1]=1
+[2]:
+   _[1]=1
+[3]:
+   _[1]=y(1)
+[4]:
+   _[1]=1
+[5]:
+   _[1]=1
+[6]:
+   _[1]=1
+[7]:
+   _[1]=x(1)
+
+Center of blowup: y(1),y(0)
+
+Passing to chart: 1
+// ** redefining Q (            def Q = l[2][mypath[i]];)
+=============================Blow Up 9===========================
+Ring variables: x(1),x(2),y(0)
+
+Last map: x(1),x(2),x(2)*y(0)
+
+Strict transform: y(0)^3+x(1)*x(2)
+
+Exceptional divisors:
+
+[1]:
+   _[1]=1
+[2]:
+   _[1]=1
+[3]:
+   _[1]=y(0)
+[4]:
+   _[1]=1
+[5]:
+   _[1]=1
+[6]:
+   _[1]=1
+[7]:
+   _[1]=x(1)
+[8]:
+   _[1]=x(2)
+
+Center of blowup: x(1),x(2),y(0)
+
+Passing to chart: 3
+// ** redefining Q (            def Q = l[2][mypath[i]];)
+=============================Blow Up 10===========================
+Ring variables: x(1),y(0),y(1)
+
+Last map: x(1),x(1)*y(1),x(1)*y(0)
+
+Strict transform: x(1)*y(0)^3+y(1)
+
+Exceptional divisors:
+
+[1]:
+   _[1]=1
+[2]:
+   _[1]=1
+[3]:
+   _[1]=y(0)
+[4]:
+   _[1]=1
+[5]:
+   _[1]=1
+[6]:
+   _[1]=1
+[7]:
+   _[1]=1
+[8]:
+   _[1]=y(1)
+[9]:
+   _[1]=x(1)
+
+Center of blowup: x(1),y(0),y(1)
+
+Passing to chart: 3
+// ** redefining Q (            def Q = l[2][mypath[i]];)
+=============================Blow Up 11===========================
+Ring variables: x(1),y(0),y(1)
+
+Last map: x(1),x(1)*y(1),x(1)*y(0)
+
+Strict transform: x(1)^3*y(1)^3+y(0)
+
+Exceptional divisors:
+
+[1]:
+   _[1]=1
+[2]:
+   _[1]=1
+[3]:
+   _[1]=y(1)
+[4]:
+   _[1]=1
+[5]:
+   _[1]=1
+[6]:
+   _[1]=1
+[7]:
+   _[1]=1
+[8]:
+   _[1]=y(0)
+[9]:
+   _[1]=1
+[10]:
+   _[1]=x(1)
+
+Center of blowup: y(1),y(0)
+
+Passing to chart: 1
+// ** redefining Q (            def Q = l[2][mypath[i]];)
+=============================Blow Up 12===========================
+Ring variables: x(1),x(3),y(1)
+
+Last map: x(1),x(3)*y(1),x(3)
+
+Strict transform: x(1)^3*x(3)^2+y(1)
+
+Exceptional divisors:
+
+[1]:
+   _[1]=1
+[2]:
+   _[1]=1
+[3]:
+   _[1]=1
+[4]:
+   _[1]=1
+[5]:
+   _[1]=1
+[6]:
+   _[1]=1
+[7]:
+   _[1]=1
+[8]:
+   _[1]=y(1)
+[9]:
+   _[1]=1
+[10]:
+   _[1]=x(1)
+[11]:
+   _[1]=x(3)
+
+Center of blowup: y(1),x(3)
+
+Passing to chart: 2
+// ** redefining Q (            def Q = l[2][mypath[i]];)
+=============================Blow Up 13===========================
+Ring variables: x(1),x(2),y(0)
+
+Last map: x(1),x(2),x(2)*y(0)
+
+Strict transform: x(1)^3*x(2)+y(0)
+
+Exceptional divisors:
+
+[1]:
+   _[1]=1
+[2]:
+   _[1]=1
+[3]:
+   _[1]=1
+[4]:
+   _[1]=1
+[5]:
+   _[1]=1
+[6]:
+   _[1]=1
+[7]:
+   _[1]=1
+[8]:
+   _[1]=y(0)
+[9]:
+   _[1]=1
+[10]:
+   _[1]=x(1)
+[11]:
+   _[1]=1
+[12]:
+   _[1]=x(2)
+
+Center of blowup: y(0),x(2)
+
+Passing to chart: 2
+// ** redefining Q (            def Q = l[2][mypath[i]];)
+=============================Blow Up 14===========================
+Ring variables: x(1),x(2),y(0)
+
+Last map: x(1),x(2),x(2)*y(0)
+
+Strict transform: x(1)^3+y(0)
+
+Exceptional divisors:
+
+[1]:
+   _[1]=1
+[2]:
+   _[1]=1
+[3]:
+   _[1]=1
+[4]:
+   _[1]=1
+[5]:
+   _[1]=1
+[6]:
+   _[1]=1
+[7]:
+   _[1]=1
+[8]:
+   _[1]=y(0)
+[9]:
+   _[1]=1
+[10]:
+   _[1]=x(1)
+[11]:
+   _[1]=1
+[12]:
+   _[1]=1
+[13]:
+   _[1]=x(2)
+
+Center of blowup: y(0),x(1)
+
+Passing to chart: 2
+// ** redefining Q (            def Q = l[2][mypath[i]];)
+=============================Blow Up 15===========================
+Ring variables: x(1),x(2),y(0)
+
+Last map: x(1),x(2),x(1)*y(0)
+
+Strict transform: x(1)^2+y(0)
+
+Exceptional divisors:
+
+[1]:
+   _[1]=1
+[2]:
+   _[1]=1
+[3]:
+   _[1]=1
+[4]:
+   _[1]=1
+[5]:
+   _[1]=1
+[6]:
+   _[1]=1
+[7]:
+   _[1]=1
+[8]:
+   _[1]=y(0)
+[9]:
+   _[1]=1
+[10]:
+   _[1]=1
+[11]:
+   _[1]=1
+[12]:
+   _[1]=1
+[13]:
+   _[1]=x(2)
+[14]:
+   _[1]=x(1)
+
+Center of blowup: y(0),x(1)
+
+Passing to chart: 2
+// ** redefining Q (            def Q = l[2][mypath[i]];)
+=============================Blow Up 16===========================
+Ring variables: x(1),x(2),y(0)
+
+Last map: x(1),x(2),x(1)*y(0)
+
+Strict transform: x(1)+y(0)
+
+Exceptional divisors:
+
+[1]:
+   _[1]=1
+[2]:
+   _[1]=1
+[3]:
+   _[1]=1
+[4]:
+   _[1]=1
+[5]:
+   _[1]=1
+[6]:
+   _[1]=1
+[7]:
+   _[1]=1
+[8]:
+   _[1]=y(0)
+[9]:
+   _[1]=1
+[10]:
+   _[1]=1
+[11]:
+   _[1]=1
+[12]:
+   _[1]=1
+[13]:
+   _[1]=x(2)
+[14]:
+   _[1]=1
+[15]:
+   _[1]=x(1)
+
+Center of blowup: y(0),x(1)
+
+Passing to chart: 2
