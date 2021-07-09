@@ -1,0 +1,66 @@
+
+///////////////////////////////////////Showing path 30/////////////////////////////////////////////////////
+=============================Blow Up 1===========================
+First polynomial: x^3+y^4*z^5n
+Exceptional divisors: %s
+Center of blowup: x,y,z nn
+Passing to chart: 1 (x)nn
+=============================Blow Up 2===========================
+Last map: x*z,x*y,xn
+Strict transform: x^6*y^4+z^3nn
+Exceptional divisors: x
+Center of blowup: z,y nn
+Passing to chart: 1 (x)nn
+=============================Blow Up 3===========================
+Last map: x,y,y*zn
+Strict transform: x^6*y+z^3nn
+Exceptional divisors: x
+Center of blowup: z,x nn
+Passing to chart: 2 (y)nn
+=============================Blow Up 4===========================
+Last map: x,y,x*zn
+Strict transform: x^3*y+z^3nn
+Exceptional divisors: 1
+Center of blowup: z,x nn
+Passing to chart: 2 (y)nn
+=============================Blow Up 5===========================
+Last map: x,y,x*zn
+Strict transform: y+z^3nn
+Exceptional divisors: 1
+Center of blowup: x,y,z nn
+Passing to chart: 2 (y)nn
+=============================Blow Up 6===========================
+Last map: x,x*z,x*yn
+Strict transform: x^2*y^3+znn
+Exceptional divisors: 1
+Center of blowup: z,x nn
+Passing to chart: 2 (y)nn
+=============================Blow Up 7===========================
+Last map: x,y,x*zn
+Strict transform: x*y^3+znn
+Exceptional divisors: 1
+Center of blowup: z,x nn
+Passing to chart: 2 (y)nn
+=============================Blow Up 8===========================
+Last map: x,y,x*zn
+Strict transform: y^3+znn
+Exceptional divisors: 1
+Center of blowup: z,y nn
+Passing to chart: 1 (x)nn
+=============================Blow Up 9===========================
+Last map: x,y,y*zn
+Strict transform: y^2+znn
+Exceptional divisors: 1
+Center of blowup: z,y nn
+Passing to chart: 2 (y)nn
+=============================Blow Up 10===========================
+Last map: x,y,y*zn
+Strict transform: y+znn
+Exceptional divisors: 1
+Center of blowup: z,y nn
+Passing to chart: 2 (y)nn
+=============================Blow Up 11===========================
+Last map: x*z,x,x*yn
+Strict transform: y+znn
+Exceptional divisors: 1
+Center of blowup: z,y nn
