@@ -1,0 +1,6 @@
+Polynomial:x(0)+x(1)^2*y(1)^3+x(2)^3*y(2)^2
+First center of blowup:x(0)+x(1)^2*y(1)^3+x(2)^3*y(2)^2
+The object was already resolved or the list L does not
+have required input format. There is just one chart in
+the tree.
+Time taken:0

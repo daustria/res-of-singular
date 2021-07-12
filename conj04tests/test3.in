@@ -1,0 +1,18 @@
+LIB "resolve.lib";
+
+int t = timer;
+
+ring A = (0,complex),(x(0..2),y(0..2)),lp;
+
+ideal J = x(0)^2 + x(1)^5*y(1)^2 + x(2)^2*y(2)^5;
+
+printf("Polynomial:%s", J[1]);
+printf("First center of blowup:%s", Center(J));
+
+list l = resolve(J);
+
+presentTree(l);
+
+printf("Time taken:%s", timer - t);
+
+quit;

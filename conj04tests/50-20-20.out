@@ -1,0 +1,168 @@
+///////////////////NODE 1//////////////////
+=================PARAMETERS===============
+
+ideal: x^50+y^20*z^20
+
+depth: 0
+
+invariant: 40,0,1,0,5/4,0,-1
+
+centre of blowup: x,z,y
+==================BLOWUP==================
+
+ring variables: x(3),y(1),y(2)
+
+ideal of blownup ambient space:0
+
+ideal of strict transform:x(3)^10*y(2)^50+y(1)^20
+
+ideal of exceptional divisor:x(3)
+
+ideal of blowup map:x(3)*y(2),x(3)*y(1),x(3)
+///////////////////NODE 2//////////////////
+=================PARAMETERS===============
+
+ideal: x(3)^10*y(2)^50+y(1)^20
+
+depth: 1
+
+invariant: 20,0,3,0,1,0,-1
+
+centre of blowup: y(2),x(3),y(1)
+==================BLOWUP==================
+
+ring variables: x(3),y(1),y(2)
+
+ideal of blownup ambient space:0
+
+ideal of strict transform:x(3)^40*y(2)^10+y(1)^20
+
+ideal of exceptional divisor:x(3)
+
+ideal of blowup map:x(3)*y(2),x(3)*y(1),x(3)
+///////////////////NODE 3//////////////////
+=================PARAMETERS===============
+
+ideal: x(3)^40*y(2)^10+y(1)^20
+
+depth: 2
+
+invariant: 20,0,5/2,0,1,0,-1
+
+centre of blowup: y(2),x(3),y(1)
+==================BLOWUP==================
+
+ring variables: x(1),y(0),y(1)
+
+ideal of blownup ambient space:0
+
+ideal of strict transform:x(1)^30*y(0)^10+y(1)^20
+
+ideal of exceptional divisor:x(1)
+
+ideal of blowup map:x(1),x(1)*y(1),x(1)*y(0)
+///////////////////NODE 4//////////////////
+=================PARAMETERS===============
+
+ideal: x(1)^30*y(0)^10+y(1)^20
+
+depth: 3
+
+invariant: 20,0,2,0,1,0,-1
+
+centre of blowup: y(0),x(1),y(1)
+==================BLOWUP==================
+
+ring variables: x(1),y(0),y(1)
+
+ideal of blownup ambient space:0
+
+ideal of strict transform:x(1)^20*y(1)^10+y(0)^20
+
+ideal of exceptional divisor:x(1)
+
+ideal of blowup map:x(1),x(1)*y(1),x(1)*y(0)
+///////////////////NODE 5//////////////////
+=================PARAMETERS===============
+
+ideal: x(1)^20*y(1)^10+y(0)^20
+
+depth: 4
+
+invariant: 20,0,3/2,0,1,0,-1
+
+centre of blowup: y(1),x(1),y(0)
+==================BLOWUP==================
+
+ring variables: x(1),y(0),y(1)
+
+ideal of blownup ambient space:0
+
+ideal of strict transform:x(1)^10*y(0)^10+y(1)^20
+
+ideal of exceptional divisor:x(1)
+
+ideal of blowup map:x(1),x(1)*y(1),x(1)*y(0)
+///////////////////NODE 6//////////////////
+=================PARAMETERS===============
+
+ideal: x(1)^10*y(0)^10+y(1)^20
+
+depth: 5
+
+invariant: 20,0,1,0,1,0,-1
+
+centre of blowup: y(0),y(1),x(1)
+==================BLOWUP==================
+
+ring variables: x(2),y(0),y(2)
+
+ideal of blownup ambient space:0
+
+ideal of strict transform:y(0)^20+y(2)^10
+
+ideal of exceptional divisor:x(2)
+
+ideal of blowup map:x(2)*y(2),x(2),x(2)*y(0)
+///////////////////NODE 7//////////////////
+=================PARAMETERS===============
+
+ideal: y(0)^20+y(2)^10
+
+depth: 6
+
+invariant: 10,0,2,0,-1
+
+centre of blowup: y(0),y(2)
+==================BLOWUP==================
+
+ring variables: x(1),y(0)
+
+ideal of blownup ambient space:0
+
+ideal of strict transform:x(1)^10+y(0)^10
+
+ideal of exceptional divisor:x(1)
+
+ideal of blowup map:0,x(1),x(1)*y(0)
+///////////////////NODE 8//////////////////
+=================PARAMETERS===============
+
+ideal: x(1)^10+y(0)^10
+
+depth: 7
+
+invariant: 10,0,1,0,-1
+
+centre of blowup: y(0),x(1)
+==================BLOWUP==================
+
+ring variables: x(1),y(0)
+
+ideal of blownup ambient space:0
+
+ideal of strict transform:y(0)^10+1
+
+ideal of exceptional divisor:x(1)
+
+ideal of blowup map:x(1),x(1)*y(0)
