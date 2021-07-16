@@ -1,288 +1,84 @@
-Polynomial:y^4*z^5+x^3
-Time taken to resolve :2
-[1]:
-   2
-[2]:
-   1
-[3]:
-   2
-[4]:
-   2
-[5]:
-   2
-[6]:
-   1
-[7]:
-   2
-[8]:
-   3
-[9]:
-   1
-[10]:
-   2
-[11]:
-   1
-Showing one of the paths:
-// ** redefining i (int i = 1;)
+
+///////////////////////////////////////Showing path 37/////////////////////////////////////////////////////
 =============================Blow Up 1===========================
-Ring variables: x,y,z
-
-Strict transform: y^4*z^5+x^3
-
-Exceptional divisors: 
-
-empty list
+First polynomial: y^4*z^5+x^3
+Exceptional Divisors: %n%n
 
 Center of blowup: x,y,z
-
-Passing to chart: 2
-// ** redefining Q (	def Q = l[2][mypath[i]];)
+Passing to chart: 2 (y)
 =============================Blow Up 2===========================
-Ring variables: x(2),y(0),y(2)
-
-Last map: x(2)*y(2),x(2),x(2)*y(0)
-
-Strict transform: x(2)^6*y(0)^5+y(2)^3
-
-Exceptional divisors: 
-
-[1]:
-   _[1]=x(2)
-
-Center of blowup: y(2),y(0)
-
-Passing to chart: 1
-// ** redefining Q (	def Q = l[2][mypath[i]];)
+Last map: x*z,x,x*y
+Strict transform: x^6*y^5+z^3
+Exceptional Divisors: %n%n
+x
+Center of blowup: z,y
+Passing to chart: 1 (x)
 =============================Blow Up 3===========================
-Ring variables: x(1),x(2),y(0)
-
-Last map: x(1),x(2),x(2)*y(0)
-
-Strict transform: x(1)^6*x(2)^2+y(0)^3
-
-Exceptional divisors: 
-
-[1]:
-   _[1]=x(1)
-[2]:
-   _[1]=x(2)
-
-Center of blowup: y(0),x(1)
-
-Passing to chart: 2
-// ** redefining Q (	def Q = l[2][mypath[i]];)
+Last map: x,y,y*z
+Strict transform: x^6*y^2+z^3
+Exceptional Divisors: %n%n
+x,y
+Center of blowup: z,x
+Passing to chart: 2 (y)
 =============================Blow Up 4===========================
-Ring variables: x(1),x(2),y(0)
-
-Last map: x(1),x(2),x(1)*y(0)
-
-Strict transform: x(1)^3*x(2)^2+y(0)^3
-
-Exceptional divisors: 
-
-[1]:
-   _[1]=1
-[2]:
-   _[1]=x(2)
-[3]:
-   _[1]=x(1)
-
-Center of blowup: y(0),x(1)
-
-Passing to chart: 2
-// ** redefining Q (	def Q = l[2][mypath[i]];)
+Last map: x,y,x*z
+Strict transform: x^3*y^2+z^3
+Exceptional Divisors: %n%n
+1,y,x
+Center of blowup: z,x
+Passing to chart: 2 (y)
 =============================Blow Up 5===========================
-Ring variables: x(1),x(2),y(0)
-
-Last map: x(1),x(2),x(1)*y(0)
-
-Strict transform: y(0)^3+x(2)^2
-
-Exceptional divisors: 
-
-[1]:
-   _[1]=1
-[2]:
-   _[1]=x(2)
-[3]:
-   _[1]=1
-[4]:
-   _[1]=x(1)
-
-Center of blowup: x(1),x(2),y(0)
-
-Passing to chart: 2
-// ** redefining Q (	def Q = l[2][mypath[i]];)
+Last map: x,y,x*z
+Strict transform: z^3+y^2
+Exceptional Divisors: %n%n
+1,y,1,x
+Center of blowup: x,y,z
+Passing to chart: 2 (y)
 =============================Blow Up 6===========================
-Ring variables: x(1),y(0),y(1)
-
-Last map: x(1),x(1)*y(1),x(1)*y(0)
-
-Strict transform: x(1)*y(0)^3+y(1)^2
-
-Exceptional divisors: 
-
-[1]:
-   _[1]=1
-[2]:
-   _[1]=y(1)
-[3]:
-   _[1]=1
-[4]:
-   _[1]=1
-[5]:
-   _[1]=x(1)
-
-Center of blowup: y(1),y(0)
-
-Passing to chart: 1
-// ** redefining Q (	def Q = l[2][mypath[i]];)
+Last map: x,x*z,x*y
+Strict transform: x*y^3+z^2
+Exceptional Divisors: %n%n
+1,z,1,1,x
+Center of blowup: z,y
+Passing to chart: 1 (x)
 =============================Blow Up 7===========================
-Ring variables: x(1),x(2),y(0)
-
-Last map: x(1),x(2),x(2)*y(0)
-
-Strict transform: x(1)*x(2)+y(0)^2
-
-Exceptional divisors: 
-
-[1]:
-   _[1]=1
-[2]:
-   _[1]=y(0)
-[3]:
-   _[1]=1
-[4]:
-   _[1]=1
-[5]:
-   _[1]=x(1)
-[6]:
-   _[1]=x(2)
-
-Center of blowup: x(1),x(2),y(0)
-
-Passing to chart: 2
-// ** redefining Q (	def Q = l[2][mypath[i]];)
+Last map: x,y,y*z
+Strict transform: x*y+z^2
+Exceptional Divisors: %n%n
+1,z,1,1,x,y
+Center of blowup: x,y,z
+Passing to chart: 2 (y)
 =============================Blow Up 8===========================
-Ring variables: x(2),y(0),y(2)
-
-Last map: x(2)*y(2),x(2),x(2)*y(0)
-
-Strict transform: y(0)^2+y(2)
-
-Exceptional divisors: 
-
-[1]:
-   _[1]=1
-[2]:
-   _[1]=y(0)
-[3]:
-   _[1]=1
-[4]:
-   _[1]=1
-[5]:
-   _[1]=y(2)
-[6]:
-   _[1]=1
-[7]:
-   _[1]=x(2)
-
-Center of blowup: x(2),y(0),y(2)
-
-Passing to chart: 3
-// ** redefining Q (	def Q = l[2][mypath[i]];)
+Last map: x*z,x,x*y
+Strict transform: y^2+z
+Exceptional Divisors: %n%n
+1,y,1,1,z,1,x
+Center of blowup: x,y,z
+Passing to chart: 3 (z)
 =============================Blow Up 9===========================
-Ring variables: x(1),y(0),y(1)
-
-Last map: x(1),x(1)*y(1),x(1)*y(0)
-
-Strict transform: x(1)*y(1)^2+y(0)
-
-Exceptional divisors: 
-
-[1]:
-   _[1]=1
-[2]:
-   _[1]=y(1)
-[3]:
-   _[1]=1
-[4]:
-   _[1]=1
-[5]:
-   _[1]=y(0)
-[6]:
-   _[1]=1
-[7]:
-   _[1]=1
-[8]:
-   _[1]=x(1)
-
-Center of blowup: y(1),y(0)
-
-Passing to chart: 1
-// ** redefining Q (	def Q = l[2][mypath[i]];)
+Last map: x,x*z,x*y
+Strict transform: x*z^2+y
+Exceptional Divisors: %n%n
+1,z,1,1,y,1,1,x
+Center of blowup: z,y
+Passing to chart: 1 (x)
 =============================Blow Up 10===========================
-Ring variables: x(1),x(3),y(1)
-
-Last map: x(1),x(3)*y(1),x(3)
-
-Strict transform: x(1)*x(3)+y(1)
-
-Exceptional divisors: 
-
-[1]:
-   _[1]=1
-[2]:
-   _[1]=1
-[3]:
-   _[1]=1
-[4]:
-   _[1]=1
-[5]:
-   _[1]=y(1)
-[6]:
-   _[1]=1
-[7]:
-   _[1]=1
-[8]:
-   _[1]=x(1)
-[9]:
-   _[1]=x(3)
-
-Center of blowup: y(1),x(3)
-
-Passing to chart: 2
-// ** redefining Q (	def Q = l[2][mypath[i]];)
+Last map: x,y*z,y
+Strict transform: x*y+z
+Exceptional Divisors: %n%n
+1,1,1,1,z,1,1,x,y
+Center of blowup: z,y
+Passing to chart: 2 (y)
 =============================Blow Up 11===========================
-Ring variables: x(1),x(2),y(0)
-
-Last map: x(1),x(2),x(2)*y(0)
-
-Strict transform: x(1)+y(0)
-
-Exceptional divisors: 
-
-[1]:
-   _[1]=1
-[2]:
-   _[1]=1
-[3]:
-   _[1]=1
-[4]:
-   _[1]=1
-[5]:
-   _[1]=y(0)
-[6]:
-   _[1]=1
-[7]:
-   _[1]=1
-[8]:
-   _[1]=x(1)
-[9]:
-   _[1]=1
-[10]:
-   _[1]=x(2)
-
-Center of blowup: y(0),x(1)
-
-Passing to chart: 1
+Last map: x,y,y*z
+Strict transform: x+z
+Exceptional Divisors: %n%n
+1,1,1,1,z,1,1,x,1,y
+Center of blowup: z,x
+Passing to chart: 1 (x)
+=============================Blow Up 12===========================
+Last map: x*z,x,x*y
+Strict transform: y+z
+Exceptional Divisors: %n%n
+1,1,1,1,y,z,x
+Center of blowup: z,y

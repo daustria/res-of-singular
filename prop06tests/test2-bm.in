@@ -1,0 +1,13 @@
+LIB "resolvebm.lib";
+
+ring A = (0, complex),(x(0..3), w), lp;
+
+poly f = x(1)^6+x(2)^6+x(3)^6+x(0)^3; // max length 2
+ideal J = f*w;
+int t = timer;
+
+printf("polynomial: %s", J[1]);
+
+dfs_resolve(J, 30);
+
+quit;

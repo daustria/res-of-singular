@@ -1,0 +1,49 @@
+Polynomial:x(0)^2+x(1)^6+x(2)^6
+Time taken to resolve :0
+Showing path 4
+=============================Blow Up 1===========================
+Ring variables: x(0),x(1),x(2)
+
+Strict transform: x(0)^2+x(1)^6+x(2)^6
+
+Exceptional divisors: 
+
+empty list
+
+Center of blowup: x(2),x(1),x(0)
+
+Passing to chart: 2
+// ** redefining Q (		def Q = l[2][mypath[i]];)
+=============================Blow Up 2===========================
+Ring variables: x(2),y(0),y(2)
+
+Last map: x(2)*y(2),x(2),x(2)*y(0)
+
+Strict transform: x(2)^4*y(0)^6+x(2)^4+y(2)^2
+
+Exceptional divisors: 
+
+[1]:
+   _[1]=x(2)
+
+Center of blowup: y(2),x(2)
+
+Passing to chart: 2
+// ** redefining Q (		def Q = l[2][mypath[i]];)
+=============================Blow Up 3===========================
+Ring variables: x(1),x(2),y(0)
+
+Last map: x(1),x(2),x(1)*y(0)
+
+Strict transform: x(1)^2*x(2)^6+x(1)^2+y(0)^2
+
+Exceptional divisors: 
+
+[1]:
+   _[1]=1
+[2]:
+   _[1]=x(1)
+
+Center of blowup: y(0),x(1)
+
+Passing to chart: 2

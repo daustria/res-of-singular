@@ -1,0 +1,3826 @@
+                        
+/////////////////////////// Final Chart 1 /////////////////////////
+======================== History of this chart ======================
+                  
+Blow Up 1 :
+     Center determined in L[2][1],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 2 :
+     Center determined in L[2][2],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 3 :
+     Center determined in L[2][3],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 4 :
+     Center determined in L[2][4],
+     Passing to chart  3  in resulting blow up.
+                 
+======================== Data of this chart ========================
+                       
+==== Ambient Space: 
+_[1]=0
+      
+==== Ideal of Variety: 
+_[1]=y(0)*y(1)^2+1
+      
+==== Exceptional Divisors: 
+[1]:
+   _[1]=y(1)
+[2]:
+   _[1]=y(0)
+[3]:
+   _[1]=1
+[4]:
+   _[1]=x(2)
+   
+==== Images of variables of original ring:
+_[1]=x(2)^5*y(0)*y(1)
+_[2]=x(2)^2*y(0)
+_[3]=x(2)^2*y(1)
+_[4]=x(1)
+   
+pause>                        
+/////////////////////////// Final Chart 2 /////////////////////////
+======================== History of this chart ======================
+                  
+Blow Up 1 :
+     Center determined in L[2][1],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 2 :
+     Center determined in L[2][2],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 3 :
+     Center determined in L[2][3],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 4 :
+     Center determined in L[2][4],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 5 :
+     Center determined in L[2][7],
+     Passing to chart  2  in resulting blow up.
+                 
+======================== Data of this chart ========================
+                       
+==== Ambient Space: 
+_[1]=0
+      
+==== Ideal of Variety: 
+_[1]=x(3)*y(0)^3+1
+      
+==== Exceptional Divisors: 
+[1]:
+   _[1]=1
+[2]:
+   _[1]=1
+[3]:
+   _[1]=y(0)
+[4]:
+   _[1]=y(2)
+[5]:
+   _[1]=x(3)
+   
+==== Images of variables of original ring:
+_[1]=x(3)^9*y(0)^3*y(2)^5
+_[2]=x(3)^3*y(0)*y(2)^2
+_[3]=x(3)^4*y(0)*y(2)^2
+_[4]=x(1)
+   
+pause>                        
+/////////////////////////// Final Chart 3 /////////////////////////
+======================== History of this chart ======================
+                  
+Blow Up 1 :
+     Center determined in L[2][1],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 2 :
+     Center determined in L[2][2],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 3 :
+     Center determined in L[2][3],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 4 :
+     Center determined in L[2][4],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 5 :
+     Center determined in L[2][8],
+     Passing to chart  2  in resulting blow up.
+                 
+======================== Data of this chart ========================
+                       
+==== Ambient Space: 
+_[1]=0
+      
+==== Ideal of Variety: 
+_[1]=x(3)^2*y(0)^3+1
+      
+==== Exceptional Divisors: 
+[1]:
+   _[1]=1
+[2]:
+   _[1]=1
+[3]:
+   _[1]=y(0)
+[4]:
+   _[1]=y(2)
+[5]:
+   _[1]=x(3)
+   
+==== Images of variables of original ring:
+_[1]=x(3)^9*y(0)^3*y(2)^5
+_[2]=x(3)^4*y(0)*y(2)^2
+_[3]=x(3)^3*y(0)*y(2)^2
+_[4]=x(1)
+   
+pause>                        
+/////////////////////////// Final Chart 4 /////////////////////////
+======================== History of this chart ======================
+                  
+Blow Up 1 :
+     Center determined in L[2][1],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 2 :
+     Center determined in L[2][2],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 3 :
+     Center determined in L[2][3],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 4 :
+     Center determined in L[2][4],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 5 :
+     Center determined in L[2][7],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 6 :
+     Center determined in L[2][14],
+     Passing to chart  3  in resulting blow up.
+                 
+======================== Data of this chart ========================
+                       
+==== Ambient Space: 
+_[1]=0
+      
+==== Ideal of Variety: 
+_[1]=x(2)*y(1)^2+1
+      
+==== Exceptional Divisors: 
+[1]:
+   _[1]=y(1)
+[2]:
+   _[1]=1
+[3]:
+   _[1]=1
+[4]:
+   _[1]=y(0)
+[5]:
+   _[1]=1
+[6]:
+   _[1]=x(2)
+   
+==== Images of variables of original ring:
+_[1]=x(2)^15*y(0)^5*y(1)
+_[2]=x(2)^5*y(0)^2
+_[3]=x(2)^7*y(0)^2*y(1)
+_[4]=x(1)
+   
+pause>                        
+/////////////////////////// Final Chart 5 /////////////////////////
+======================== History of this chart ======================
+                  
+Blow Up 1 :
+     Center determined in L[2][1],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 2 :
+     Center determined in L[2][2],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 3 :
+     Center determined in L[2][3],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 4 :
+     Center determined in L[2][4],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 5 :
+     Center determined in L[2][8],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 6 :
+     Center determined in L[2][17],
+     Passing to chart  2  in resulting blow up.
+                 
+======================== Data of this chart ========================
+                       
+==== Ambient Space: 
+_[1]=0
+      
+==== Ideal of Variety: 
+_[1]=x(3)*y(2)^2+1
+      
+==== Exceptional Divisors: 
+[1]:
+   _[1]=1
+[2]:
+   _[1]=1
+[3]:
+   _[1]=1
+[4]:
+   _[1]=y(0)
+[5]:
+   _[1]=y(2)
+[6]:
+   _[1]=x(3)
+   
+==== Images of variables of original ring:
+_[1]=x(3)^15*y(0)^5*y(2)^9
+_[2]=x(3)^7*y(0)^2*y(2)^4
+_[3]=x(3)^5*y(0)^2*y(2)^3
+_[4]=x(1)
+   
+pause>                        
+/////////////////////////// Final Chart 6 /////////////////////////
+======================== History of this chart ======================
+                  
+Blow Up 1 :
+     Center determined in L[2][1],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 2 :
+     Center determined in L[2][2],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 3 :
+     Center determined in L[2][3],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 4 :
+     Center determined in L[2][5],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 5 :
+     Center determined in L[2][11],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 6 :
+     Center determined in L[2][21],
+     Passing to chart  1  in resulting blow up.
+                 
+======================== Data of this chart ========================
+                       
+==== Ambient Space: 
+_[1]=0
+      
+==== Ideal of Variety: 
+_[1]=x(3)^6*y(1)+1
+      
+==== Exceptional Divisors: 
+[1]:
+   _[1]=1
+[2]:
+   _[1]=1
+[3]:
+   _[1]=1
+[4]:
+   _[1]=1
+[5]:
+   _[1]=y(1)
+[6]:
+   _[1]=x(4)
+   
+==== Images of variables of original ring:
+_[1]=x(3)*x(4)^6*y(1)^5
+_[2]=x(4)^4*y(1)^3
+_[3]=x(4)*y(1)
+_[4]=x(2)
+   
+pause>                        
+/////////////////////////// Final Chart 7 /////////////////////////
+======================== History of this chart ======================
+                  
+Blow Up 1 :
+     Center determined in L[2][1],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 2 :
+     Center determined in L[2][2],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 3 :
+     Center determined in L[2][3],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 4 :
+     Center determined in L[2][4],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 5 :
+     Center determined in L[2][7],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 6 :
+     Center determined in L[2][14],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 7 :
+     Center determined in L[2][24],
+     Passing to chart  1  in resulting blow up.
+                 
+======================== Data of this chart ========================
+                       
+==== Ambient Space: 
+_[1]=0
+      
+==== Ideal of Variety: 
+_[1]=y(2)+1
+      
+==== Exceptional Divisors: 
+[1]:
+   _[1]=1
+[2]:
+   _[1]=1
+[3]:
+   _[1]=1
+[4]:
+   _[1]=y(1)
+[5]:
+   _[1]=1
+[6]:
+   _[1]=y(2)
+[7]:
+   _[1]=x(4)
+   
+==== Images of variables of original ring:
+_[1]=x(4)^29*y(1)^5*y(2)^15
+_[2]=x(4)^10*y(1)^2*y(2)^5
+_[3]=x(4)^13*y(1)^2*y(2)^7
+_[4]=x(1)
+   
+pause>                        
+/////////////////////////// Final Chart 8 /////////////////////////
+======================== History of this chart ======================
+                  
+Blow Up 1 :
+     Center determined in L[2][1],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 2 :
+     Center determined in L[2][2],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 3 :
+     Center determined in L[2][3],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 4 :
+     Center determined in L[2][4],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 5 :
+     Center determined in L[2][7],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 6 :
+     Center determined in L[2][14],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 7 :
+     Center determined in L[2][24],
+     Passing to chart  3  in resulting blow up.
+                 
+======================== Data of this chart ========================
+                       
+==== Ambient Space: 
+_[1]=0
+      
+==== Ideal of Variety: 
+_[1]=y(0)+1
+      
+==== Exceptional Divisors: 
+[1]:
+   _[1]=1
+[2]:
+   _[1]=1
+[3]:
+   _[1]=1
+[4]:
+   _[1]=y(1)
+[5]:
+   _[1]=y(0)
+[6]:
+   _[1]=1
+[7]:
+   _[1]=x(2)
+   
+==== Images of variables of original ring:
+_[1]=x(2)^29*y(0)^9*y(1)^5
+_[2]=x(2)^10*y(0)^3*y(1)^2
+_[3]=x(2)^13*y(0)^4*y(1)^2
+_[4]=x(1)
+   
+pause>                        
+/////////////////////////// Final Chart 9 /////////////////////////
+======================== History of this chart ======================
+                  
+Blow Up 1 :
+     Center determined in L[2][1],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 2 :
+     Center determined in L[2][2],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 3 :
+     Center determined in L[2][3],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 4 :
+     Center determined in L[2][4],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 5 :
+     Center determined in L[2][7],
+     Passing to chart  3  in resulting blow up.
+                  
+Blow Up 6 :
+     Center determined in L[2][16],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 7 :
+     Center determined in L[2][27],
+     Passing to chart  1  in resulting blow up.
+                 
+======================== Data of this chart ========================
+                       
+==== Ambient Space: 
+_[1]=0
+      
+==== Ideal of Variety: 
+_[1]=y(1)*y(2)+1
+      
+==== Exceptional Divisors: 
+[1]:
+   _[1]=1
+[2]:
+   _[1]=1
+[3]:
+   _[1]=1
+[4]:
+   _[1]=1
+[5]:
+   _[1]=y(2)
+[6]:
+   _[1]=y(1)
+[7]:
+   _[1]=x(4)
+   
+==== Images of variables of original ring:
+_[1]=x(4)^14*y(1)^4*y(2)^9
+_[2]=x(4)^4*y(1)*y(2)^3
+_[3]=x(4)^7*y(1)^2*y(2)^4
+_[4]=x(1)
+   
+pause>                        
+/////////////////////////// Final Chart 10 /////////////////////////
+======================== History of this chart ======================
+                  
+Blow Up 1 :
+     Center determined in L[2][1],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 2 :
+     Center determined in L[2][2],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 3 :
+     Center determined in L[2][3],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 4 :
+     Center determined in L[2][4],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 5 :
+     Center determined in L[2][8],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 6 :
+     Center determined in L[2][17],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 7 :
+     Center determined in L[2][28],
+     Passing to chart  1  in resulting blow up.
+                 
+======================== Data of this chart ========================
+                       
+==== Ambient Space: 
+_[1]=0
+      
+==== Ideal of Variety: 
+_[1]=x(4)^2*y(1)+1
+      
+==== Exceptional Divisors: 
+[1]:
+   _[1]=1
+[2]:
+   _[1]=1
+[3]:
+   _[1]=1
+[4]:
+   _[1]=1
+[5]:
+   _[1]=x(4)
+[6]:
+   _[1]=y(1)
+[7]:
+   _[1]=x(3)
+   
+==== Images of variables of original ring:
+_[1]=x(3)^16*x(4)^9*y(1)^15
+_[2]=x(3)^8*x(4)^4*y(1)^7
+_[3]=x(3)^5*x(4)^3*y(1)^5
+_[4]=x(1)
+   
+pause>                        
+/////////////////////////// Final Chart 11 /////////////////////////
+======================== History of this chart ======================
+                  
+Blow Up 1 :
+     Center determined in L[2][1],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 2 :
+     Center determined in L[2][2],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 3 :
+     Center determined in L[2][3],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 4 :
+     Center determined in L[2][4],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 5 :
+     Center determined in L[2][8],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 6 :
+     Center determined in L[2][17],
+     Passing to chart  3  in resulting blow up.
+                  
+Blow Up 7 :
+     Center determined in L[2][30],
+     Passing to chart  1  in resulting blow up.
+                 
+======================== Data of this chart ========================
+                       
+==== Ambient Space: 
+_[1]=0
+      
+==== Ideal of Variety: 
+_[1]=y(2)+1
+      
+==== Exceptional Divisors: 
+[1]:
+   _[1]=1
+[2]:
+   _[1]=1
+[3]:
+   _[1]=1
+[4]:
+   _[1]=y(1)
+[5]:
+   _[1]=1
+[6]:
+   _[1]=y(2)
+[7]:
+   _[1]=x(4)
+   
+==== Images of variables of original ring:
+_[1]=x(4)^21*y(1)^5*y(2)^15
+_[2]=x(4)^10*y(1)^2*y(2)^7
+_[3]=x(4)^7*y(1)^2*y(2)^5
+_[4]=x(1)
+   
+pause>                        
+/////////////////////////// Final Chart 12 /////////////////////////
+======================== History of this chart ======================
+                  
+Blow Up 1 :
+     Center determined in L[2][1],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 2 :
+     Center determined in L[2][2],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 3 :
+     Center determined in L[2][3],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 4 :
+     Center determined in L[2][4],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 5 :
+     Center determined in L[2][8],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 6 :
+     Center determined in L[2][17],
+     Passing to chart  3  in resulting blow up.
+                  
+Blow Up 7 :
+     Center determined in L[2][30],
+     Passing to chart  3  in resulting blow up.
+                 
+======================== Data of this chart ========================
+                       
+==== Ambient Space: 
+_[1]=0
+      
+==== Ideal of Variety: 
+_[1]=y(0)+1
+      
+==== Exceptional Divisors: 
+[1]:
+   _[1]=1
+[2]:
+   _[1]=y(0)
+[3]:
+   _[1]=1
+[4]:
+   _[1]=y(1)
+[5]:
+   _[1]=1
+[6]:
+   _[1]=1
+[7]:
+   _[1]=x(2)
+   
+==== Images of variables of original ring:
+_[1]=x(2)^21*y(0)*y(1)^5
+_[2]=x(2)^10*y(0)*y(1)^2
+_[3]=x(2)^7*y(1)^2
+_[4]=x(1)
+   
+pause>                        
+/////////////////////////// Final Chart 13 /////////////////////////
+======================== History of this chart ======================
+                  
+Blow Up 1 :
+     Center determined in L[2][1],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 2 :
+     Center determined in L[2][2],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 3 :
+     Center determined in L[2][3],
+     Passing to chart  3  in resulting blow up.
+                  
+Blow Up 4 :
+     Center determined in L[2][6],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 5 :
+     Center determined in L[2][13],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 6 :
+     Center determined in L[2][22],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 7 :
+     Center determined in L[2][36],
+     Passing to chart  1  in resulting blow up.
+                 
+======================== Data of this chart ========================
+                       
+==== Ambient Space: 
+_[1]=0
+      
+==== Ideal of Variety: 
+_[1]=x(1)*y(1)^2+1
+      
+==== Exceptional Divisors: 
+[1]:
+   _[1]=1
+[2]:
+   _[1]=1
+[3]:
+   _[1]=1
+[4]:
+   _[1]=x(1)
+[5]:
+   _[1]=1
+[6]:
+   _[1]=y(1)
+[7]:
+   _[1]=x(4)
+   
+==== Images of variables of original ring:
+_[1]=x(1)^4*x(4)^4*y(1)^3
+_[2]=x(1)
+_[3]=x(1)^2*x(4)^3*y(1)^2
+_[4]=x(2)
+   
+pause>                        
+/////////////////////////// Final Chart 14 /////////////////////////
+======================== History of this chart ======================
+                  
+Blow Up 1 :
+     Center determined in L[2][1],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 2 :
+     Center determined in L[2][2],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 3 :
+     Center determined in L[2][3],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 4 :
+     Center determined in L[2][4],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 5 :
+     Center determined in L[2][7],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 6 :
+     Center determined in L[2][14],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 7 :
+     Center determined in L[2][23],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 8 :
+     Center determined in L[2][38],
+     Passing to chart  1  in resulting blow up.
+                 
+======================== Data of this chart ========================
+                       
+==== Ambient Space: 
+_[1]=0
+      
+==== Ideal of Variety: 
+_[1]=x(2)*y(1)+1
+      
+==== Exceptional Divisors: 
+[1]:
+   _[1]=1
+[2]:
+   _[1]=1
+[3]:
+   _[1]=1
+[4]:
+   _[1]=1
+[5]:
+   _[1]=1
+[6]:
+   _[1]=x(2)
+[7]:
+   _[1]=y(1)
+[8]:
+   _[1]=x(4)
+   
+==== Images of variables of original ring:
+_[1]=x(2)^15*x(4)^19*y(1)^10
+_[2]=x(2)^5*x(4)^6*y(1)^3
+_[3]=x(2)^7*x(4)^9*y(1)^5
+_[4]=x(1)
+   
+pause>                        
+/////////////////////////// Final Chart 15 /////////////////////////
+======================== History of this chart ======================
+                  
+Blow Up 1 :
+     Center determined in L[2][1],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 2 :
+     Center determined in L[2][2],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 3 :
+     Center determined in L[2][3],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 4 :
+     Center determined in L[2][4],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 5 :
+     Center determined in L[2][7],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 6 :
+     Center determined in L[2][14],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 7 :
+     Center determined in L[2][24],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 8 :
+     Center determined in L[2][40],
+     Passing to chart  1  in resulting blow up.
+                 
+======================== Data of this chart ========================
+                       
+==== Ambient Space: 
+_[1]=0
+      
+==== Ideal of Variety: 
+_[1]=y(1)+1
+      
+==== Exceptional Divisors: 
+[1]:
+   _[1]=1
+[2]:
+   _[1]=1
+[3]:
+   _[1]=1
+[4]:
+   _[1]=1
+[5]:
+   _[1]=y(1)
+[6]:
+   _[1]=1
+[7]:
+   _[1]=x(2)
+[8]:
+   _[1]=x(4)
+   
+==== Images of variables of original ring:
+_[1]=x(2)^29*x(4)^24*y(1)^9
+_[2]=x(2)^10*x(4)^8*y(1)^3
+_[3]=x(2)^13*x(4)^11*y(1)^4
+_[4]=x(1)
+   
+pause>                        
+/////////////////////////// Final Chart 16 /////////////////////////
+======================== History of this chart ======================
+                  
+Blow Up 1 :
+     Center determined in L[2][1],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 2 :
+     Center determined in L[2][2],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 3 :
+     Center determined in L[2][3],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 4 :
+     Center determined in L[2][4],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 5 :
+     Center determined in L[2][7],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 6 :
+     Center determined in L[2][14],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 7 :
+     Center determined in L[2][24],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 8 :
+     Center determined in L[2][40],
+     Passing to chart  2  in resulting blow up.
+                 
+======================== Data of this chart ========================
+                       
+==== Ambient Space: 
+_[1]=0
+      
+==== Ideal of Variety: 
+_[1]=y(0)+1
+      
+==== Exceptional Divisors: 
+[1]:
+   _[1]=1
+[2]:
+   _[1]=1
+[3]:
+   _[1]=1
+[4]:
+   _[1]=1
+[5]:
+   _[1]=1
+[6]:
+   _[1]=y(0)
+[7]:
+   _[1]=x(2)
+[8]:
+   _[1]=x(3)
+   
+==== Images of variables of original ring:
+_[1]=x(2)^29*x(3)^24*y(0)^15
+_[2]=x(2)^10*x(3)^8*y(0)^5
+_[3]=x(2)^13*x(3)^11*y(0)^7
+_[4]=x(1)
+   
+pause>                        
+/////////////////////////// Final Chart 17 /////////////////////////
+======================== History of this chart ======================
+                  
+Blow Up 1 :
+     Center determined in L[2][1],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 2 :
+     Center determined in L[2][2],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 3 :
+     Center determined in L[2][3],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 4 :
+     Center determined in L[2][4],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 5 :
+     Center determined in L[2][7],
+     Passing to chart  3  in resulting blow up.
+                  
+Blow Up 6 :
+     Center determined in L[2][16],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 7 :
+     Center determined in L[2][27],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 8 :
+     Center determined in L[2][43],
+     Passing to chart  1  in resulting blow up.
+                 
+======================== Data of this chart ========================
+                       
+==== Ambient Space: 
+_[1]=0
+      
+==== Ideal of Variety: 
+_[1]=x(4)*y(1)^2+1
+      
+==== Exceptional Divisors: 
+[1]:
+   _[1]=y(1)
+[2]:
+   _[1]=1
+[3]:
+   _[1]=1
+[4]:
+   _[1]=1
+[5]:
+   _[1]=1
+[6]:
+   _[1]=1
+[7]:
+   _[1]=y(2)
+[8]:
+   _[1]=x(4)
+   
+==== Images of variables of original ring:
+_[1]=x(4)^24*y(1)*y(2)^14
+_[2]=x(4)^7*y(2)^4
+_[3]=x(4)^12*y(1)*y(2)^7
+_[4]=x(1)
+   
+pause>                        
+/////////////////////////// Final Chart 18 /////////////////////////
+======================== History of this chart ======================
+                  
+Blow Up 1 :
+     Center determined in L[2][1],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 2 :
+     Center determined in L[2][2],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 3 :
+     Center determined in L[2][3],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 4 :
+     Center determined in L[2][4],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 5 :
+     Center determined in L[2][7],
+     Passing to chart  3  in resulting blow up.
+                  
+Blow Up 6 :
+     Center determined in L[2][16],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 7 :
+     Center determined in L[2][27],
+     Passing to chart  3  in resulting blow up.
+                  
+Blow Up 8 :
+     Center determined in L[2][44],
+     Passing to chart  1  in resulting blow up.
+                 
+======================== Data of this chart ========================
+                       
+==== Ambient Space: 
+_[1]=0
+      
+==== Ideal of Variety: 
+_[1]=x(4)*y(1)^2+1
+      
+==== Exceptional Divisors: 
+[1]:
+   _[1]=y(1)
+[2]:
+   _[1]=1
+[3]:
+   _[1]=1
+[4]:
+   _[1]=1
+[5]:
+   _[1]=1
+[6]:
+   _[1]=1
+[7]:
+   _[1]=y(2)
+[8]:
+   _[1]=x(4)
+   
+==== Images of variables of original ring:
+_[1]=x(4)^19*y(1)*y(2)^14
+_[2]=x(4)^5*y(2)^4
+_[3]=x(4)^10*y(1)*y(2)^7
+_[4]=x(1)
+   
+pause>                        
+/////////////////////////// Final Chart 19 /////////////////////////
+======================== History of this chart ======================
+                  
+Blow Up 1 :
+     Center determined in L[2][1],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 2 :
+     Center determined in L[2][2],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 3 :
+     Center determined in L[2][3],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 4 :
+     Center determined in L[2][4],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 5 :
+     Center determined in L[2][8],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 6 :
+     Center determined in L[2][17],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 7 :
+     Center determined in L[2][28],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 8 :
+     Center determined in L[2][46],
+     Passing to chart  1  in resulting blow up.
+                 
+======================== Data of this chart ========================
+                       
+==== Ambient Space: 
+_[1]=0
+      
+==== Ideal of Variety: 
+_[1]=x(4)*y(1)^2+1
+      
+==== Exceptional Divisors: 
+[1]:
+   _[1]=1
+[2]:
+   _[1]=1
+[3]:
+   _[1]=1
+[4]:
+   _[1]=1
+[5]:
+   _[1]=y(1)
+[6]:
+   _[1]=1
+[7]:
+   _[1]=x(2)
+[8]:
+   _[1]=x(4)
+   
+==== Images of variables of original ring:
+_[1]=x(2)^16*x(4)^10*y(1)^9
+_[2]=x(2)^8*x(4)^5*y(1)^4
+_[3]=x(2)^5*x(4)^3*y(1)^3
+_[4]=x(1)
+   
+pause>                        
+/////////////////////////// Final Chart 20 /////////////////////////
+======================== History of this chart ======================
+                  
+Blow Up 1 :
+     Center determined in L[2][1],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 2 :
+     Center determined in L[2][2],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 3 :
+     Center determined in L[2][3],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 4 :
+     Center determined in L[2][4],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 5 :
+     Center determined in L[2][8],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 6 :
+     Center determined in L[2][17],
+     Passing to chart  3  in resulting blow up.
+                  
+Blow Up 7 :
+     Center determined in L[2][30],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 8 :
+     Center determined in L[2][48],
+     Passing to chart  1  in resulting blow up.
+                 
+======================== Data of this chart ========================
+                       
+==== Ambient Space: 
+_[1]=0
+      
+==== Ideal of Variety: 
+_[1]=y(1)+1
+      
+==== Exceptional Divisors: 
+[1]:
+   _[1]=1
+[2]:
+   _[1]=y(1)
+[3]:
+   _[1]=1
+[4]:
+   _[1]=1
+[5]:
+   _[1]=1
+[6]:
+   _[1]=1
+[7]:
+   _[1]=x(2)
+[8]:
+   _[1]=x(4)
+   
+==== Images of variables of original ring:
+_[1]=x(2)^21*x(4)^16*y(1)
+_[2]=x(2)^10*x(4)^8*y(1)
+_[3]=x(2)^7*x(4)^5
+_[4]=x(1)
+   
+pause>                        
+/////////////////////////// Final Chart 21 /////////////////////////
+======================== History of this chart ======================
+                  
+Blow Up 1 :
+     Center determined in L[2][1],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 2 :
+     Center determined in L[2][2],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 3 :
+     Center determined in L[2][3],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 4 :
+     Center determined in L[2][4],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 5 :
+     Center determined in L[2][8],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 6 :
+     Center determined in L[2][17],
+     Passing to chart  3  in resulting blow up.
+                  
+Blow Up 7 :
+     Center determined in L[2][30],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 8 :
+     Center determined in L[2][48],
+     Passing to chart  2  in resulting blow up.
+                 
+======================== Data of this chart ========================
+                       
+==== Ambient Space: 
+_[1]=0
+      
+==== Ideal of Variety: 
+_[1]=y(0)+1
+      
+==== Exceptional Divisors: 
+[1]:
+   _[1]=1
+[2]:
+   _[1]=1
+[3]:
+   _[1]=1
+[4]:
+   _[1]=1
+[5]:
+   _[1]=1
+[6]:
+   _[1]=y(0)
+[7]:
+   _[1]=x(2)
+[8]:
+   _[1]=x(3)
+   
+==== Images of variables of original ring:
+_[1]=x(2)^21*x(3)^16*y(0)^15
+_[2]=x(2)^10*x(3)^8*y(0)^7
+_[3]=x(2)^7*x(3)^5*y(0)^5
+_[4]=x(1)
+   
+pause>                        
+/////////////////////////// Final Chart 22 /////////////////////////
+======================== History of this chart ======================
+                  
+Blow Up 1 :
+     Center determined in L[2][1],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 2 :
+     Center determined in L[2][2],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 3 :
+     Center determined in L[2][3],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 4 :
+     Center determined in L[2][4],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 5 :
+     Center determined in L[2][8],
+     Passing to chart  3  in resulting blow up.
+                  
+Blow Up 6 :
+     Center determined in L[2][19],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 7 :
+     Center determined in L[2][32],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 8 :
+     Center determined in L[2][51],
+     Passing to chart  1  in resulting blow up.
+                 
+======================== Data of this chart ========================
+                       
+==== Ambient Space: 
+_[1]=0
+      
+==== Ideal of Variety: 
+_[1]=x(2)^2*y(1)+1
+      
+==== Exceptional Divisors: 
+[1]:
+   _[1]=1
+[2]:
+   _[1]=1
+[3]:
+   _[1]=1
+[4]:
+   _[1]=1
+[5]:
+   _[1]=x(2)
+[6]:
+   _[1]=1
+[7]:
+   _[1]=y(1)
+[8]:
+   _[1]=x(4)
+   
+==== Images of variables of original ring:
+_[1]=x(2)^9*x(4)^6*y(1)^5
+_[2]=x(2)^4*x(4)^4*y(1)^3
+_[3]=x(2)^3*x(4)*y(1)
+_[4]=x(1)
+   
+pause>                        
+/////////////////////////// Final Chart 23 /////////////////////////
+======================== History of this chart ======================
+                  
+Blow Up 1 :
+     Center determined in L[2][1],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 2 :
+     Center determined in L[2][2],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 3 :
+     Center determined in L[2][3],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 4 :
+     Center determined in L[2][5],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 5 :
+     Center determined in L[2][11],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 6 :
+     Center determined in L[2][21],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 7 :
+     Center determined in L[2][34],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 8 :
+     Center determined in L[2][52],
+     Passing to chart  1  in resulting blow up.
+                 
+======================== Data of this chart ========================
+                       
+==== Ambient Space: 
+_[1]=0
+      
+==== Ideal of Variety: 
+_[1]=x(4)^4*y(1)^5+1
+      
+==== Exceptional Divisors: 
+[1]:
+   _[1]=1
+[2]:
+   _[1]=1
+[3]:
+   _[1]=1
+[4]:
+   _[1]=1
+[5]:
+   _[1]=1
+[6]:
+   _[1]=x(1)
+[7]:
+   _[1]=y(1)
+[8]:
+   _[1]=x(4)
+   
+==== Images of variables of original ring:
+_[1]=x(1)^6*x(4)^3*y(1)^2
+_[2]=x(1)^4*x(4)^2*y(1)
+_[3]=x(1)
+_[4]=x(2)
+   
+pause>                        
+/////////////////////////// Final Chart 24 /////////////////////////
+======================== History of this chart ======================
+                  
+Blow Up 1 :
+     Center determined in L[2][1],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 2 :
+     Center determined in L[2][2],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 3 :
+     Center determined in L[2][3],
+     Passing to chart  3  in resulting blow up.
+                  
+Blow Up 4 :
+     Center determined in L[2][6],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 5 :
+     Center determined in L[2][13],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 6 :
+     Center determined in L[2][22],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 7 :
+     Center determined in L[2][36],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 8 :
+     Center determined in L[2][54],
+     Passing to chart  3  in resulting blow up.
+                 
+======================== Data of this chart ========================
+                       
+==== Ambient Space: 
+_[1]=0
+      
+==== Ideal of Variety: 
+_[1]=x(1)*y(0)^2+1
+      
+==== Exceptional Divisors: 
+[1]:
+   _[1]=y(0)
+[2]:
+   _[1]=1
+[3]:
+   _[1]=1
+[4]:
+   _[1]=1
+[5]:
+   _[1]=1
+[6]:
+   _[1]=1
+[7]:
+   _[1]=y(1)
+[8]:
+   _[1]=x(1)
+   
+==== Images of variables of original ring:
+_[1]=x(1)^9*y(0)*y(1)^4
+_[2]=x(1)
+_[3]=x(1)^6*y(0)*y(1)^3
+_[4]=x(2)
+   
+pause>                        
+/////////////////////////// Final Chart 25 /////////////////////////
+======================== History of this chart ======================
+                  
+Blow Up 1 :
+     Center determined in L[2][1],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 2 :
+     Center determined in L[2][2],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 3 :
+     Center determined in L[2][3],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 4 :
+     Center determined in L[2][4],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 5 :
+     Center determined in L[2][7],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 6 :
+     Center determined in L[2][14],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 7 :
+     Center determined in L[2][23],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 8 :
+     Center determined in L[2][38],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 9 :
+     Center determined in L[2][56],
+     Passing to chart  1  in resulting blow up.
+                 
+======================== Data of this chart ========================
+                       
+==== Ambient Space: 
+_[1]=0
+      
+==== Ideal of Variety: 
+_[1]=y(1)+1
+      
+==== Exceptional Divisors: 
+[1]:
+   _[1]=1
+[2]:
+   _[1]=1
+[3]:
+   _[1]=1
+[4]:
+   _[1]=1
+[5]:
+   _[1]=1
+[6]:
+   _[1]=y(1)
+[7]:
+   _[1]=1
+[8]:
+   _[1]=x(3)
+[9]:
+   _[1]=x(4)
+   
+==== Images of variables of original ring:
+_[1]=x(3)^19*x(4)^24*y(1)^15
+_[2]=x(3)^6*x(4)^8*y(1)^5
+_[3]=x(3)^9*x(4)^11*y(1)^7
+_[4]=x(1)
+   
+pause>                        
+/////////////////////////// Final Chart 26 /////////////////////////
+======================== History of this chart ======================
+                  
+Blow Up 1 :
+     Center determined in L[2][1],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 2 :
+     Center determined in L[2][2],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 3 :
+     Center determined in L[2][3],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 4 :
+     Center determined in L[2][4],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 5 :
+     Center determined in L[2][7],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 6 :
+     Center determined in L[2][14],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 7 :
+     Center determined in L[2][23],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 8 :
+     Center determined in L[2][38],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 9 :
+     Center determined in L[2][56],
+     Passing to chart  2  in resulting blow up.
+                 
+======================== Data of this chart ========================
+                       
+==== Ambient Space: 
+_[1]=0
+      
+==== Ideal of Variety: 
+_[1]=y(0)+1
+      
+==== Exceptional Divisors: 
+[1]:
+   _[1]=1
+[2]:
+   _[1]=1
+[3]:
+   _[1]=1
+[4]:
+   _[1]=1
+[5]:
+   _[1]=y(0)
+[6]:
+   _[1]=1
+[7]:
+   _[1]=1
+[8]:
+   _[1]=x(3)
+[9]:
+   _[1]=x(2)
+   
+==== Images of variables of original ring:
+_[1]=x(2)^24*x(3)^19*y(0)^9
+_[2]=x(2)^8*x(3)^6*y(0)^3
+_[3]=x(2)^11*x(3)^9*y(0)^4
+_[4]=x(1)
+   
+pause>                        
+/////////////////////////// Final Chart 27 /////////////////////////
+======================== History of this chart ======================
+                  
+Blow Up 1 :
+     Center determined in L[2][1],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 2 :
+     Center determined in L[2][2],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 3 :
+     Center determined in L[2][3],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 4 :
+     Center determined in L[2][4],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 5 :
+     Center determined in L[2][7],
+     Passing to chart  3  in resulting blow up.
+                  
+Blow Up 6 :
+     Center determined in L[2][16],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 7 :
+     Center determined in L[2][27],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 8 :
+     Center determined in L[2][43],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 9 :
+     Center determined in L[2][60],
+     Passing to chart  2  in resulting blow up.
+                 
+======================== Data of this chart ========================
+                       
+==== Ambient Space: 
+_[1]=0
+      
+==== Ideal of Variety: 
+_[1]=y(2)
+      
+==== Exceptional Divisors: 
+[1]:
+   _[1]=1
+[2]:
+   _[1]=1
+[3]:
+   _[1]=1
+[4]:
+   _[1]=1
+[5]:
+   _[1]=1
+[6]:
+   _[1]=1
+[7]:
+   _[1]=y(0)
+[8]:
+   _[1]=y(2)-1
+[9]:
+   _[1]=x(3)
+   
+==== Images of variables of original ring:
+_[1]=x(3)^47*y(0)^14*y(2)^24-24*x(3)^47*y(0)^14*y(2)^23+276*x(3)^47*y(0)^14*y(2)^22-2024*x(3)^47*y(0)^14*y(2)^21+10626*x(3)^47*y(0)^14*y(2)^20-42504*x(3)^47*y(0)^14*y(2)^19+134596*x(3)^47*y(0)^14*y(2)^18-346104*x(3)^47*y(0)^14*y(2)^17+735471*x(3)^47*y(0)^14*y(2)^16-1307504*x(3)^47*y(0)^14*y(2)^15+1961256*x(3)^47*y(0)^14*y(2)^14-2496144*x(3)^47*y(0)^14*y(2)^13+2704156*x(3)^47*y(0)^14*y(2)^12-2496144*x(3)^47*y(0)^14*y(2)^11+1961256*x(3)^47*y(0)^14*y(2)^10-1307504*x(3)^47*y(0)^14*y(2)^9+735471*x(3)^47*y(0)^14*y(2)^8-346104*x(3)^47*y(0)^14*y(2)^7+134596*x(3)^47*y(0)^14*y(2)^6-42504*x(3)^47*y(0)^14*y(2)^5+10626*x(3)^47*y(0)^14*y(2)^4-2024*x(3)^47*y(0)^14*y(2)^3+276*x(3)^47*y(0)^14*y(2)^2-24*x(3)^47*y(0)^14*y(2)+x(3)^47*y(0)^14
+_[2]=x(3)^14*y(0)^4*y(2)^7-7*x(3)^14*y(0)^4*y(2)^6+21*x(3)^14*y(0)^4*y(2)^5-35*x(3)^14*y(0)^4*y(2)^4+35*x(3)^14*y(0)^4*y(2)^3-21*x(3)^14*y(0)^4*y(2)^2+7*x(3)^14*y(0)^4*y(2)-x(3)^14*y(0)^4
+_[3]=x(3)^23*y(0)^7*y(2)^12-12*x(3)^23*y(0)^7*y(2)^11+66*x(3)^23*y(0)^7*y(2)^10-220*x(3)^23*y(0)^7*y(2)^9+495*x(3)^23*y(0)^7*y(2)^8-792*x(3)^23*y(0)^7*y(2)^7+924*x(3)^23*y(0)^7*y(2)^6-792*x(3)^23*y(0)^7*y(2)^5+495*x(3)^23*y(0)^7*y(2)^4-220*x(3)^23*y(0)^7*y(2)^3+66*x(3)^23*y(0)^7*y(2)^2-12*x(3)^23*y(0)^7*y(2)+x(3)^23*y(0)^7
+_[4]=x(1)
+   
+pause>                        
+/////////////////////////// Final Chart 28 /////////////////////////
+======================== History of this chart ======================
+                  
+Blow Up 1 :
+     Center determined in L[2][1],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 2 :
+     Center determined in L[2][2],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 3 :
+     Center determined in L[2][3],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 4 :
+     Center determined in L[2][4],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 5 :
+     Center determined in L[2][7],
+     Passing to chart  3  in resulting blow up.
+                  
+Blow Up 6 :
+     Center determined in L[2][16],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 7 :
+     Center determined in L[2][27],
+     Passing to chart  3  in resulting blow up.
+                  
+Blow Up 8 :
+     Center determined in L[2][44],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 9 :
+     Center determined in L[2][63],
+     Passing to chart  2  in resulting blow up.
+                 
+======================== Data of this chart ========================
+                       
+==== Ambient Space: 
+_[1]=0
+      
+==== Ideal of Variety: 
+_[1]=y(2)
+      
+==== Exceptional Divisors: 
+[1]:
+   _[1]=1
+[2]:
+   _[1]=1
+[3]:
+   _[1]=1
+[4]:
+   _[1]=1
+[5]:
+   _[1]=1
+[6]:
+   _[1]=1
+[7]:
+   _[1]=y(0)
+[8]:
+   _[1]=y(2)-1
+[9]:
+   _[1]=x(3)
+   
+==== Images of variables of original ring:
+_[1]=x(3)^37*y(0)^14*y(2)^19-19*x(3)^37*y(0)^14*y(2)^18+171*x(3)^37*y(0)^14*y(2)^17-969*x(3)^37*y(0)^14*y(2)^16+3876*x(3)^37*y(0)^14*y(2)^15-11628*x(3)^37*y(0)^14*y(2)^14+27132*x(3)^37*y(0)^14*y(2)^13-50388*x(3)^37*y(0)^14*y(2)^12+75582*x(3)^37*y(0)^14*y(2)^11-92378*x(3)^37*y(0)^14*y(2)^10+92378*x(3)^37*y(0)^14*y(2)^9-75582*x(3)^37*y(0)^14*y(2)^8+50388*x(3)^37*y(0)^14*y(2)^7-27132*x(3)^37*y(0)^14*y(2)^6+11628*x(3)^37*y(0)^14*y(2)^5-3876*x(3)^37*y(0)^14*y(2)^4+969*x(3)^37*y(0)^14*y(2)^3-171*x(3)^37*y(0)^14*y(2)^2+19*x(3)^37*y(0)^14*y(2)-x(3)^37*y(0)^14
+_[2]=x(3)^10*y(0)^4*y(2)^5-5*x(3)^10*y(0)^4*y(2)^4+10*x(3)^10*y(0)^4*y(2)^3-10*x(3)^10*y(0)^4*y(2)^2+5*x(3)^10*y(0)^4*y(2)-x(3)^10*y(0)^4
+_[3]=x(3)^19*y(0)^7*y(2)^10-10*x(3)^19*y(0)^7*y(2)^9+45*x(3)^19*y(0)^7*y(2)^8-120*x(3)^19*y(0)^7*y(2)^7+210*x(3)^19*y(0)^7*y(2)^6-252*x(3)^19*y(0)^7*y(2)^5+210*x(3)^19*y(0)^7*y(2)^4-120*x(3)^19*y(0)^7*y(2)^3+45*x(3)^19*y(0)^7*y(2)^2-10*x(3)^19*y(0)^7*y(2)+x(3)^19*y(0)^7
+_[4]=x(1)
+   
+pause>                        
+/////////////////////////// Final Chart 29 /////////////////////////
+======================== History of this chart ======================
+                  
+Blow Up 1 :
+     Center determined in L[2][1],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 2 :
+     Center determined in L[2][2],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 3 :
+     Center determined in L[2][3],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 4 :
+     Center determined in L[2][4],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 5 :
+     Center determined in L[2][8],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 6 :
+     Center determined in L[2][17],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 7 :
+     Center determined in L[2][28],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 8 :
+     Center determined in L[2][46],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 9 :
+     Center determined in L[2][66],
+     Passing to chart  1  in resulting blow up.
+                 
+======================== Data of this chart ========================
+                       
+==== Ambient Space: 
+_[1]=0
+      
+==== Ideal of Variety: 
+_[1]=y(1)+1
+      
+==== Exceptional Divisors: 
+[1]:
+   _[1]=1
+[2]:
+   _[1]=1
+[3]:
+   _[1]=1
+[4]:
+   _[1]=1
+[5]:
+   _[1]=1
+[6]:
+   _[1]=1
+[7]:
+   _[1]=x(2)
+[8]:
+   _[1]=y(1)
+[9]:
+   _[1]=x(4)
+   
+==== Images of variables of original ring:
+_[1]=x(2)^16*x(4)^11*y(1)^10
+_[2]=x(2)^8*x(4)^6*y(1)^5
+_[3]=x(2)^5*x(4)^3*y(1)^3
+_[4]=x(1)
+   
+pause>                        
+/////////////////////////// Final Chart 30 /////////////////////////
+======================== History of this chart ======================
+                  
+Blow Up 1 :
+     Center determined in L[2][1],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 2 :
+     Center determined in L[2][2],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 3 :
+     Center determined in L[2][3],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 4 :
+     Center determined in L[2][4],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 5 :
+     Center determined in L[2][8],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 6 :
+     Center determined in L[2][17],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 7 :
+     Center determined in L[2][28],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 8 :
+     Center determined in L[2][46],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 9 :
+     Center determined in L[2][66],
+     Passing to chart  2  in resulting blow up.
+                 
+======================== Data of this chart ========================
+                       
+==== Ambient Space: 
+_[1]=0
+      
+==== Ideal of Variety: 
+_[1]=y(0)+1
+      
+==== Exceptional Divisors: 
+[1]:
+   _[1]=1
+[2]:
+   _[1]=y(0)
+[3]:
+   _[1]=1
+[4]:
+   _[1]=1
+[5]:
+   _[1]=1
+[6]:
+   _[1]=1
+[7]:
+   _[1]=x(2)
+[8]:
+   _[1]=1
+[9]:
+   _[1]=x(3)
+   
+==== Images of variables of original ring:
+_[1]=x(2)^16*x(3)^11*y(0)
+_[2]=x(2)^8*x(3)^6*y(0)
+_[3]=x(2)^5*x(3)^3
+_[4]=x(1)
+   
+pause>                        
+/////////////////////////// Final Chart 31 /////////////////////////
+======================== History of this chart ======================
+                  
+Blow Up 1 :
+     Center determined in L[2][1],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 2 :
+     Center determined in L[2][2],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 3 :
+     Center determined in L[2][3],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 4 :
+     Center determined in L[2][4],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 5 :
+     Center determined in L[2][8],
+     Passing to chart  3  in resulting blow up.
+                  
+Blow Up 6 :
+     Center determined in L[2][19],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 7 :
+     Center determined in L[2][32],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 8 :
+     Center determined in L[2][51],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 9 :
+     Center determined in L[2][70],
+     Passing to chart  1  in resulting blow up.
+                 
+======================== Data of this chart ========================
+                       
+==== Ambient Space: 
+_[1]=0
+      
+==== Ideal of Variety: 
+_[1]=x(4)*y(1)^2+1
+      
+==== Exceptional Divisors: 
+[1]:
+   _[1]=1
+[2]:
+   _[1]=1
+[3]:
+   _[1]=1
+[4]:
+   _[1]=1
+[5]:
+   _[1]=y(1)
+[6]:
+   _[1]=1
+[7]:
+   _[1]=1
+[8]:
+   _[1]=x(3)
+[9]:
+   _[1]=x(4)
+   
+==== Images of variables of original ring:
+_[1]=x(3)^6*x(4)^10*y(1)^9
+_[2]=x(3)^4*x(4)^5*y(1)^4
+_[3]=x(3)*x(4)^3*y(1)^3
+_[4]=x(1)
+   
+pause>                        
+/////////////////////////// Final Chart 32 /////////////////////////
+======================== History of this chart ======================
+                  
+Blow Up 1 :
+     Center determined in L[2][1],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 2 :
+     Center determined in L[2][2],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 3 :
+     Center determined in L[2][3],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 4 :
+     Center determined in L[2][5],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 5 :
+     Center determined in L[2][11],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 6 :
+     Center determined in L[2][21],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 7 :
+     Center determined in L[2][34],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 8 :
+     Center determined in L[2][52],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 9 :
+     Center determined in L[2][72],
+     Passing to chart  1  in resulting blow up.
+                 
+======================== Data of this chart ========================
+                       
+==== Ambient Space: 
+_[1]=0
+      
+==== Ideal of Variety: 
+_[1]=x(4)^3*y(1)^4+1
+      
+==== Exceptional Divisors: 
+[1]:
+   _[1]=1
+[2]:
+   _[1]=1
+[3]:
+   _[1]=1
+[4]:
+   _[1]=1
+[5]:
+   _[1]=1
+[6]:
+   _[1]=x(1)
+[7]:
+   _[1]=1
+[8]:
+   _[1]=y(1)
+[9]:
+   _[1]=x(4)
+   
+==== Images of variables of original ring:
+_[1]=x(1)^6*x(4)^4*y(1)^3
+_[2]=x(1)^4*x(4)^3*y(1)^2
+_[3]=x(1)
+_[4]=x(2)
+   
+pause>                        
+/////////////////////////// Final Chart 33 /////////////////////////
+======================== History of this chart ======================
+                  
+Blow Up 1 :
+     Center determined in L[2][1],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 2 :
+     Center determined in L[2][2],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 3 :
+     Center determined in L[2][3],
+     Passing to chart  3  in resulting blow up.
+                  
+Blow Up 4 :
+     Center determined in L[2][6],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 5 :
+     Center determined in L[2][13],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 6 :
+     Center determined in L[2][22],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 7 :
+     Center determined in L[2][36],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 8 :
+     Center determined in L[2][54],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 9 :
+     Center determined in L[2][73],
+     Passing to chart  1  in resulting blow up.
+                 
+======================== Data of this chart ========================
+                       
+==== Ambient Space: 
+_[1]=0
+      
+==== Ideal of Variety: 
+_[1]=y(2)+1
+      
+==== Exceptional Divisors: 
+[1]:
+   _[1]=1
+[2]:
+   _[1]=1
+[3]:
+   _[1]=1
+[4]:
+   _[1]=1
+[5]:
+   _[1]=1
+[6]:
+   _[1]=1
+[7]:
+   _[1]=y(1)
+[8]:
+   _[1]=y(2)
+[9]:
+   _[1]=x(4)
+   
+==== Images of variables of original ring:
+_[1]=x(4)^17*y(1)^4*y(2)^9
+_[2]=x(4)^2*y(2)
+_[3]=x(4)^11*y(1)^3*y(2)^6
+_[4]=x(1)
+   
+pause>                        
+/////////////////////////// Final Chart 34 /////////////////////////
+======================== History of this chart ======================
+                  
+Blow Up 1 :
+     Center determined in L[2][1],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 2 :
+     Center determined in L[2][2],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 3 :
+     Center determined in L[2][3],
+     Passing to chart  3  in resulting blow up.
+                  
+Blow Up 4 :
+     Center determined in L[2][6],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 5 :
+     Center determined in L[2][13],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 6 :
+     Center determined in L[2][22],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 7 :
+     Center determined in L[2][36],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 8 :
+     Center determined in L[2][54],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 9 :
+     Center determined in L[2][73],
+     Passing to chart  3  in resulting blow up.
+                 
+======================== Data of this chart ========================
+                       
+==== Ambient Space: 
+_[1]=0
+      
+==== Ideal of Variety: 
+_[1]=y(0)+1
+      
+==== Exceptional Divisors: 
+[1]:
+   _[1]=1
+[2]:
+   _[1]=1
+[3]:
+   _[1]=1
+[4]:
+   _[1]=y(0)
+[5]:
+   _[1]=1
+[6]:
+   _[1]=1
+[7]:
+   _[1]=y(1)
+[8]:
+   _[1]=1
+[9]:
+   _[1]=x(2)
+   
+==== Images of variables of original ring:
+_[1]=x(2)^17*y(0)^4*y(1)^4
+_[2]=x(2)^2*y(0)
+_[3]=x(2)^11*y(0)^2*y(1)^3
+_[4]=x(1)
+   
+pause>                        
+/////////////////////////// Final Chart 35 /////////////////////////
+======================== History of this chart ======================
+                  
+Blow Up 1 :
+     Center determined in L[2][1],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 2 :
+     Center determined in L[2][2],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 3 :
+     Center determined in L[2][3],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 4 :
+     Center determined in L[2][4],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 5 :
+     Center determined in L[2][7],
+     Passing to chart  3  in resulting blow up.
+                  
+Blow Up 6 :
+     Center determined in L[2][16],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 7 :
+     Center determined in L[2][27],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 8 :
+     Center determined in L[2][43],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 9 :
+     Center determined in L[2][60],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 10 :
+     Center determined in L[2][78],
+     Passing to chart  2  in resulting blow up.
+                 
+======================== Data of this chart ========================
+                       
+==== Ambient Space: 
+_[1]=0
+      
+==== Ideal of Variety: 
+_[1]=y(0)
+      
+==== Exceptional Divisors: 
+[1]:
+   _[1]=1
+[2]:
+   _[1]=1
+[3]:
+   _[1]=1
+[4]:
+   _[1]=1
+[5]:
+   _[1]=1
+[6]:
+   _[1]=1
+[7]:
+   _[1]=1
+[8]:
+   _[1]=y(0)-1
+[9]:
+   _[1]=x(2)
+[10]:
+   _[1]=x(3)
+   
+==== Images of variables of original ring:
+_[1]=x(2)^47*x(3)^33*y(0)^24-24*x(2)^47*x(3)^33*y(0)^23+276*x(2)^47*x(3)^33*y(0)^22-2024*x(2)^47*x(3)^33*y(0)^21+10626*x(2)^47*x(3)^33*y(0)^20-42504*x(2)^47*x(3)^33*y(0)^19+134596*x(2)^47*x(3)^33*y(0)^18-346104*x(2)^47*x(3)^33*y(0)^17+735471*x(2)^47*x(3)^33*y(0)^16-1307504*x(2)^47*x(3)^33*y(0)^15+1961256*x(2)^47*x(3)^33*y(0)^14-2496144*x(2)^47*x(3)^33*y(0)^13+2704156*x(2)^47*x(3)^33*y(0)^12-2496144*x(2)^47*x(3)^33*y(0)^11+1961256*x(2)^47*x(3)^33*y(0)^10-1307504*x(2)^47*x(3)^33*y(0)^9+735471*x(2)^47*x(3)^33*y(0)^8-346104*x(2)^47*x(3)^33*y(0)^7+134596*x(2)^47*x(3)^33*y(0)^6-42504*x(2)^47*x(3)^33*y(0)^5+10626*x(2)^47*x(3)^33*y(0)^4-2024*x(2)^47*x(3)^33*y(0)^3+276*x(2)^47*x(3)^33*y(0)^2-24*x(2)^47*x(3)^33*y(0)+x(2)^47*x(3)^33
+_[2]=x(2)^14*x(3)^10*y(0)^7-7*x(2)^14*x(3)^10*y(0)^6+21*x(2)^14*x(3)^10*y(0)^5-35*x(2)^14*x(3)^10*y(0)^4+35*x(2)^14*x(3)^10*y(0)^3-21*x(2)^14*x(3)^10*y(0)^2+7*x(2)^14*x(3)^10*y(0)-x(2)^14*x(3)^10
+_[3]=x(2)^23*x(3)^16*y(0)^12-12*x(2)^23*x(3)^16*y(0)^11+66*x(2)^23*x(3)^16*y(0)^10-220*x(2)^23*x(3)^16*y(0)^9+495*x(2)^23*x(3)^16*y(0)^8-792*x(2)^23*x(3)^16*y(0)^7+924*x(2)^23*x(3)^16*y(0)^6-792*x(2)^23*x(3)^16*y(0)^5+495*x(2)^23*x(3)^16*y(0)^4-220*x(2)^23*x(3)^16*y(0)^3+66*x(2)^23*x(3)^16*y(0)^2-12*x(2)^23*x(3)^16*y(0)+x(2)^23*x(3)^16
+_[4]=x(1)
+   
+pause>                        
+/////////////////////////// Final Chart 36 /////////////////////////
+======================== History of this chart ======================
+                  
+Blow Up 1 :
+     Center determined in L[2][1],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 2 :
+     Center determined in L[2][2],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 3 :
+     Center determined in L[2][3],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 4 :
+     Center determined in L[2][4],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 5 :
+     Center determined in L[2][7],
+     Passing to chart  3  in resulting blow up.
+                  
+Blow Up 6 :
+     Center determined in L[2][16],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 7 :
+     Center determined in L[2][27],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 8 :
+     Center determined in L[2][43],
+     Passing to chart  3  in resulting blow up.
+                  
+Blow Up 9 :
+     Center determined in L[2][61],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 10 :
+     Center determined in L[2][81],
+     Passing to chart  1  in resulting blow up.
+                 
+======================== Data of this chart ========================
+                       
+==== Ambient Space: 
+_[1]=0
+      
+==== Ideal of Variety: 
+_[1]=x(2)*y(1)+1
+      
+==== Exceptional Divisors: 
+[1]:
+   _[1]=1
+[2]:
+   _[1]=1
+[3]:
+   _[1]=1
+[4]:
+   _[1]=1
+[5]:
+   _[1]=1
+[6]:
+   _[1]=1
+[7]:
+   _[1]=1
+[8]:
+   _[1]=x(2)
+[9]:
+   _[1]=y(1)
+[10]:
+   _[1]=x(4)
+   
+==== Images of variables of original ring:
+_[1]=x(2)^24*x(4)^19*y(1)^10
+_[2]=x(2)^7*x(4)^6*y(1)^3
+_[3]=x(2)^12*x(4)^9*y(1)^5
+_[4]=x(1)
+   
+pause>                        
+/////////////////////////// Final Chart 37 /////////////////////////
+======================== History of this chart ======================
+                  
+Blow Up 1 :
+     Center determined in L[2][1],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 2 :
+     Center determined in L[2][2],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 3 :
+     Center determined in L[2][3],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 4 :
+     Center determined in L[2][4],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 5 :
+     Center determined in L[2][7],
+     Passing to chart  3  in resulting blow up.
+                  
+Blow Up 6 :
+     Center determined in L[2][16],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 7 :
+     Center determined in L[2][27],
+     Passing to chart  3  in resulting blow up.
+                  
+Blow Up 8 :
+     Center determined in L[2][44],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 9 :
+     Center determined in L[2][63],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 10 :
+     Center determined in L[2][83],
+     Passing to chart  2  in resulting blow up.
+                 
+======================== Data of this chart ========================
+                       
+==== Ambient Space: 
+_[1]=0
+      
+==== Ideal of Variety: 
+_[1]=y(0)
+      
+==== Exceptional Divisors: 
+[1]:
+   _[1]=1
+[2]:
+   _[1]=1
+[3]:
+   _[1]=1
+[4]:
+   _[1]=1
+[5]:
+   _[1]=1
+[6]:
+   _[1]=1
+[7]:
+   _[1]=1
+[8]:
+   _[1]=y(0)-1
+[9]:
+   _[1]=x(2)
+[10]:
+   _[1]=x(3)
+   
+==== Images of variables of original ring:
+_[1]=x(2)^37*x(3)^23*y(0)^19-19*x(2)^37*x(3)^23*y(0)^18+171*x(2)^37*x(3)^23*y(0)^17-969*x(2)^37*x(3)^23*y(0)^16+3876*x(2)^37*x(3)^23*y(0)^15-11628*x(2)^37*x(3)^23*y(0)^14+27132*x(2)^37*x(3)^23*y(0)^13-50388*x(2)^37*x(3)^23*y(0)^12+75582*x(2)^37*x(3)^23*y(0)^11-92378*x(2)^37*x(3)^23*y(0)^10+92378*x(2)^37*x(3)^23*y(0)^9-75582*x(2)^37*x(3)^23*y(0)^8+50388*x(2)^37*x(3)^23*y(0)^7-27132*x(2)^37*x(3)^23*y(0)^6+11628*x(2)^37*x(3)^23*y(0)^5-3876*x(2)^37*x(3)^23*y(0)^4+969*x(2)^37*x(3)^23*y(0)^3-171*x(2)^37*x(3)^23*y(0)^2+19*x(2)^37*x(3)^23*y(0)-x(2)^37*x(3)^23
+_[2]=x(2)^10*x(3)^6*y(0)^5-5*x(2)^10*x(3)^6*y(0)^4+10*x(2)^10*x(3)^6*y(0)^3-10*x(2)^10*x(3)^6*y(0)^2+5*x(2)^10*x(3)^6*y(0)-x(2)^10*x(3)^6
+_[3]=x(2)^19*x(3)^12*y(0)^10-10*x(2)^19*x(3)^12*y(0)^9+45*x(2)^19*x(3)^12*y(0)^8-120*x(2)^19*x(3)^12*y(0)^7+210*x(2)^19*x(3)^12*y(0)^6-252*x(2)^19*x(3)^12*y(0)^5+210*x(2)^19*x(3)^12*y(0)^4-120*x(2)^19*x(3)^12*y(0)^3+45*x(2)^19*x(3)^12*y(0)^2-10*x(2)^19*x(3)^12*y(0)+x(2)^19*x(3)^12
+_[4]=x(1)
+   
+pause>                        
+/////////////////////////// Final Chart 38 /////////////////////////
+======================== History of this chart ======================
+                  
+Blow Up 1 :
+     Center determined in L[2][1],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 2 :
+     Center determined in L[2][2],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 3 :
+     Center determined in L[2][3],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 4 :
+     Center determined in L[2][4],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 5 :
+     Center determined in L[2][7],
+     Passing to chart  3  in resulting blow up.
+                  
+Blow Up 6 :
+     Center determined in L[2][16],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 7 :
+     Center determined in L[2][27],
+     Passing to chart  3  in resulting blow up.
+                  
+Blow Up 8 :
+     Center determined in L[2][44],
+     Passing to chart  3  in resulting blow up.
+                  
+Blow Up 9 :
+     Center determined in L[2][64],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 10 :
+     Center determined in L[2][86],
+     Passing to chart  1  in resulting blow up.
+                 
+======================== Data of this chart ========================
+                       
+==== Ambient Space: 
+_[1]=0
+      
+==== Ideal of Variety: 
+_[1]=x(2)*y(1)+1
+      
+==== Exceptional Divisors: 
+[1]:
+   _[1]=1
+[2]:
+   _[1]=1
+[3]:
+   _[1]=1
+[4]:
+   _[1]=1
+[5]:
+   _[1]=1
+[6]:
+   _[1]=1
+[7]:
+   _[1]=1
+[8]:
+   _[1]=x(2)
+[9]:
+   _[1]=y(1)
+[10]:
+   _[1]=x(4)
+   
+==== Images of variables of original ring:
+_[1]=x(2)^19*x(4)^9*y(1)^5
+_[2]=x(2)^5*x(4)^2*y(1)
+_[3]=x(2)^10*x(4)^5*y(1)^3
+_[4]=x(1)
+   
+pause>                        
+/////////////////////////// Final Chart 39 /////////////////////////
+======================== History of this chart ======================
+                  
+Blow Up 1 :
+     Center determined in L[2][1],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 2 :
+     Center determined in L[2][2],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 3 :
+     Center determined in L[2][3],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 4 :
+     Center determined in L[2][4],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 5 :
+     Center determined in L[2][8],
+     Passing to chart  3  in resulting blow up.
+                  
+Blow Up 6 :
+     Center determined in L[2][19],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 7 :
+     Center determined in L[2][32],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 8 :
+     Center determined in L[2][51],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 9 :
+     Center determined in L[2][70],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 10 :
+     Center determined in L[2][91],
+     Passing to chart  1  in resulting blow up.
+                 
+======================== Data of this chart ========================
+                       
+==== Ambient Space: 
+_[1]=0
+      
+==== Ideal of Variety: 
+_[1]=y(1)+1
+      
+==== Exceptional Divisors: 
+[1]:
+   _[1]=1
+[2]:
+   _[1]=1
+[3]:
+   _[1]=1
+[4]:
+   _[1]=1
+[5]:
+   _[1]=1
+[6]:
+   _[1]=1
+[7]:
+   _[1]=1
+[8]:
+   _[1]=x(3)
+[9]:
+   _[1]=y(1)
+[10]:
+   _[1]=x(4)
+   
+==== Images of variables of original ring:
+_[1]=x(3)^6*x(4)^11*y(1)^10
+_[2]=x(3)^4*x(4)^6*y(1)^5
+_[3]=x(3)*x(4)^3*y(1)^3
+_[4]=x(1)
+   
+pause>                        
+/////////////////////////// Final Chart 40 /////////////////////////
+======================== History of this chart ======================
+                  
+Blow Up 1 :
+     Center determined in L[2][1],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 2 :
+     Center determined in L[2][2],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 3 :
+     Center determined in L[2][3],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 4 :
+     Center determined in L[2][4],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 5 :
+     Center determined in L[2][8],
+     Passing to chart  3  in resulting blow up.
+                  
+Blow Up 6 :
+     Center determined in L[2][19],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 7 :
+     Center determined in L[2][32],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 8 :
+     Center determined in L[2][51],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 9 :
+     Center determined in L[2][70],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 10 :
+     Center determined in L[2][91],
+     Passing to chart  2  in resulting blow up.
+                 
+======================== Data of this chart ========================
+                       
+==== Ambient Space: 
+_[1]=0
+      
+==== Ideal of Variety: 
+_[1]=y(0)+1
+      
+==== Exceptional Divisors: 
+[1]:
+   _[1]=1
+[2]:
+   _[1]=y(0)
+[3]:
+   _[1]=1
+[4]:
+   _[1]=1
+[5]:
+   _[1]=1
+[6]:
+   _[1]=1
+[7]:
+   _[1]=1
+[8]:
+   _[1]=x(3)
+[9]:
+   _[1]=1
+[10]:
+   _[1]=x(2)
+   
+==== Images of variables of original ring:
+_[1]=x(2)^11*x(3)^6*y(0)
+_[2]=x(2)^6*x(3)^4*y(0)
+_[3]=x(2)^3*x(3)
+_[4]=x(1)
+   
+pause>                        
+/////////////////////////// Final Chart 41 /////////////////////////
+======================== History of this chart ======================
+                  
+Blow Up 1 :
+     Center determined in L[2][1],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 2 :
+     Center determined in L[2][2],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 3 :
+     Center determined in L[2][3],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 4 :
+     Center determined in L[2][5],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 5 :
+     Center determined in L[2][11],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 6 :
+     Center determined in L[2][21],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 7 :
+     Center determined in L[2][34],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 8 :
+     Center determined in L[2][52],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 9 :
+     Center determined in L[2][72],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 10 :
+     Center determined in L[2][93],
+     Passing to chart  1  in resulting blow up.
+                 
+======================== Data of this chart ========================
+                       
+==== Ambient Space: 
+_[1]=0
+      
+==== Ideal of Variety: 
+_[1]=x(4)^2*y(1)^3+1
+      
+==== Exceptional Divisors: 
+[1]:
+   _[1]=1
+[2]:
+   _[1]=1
+[3]:
+   _[1]=1
+[4]:
+   _[1]=1
+[5]:
+   _[1]=1
+[6]:
+   _[1]=x(1)
+[7]:
+   _[1]=1
+[8]:
+   _[1]=1
+[9]:
+   _[1]=y(1)
+[10]:
+   _[1]=x(4)
+   
+==== Images of variables of original ring:
+_[1]=x(1)^6*x(4)^5*y(1)^4
+_[2]=x(1)^4*x(4)^4*y(1)^3
+_[3]=x(1)
+_[4]=x(2)
+   
+pause>                        
+/////////////////////////// Final Chart 42 /////////////////////////
+======================== History of this chart ======================
+                  
+Blow Up 1 :
+     Center determined in L[2][1],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 2 :
+     Center determined in L[2][2],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 3 :
+     Center determined in L[2][3],
+     Passing to chart  3  in resulting blow up.
+                  
+Blow Up 4 :
+     Center determined in L[2][6],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 5 :
+     Center determined in L[2][13],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 6 :
+     Center determined in L[2][22],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 7 :
+     Center determined in L[2][36],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 8 :
+     Center determined in L[2][54],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 9 :
+     Center determined in L[2][73],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 10 :
+     Center determined in L[2][95],
+     Passing to chart  1  in resulting blow up.
+                 
+======================== Data of this chart ========================
+                       
+==== Ambient Space: 
+_[1]=0
+      
+==== Ideal of Variety: 
+_[1]=y(1)+1
+      
+==== Exceptional Divisors: 
+[1]:
+   _[1]=1
+[2]:
+   _[1]=1
+[3]:
+   _[1]=1
+[4]:
+   _[1]=y(1)
+[5]:
+   _[1]=1
+[6]:
+   _[1]=1
+[7]:
+   _[1]=1
+[8]:
+   _[1]=1
+[9]:
+   _[1]=x(2)
+[10]:
+   _[1]=x(4)
+   
+==== Images of variables of original ring:
+_[1]=x(2)^17*x(4)^13*y(1)^4
+_[2]=x(2)^2*x(4)^2*y(1)
+_[3]=x(2)^11*x(4)^8*y(1)^2
+_[4]=x(1)
+   
+pause>                        
+/////////////////////////// Final Chart 43 /////////////////////////
+======================== History of this chart ======================
+                  
+Blow Up 1 :
+     Center determined in L[2][1],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 2 :
+     Center determined in L[2][2],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 3 :
+     Center determined in L[2][3],
+     Passing to chart  3  in resulting blow up.
+                  
+Blow Up 4 :
+     Center determined in L[2][6],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 5 :
+     Center determined in L[2][13],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 6 :
+     Center determined in L[2][22],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 7 :
+     Center determined in L[2][36],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 8 :
+     Center determined in L[2][54],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 9 :
+     Center determined in L[2][73],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 10 :
+     Center determined in L[2][95],
+     Passing to chart  2  in resulting blow up.
+                 
+======================== Data of this chart ========================
+                       
+==== Ambient Space: 
+_[1]=0
+      
+==== Ideal of Variety: 
+_[1]=y(0)+1
+      
+==== Exceptional Divisors: 
+[1]:
+   _[1]=1
+[2]:
+   _[1]=1
+[3]:
+   _[1]=1
+[4]:
+   _[1]=1
+[5]:
+   _[1]=1
+[6]:
+   _[1]=1
+[7]:
+   _[1]=1
+[8]:
+   _[1]=y(0)
+[9]:
+   _[1]=x(2)
+[10]:
+   _[1]=x(3)
+   
+==== Images of variables of original ring:
+_[1]=x(2)^17*x(3)^13*y(0)^9
+_[2]=x(2)^2*x(3)^2*y(0)
+_[3]=x(2)^11*x(3)^8*y(0)^6
+_[4]=x(1)
+   
+pause>                        
+/////////////////////////// Final Chart 44 /////////////////////////
+======================== History of this chart ======================
+                  
+Blow Up 1 :
+     Center determined in L[2][1],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 2 :
+     Center determined in L[2][2],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 3 :
+     Center determined in L[2][3],
+     Passing to chart  3  in resulting blow up.
+                  
+Blow Up 4 :
+     Center determined in L[2][6],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 5 :
+     Center determined in L[2][13],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 6 :
+     Center determined in L[2][22],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 7 :
+     Center determined in L[2][36],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 8 :
+     Center determined in L[2][54],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 9 :
+     Center determined in L[2][74],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 10 :
+     Center determined in L[2][98],
+     Passing to chart  1  in resulting blow up.
+                 
+======================== Data of this chart ========================
+                       
+==== Ambient Space: 
+_[1]=0
+      
+==== Ideal of Variety: 
+_[1]=x(2)*y(1)+1
+      
+==== Exceptional Divisors: 
+[1]:
+   _[1]=1
+[2]:
+   _[1]=1
+[3]:
+   _[1]=1
+[4]:
+   _[1]=1
+[5]:
+   _[1]=1
+[6]:
+   _[1]=1
+[7]:
+   _[1]=1
+[8]:
+   _[1]=x(2)
+[9]:
+   _[1]=y(1)
+[10]:
+   _[1]=x(4)
+   
+==== Images of variables of original ring:
+_[1]=x(2)^9*x(4)^9*y(1)^5
+_[2]=x(2)*x(4)^2*y(1)
+_[3]=x(2)^6*x(4)^5*y(1)^3
+_[4]=x(1)
+   
+pause>                        
+/////////////////////////// Final Chart 45 /////////////////////////
+======================== History of this chart ======================
+                  
+Blow Up 1 :
+     Center determined in L[2][1],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 2 :
+     Center determined in L[2][2],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 3 :
+     Center determined in L[2][3],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 4 :
+     Center determined in L[2][4],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 5 :
+     Center determined in L[2][7],
+     Passing to chart  3  in resulting blow up.
+                  
+Blow Up 6 :
+     Center determined in L[2][16],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 7 :
+     Center determined in L[2][27],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 8 :
+     Center determined in L[2][43],
+     Passing to chart  3  in resulting blow up.
+                  
+Blow Up 9 :
+     Center determined in L[2][61],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 10 :
+     Center determined in L[2][81],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 11 :
+     Center determined in L[2][102],
+     Passing to chart  1  in resulting blow up.
+                 
+======================== Data of this chart ========================
+                       
+==== Ambient Space: 
+_[1]=0
+      
+==== Ideal of Variety: 
+_[1]=y(1)+1
+      
+==== Exceptional Divisors: 
+[1]:
+   _[1]=1
+[2]:
+   _[1]=1
+[3]:
+   _[1]=1
+[4]:
+   _[1]=1
+[5]:
+   _[1]=1
+[6]:
+   _[1]=1
+[7]:
+   _[1]=1
+[8]:
+   _[1]=y(1)
+[9]:
+   _[1]=1
+[10]:
+   _[1]=x(3)
+[11]:
+   _[1]=x(4)
+   
+==== Images of variables of original ring:
+_[1]=x(3)^19*x(4)^33*y(1)^24
+_[2]=x(3)^6*x(4)^10*y(1)^7
+_[3]=x(3)^9*x(4)^16*y(1)^12
+_[4]=x(1)
+   
+pause>                        
+/////////////////////////// Final Chart 46 /////////////////////////
+======================== History of this chart ======================
+                  
+Blow Up 1 :
+     Center determined in L[2][1],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 2 :
+     Center determined in L[2][2],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 3 :
+     Center determined in L[2][3],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 4 :
+     Center determined in L[2][4],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 5 :
+     Center determined in L[2][7],
+     Passing to chart  3  in resulting blow up.
+                  
+Blow Up 6 :
+     Center determined in L[2][16],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 7 :
+     Center determined in L[2][27],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 8 :
+     Center determined in L[2][43],
+     Passing to chart  3  in resulting blow up.
+                  
+Blow Up 9 :
+     Center determined in L[2][61],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 10 :
+     Center determined in L[2][81],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 11 :
+     Center determined in L[2][102],
+     Passing to chart  2  in resulting blow up.
+                 
+======================== Data of this chart ========================
+                       
+==== Ambient Space: 
+_[1]=0
+      
+==== Ideal of Variety: 
+_[1]=y(0)+1
+      
+==== Exceptional Divisors: 
+[1]:
+   _[1]=1
+[2]:
+   _[1]=1
+[3]:
+   _[1]=1
+[4]:
+   _[1]=1
+[5]:
+   _[1]=y(0)
+[6]:
+   _[1]=1
+[7]:
+   _[1]=1
+[8]:
+   _[1]=1
+[9]:
+   _[1]=1
+[10]:
+   _[1]=x(3)
+[11]:
+   _[1]=x(2)
+   
+==== Images of variables of original ring:
+_[1]=x(2)^33*x(3)^19*y(0)^9
+_[2]=x(2)^10*x(3)^6*y(0)^3
+_[3]=x(2)^16*x(3)^9*y(0)^4
+_[4]=x(1)
+   
+pause>                        
+/////////////////////////// Final Chart 47 /////////////////////////
+======================== History of this chart ======================
+                  
+Blow Up 1 :
+     Center determined in L[2][1],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 2 :
+     Center determined in L[2][2],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 3 :
+     Center determined in L[2][3],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 4 :
+     Center determined in L[2][4],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 5 :
+     Center determined in L[2][7],
+     Passing to chart  3  in resulting blow up.
+                  
+Blow Up 6 :
+     Center determined in L[2][16],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 7 :
+     Center determined in L[2][27],
+     Passing to chart  3  in resulting blow up.
+                  
+Blow Up 8 :
+     Center determined in L[2][44],
+     Passing to chart  3  in resulting blow up.
+                  
+Blow Up 9 :
+     Center determined in L[2][64],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 10 :
+     Center determined in L[2][86],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 11 :
+     Center determined in L[2][106],
+     Passing to chart  1  in resulting blow up.
+                 
+======================== Data of this chart ========================
+                       
+==== Ambient Space: 
+_[1]=0
+      
+==== Ideal of Variety: 
+_[1]=y(1)+1
+      
+==== Exceptional Divisors: 
+[1]:
+   _[1]=1
+[2]:
+   _[1]=1
+[3]:
+   _[1]=1
+[4]:
+   _[1]=1
+[5]:
+   _[1]=1
+[6]:
+   _[1]=1
+[7]:
+   _[1]=1
+[8]:
+   _[1]=y(1)
+[9]:
+   _[1]=1
+[10]:
+   _[1]=x(3)
+[11]:
+   _[1]=x(4)
+   
+==== Images of variables of original ring:
+_[1]=x(3)^9*x(4)^23*y(1)^19
+_[2]=x(3)^2*x(4)^6*y(1)^5
+_[3]=x(3)^5*x(4)^12*y(1)^10
+_[4]=x(1)
+   
+pause>                        
+/////////////////////////// Final Chart 48 /////////////////////////
+======================== History of this chart ======================
+                  
+Blow Up 1 :
+     Center determined in L[2][1],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 2 :
+     Center determined in L[2][2],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 3 :
+     Center determined in L[2][3],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 4 :
+     Center determined in L[2][4],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 5 :
+     Center determined in L[2][7],
+     Passing to chart  3  in resulting blow up.
+                  
+Blow Up 6 :
+     Center determined in L[2][16],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 7 :
+     Center determined in L[2][27],
+     Passing to chart  3  in resulting blow up.
+                  
+Blow Up 8 :
+     Center determined in L[2][44],
+     Passing to chart  3  in resulting blow up.
+                  
+Blow Up 9 :
+     Center determined in L[2][64],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 10 :
+     Center determined in L[2][86],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 11 :
+     Center determined in L[2][106],
+     Passing to chart  2  in resulting blow up.
+                 
+======================== Data of this chart ========================
+                       
+==== Ambient Space: 
+_[1]=0
+      
+==== Ideal of Variety: 
+_[1]=y(0)+1
+      
+==== Exceptional Divisors: 
+[1]:
+   _[1]=1
+[2]:
+   _[1]=1
+[3]:
+   _[1]=1
+[4]:
+   _[1]=1
+[5]:
+   _[1]=1
+[6]:
+   _[1]=y(0)
+[7]:
+   _[1]=1
+[8]:
+   _[1]=1
+[9]:
+   _[1]=1
+[10]:
+   _[1]=x(3)
+[11]:
+   _[1]=x(2)
+   
+==== Images of variables of original ring:
+_[1]=x(2)^23*x(3)^9*y(0)^4
+_[2]=x(2)^6*x(3)^2*y(0)
+_[3]=x(2)^12*x(3)^5*y(0)^2
+_[4]=x(1)
+   
+pause>                        
+/////////////////////////// Final Chart 49 /////////////////////////
+======================== History of this chart ======================
+                  
+Blow Up 1 :
+     Center determined in L[2][1],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 2 :
+     Center determined in L[2][2],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 3 :
+     Center determined in L[2][3],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 4 :
+     Center determined in L[2][5],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 5 :
+     Center determined in L[2][11],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 6 :
+     Center determined in L[2][21],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 7 :
+     Center determined in L[2][34],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 8 :
+     Center determined in L[2][52],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 9 :
+     Center determined in L[2][72],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 10 :
+     Center determined in L[2][93],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 11 :
+     Center determined in L[2][110],
+     Passing to chart  1  in resulting blow up.
+                 
+======================== Data of this chart ========================
+                       
+==== Ambient Space: 
+_[1]=0
+      
+==== Ideal of Variety: 
+_[1]=x(4)*y(1)^2+1
+      
+==== Exceptional Divisors: 
+[1]:
+   _[1]=1
+[2]:
+   _[1]=1
+[3]:
+   _[1]=1
+[4]:
+   _[1]=1
+[5]:
+   _[1]=1
+[6]:
+   _[1]=x(1)
+[7]:
+   _[1]=1
+[8]:
+   _[1]=1
+[9]:
+   _[1]=1
+[10]:
+   _[1]=y(1)
+[11]:
+   _[1]=x(4)
+   
+==== Images of variables of original ring:
+_[1]=x(1)^6*x(4)^6*y(1)^5
+_[2]=x(1)^4*x(4)^5*y(1)^4
+_[3]=x(1)
+_[4]=x(2)
+   
+pause>                        
+/////////////////////////// Final Chart 50 /////////////////////////
+======================== History of this chart ======================
+                  
+Blow Up 1 :
+     Center determined in L[2][1],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 2 :
+     Center determined in L[2][2],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 3 :
+     Center determined in L[2][3],
+     Passing to chart  3  in resulting blow up.
+                  
+Blow Up 4 :
+     Center determined in L[2][6],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 5 :
+     Center determined in L[2][13],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 6 :
+     Center determined in L[2][22],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 7 :
+     Center determined in L[2][36],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 8 :
+     Center determined in L[2][54],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 9 :
+     Center determined in L[2][74],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 10 :
+     Center determined in L[2][98],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 11 :
+     Center determined in L[2][114],
+     Passing to chart  1  in resulting blow up.
+                 
+======================== Data of this chart ========================
+                       
+==== Ambient Space: 
+_[1]=0
+      
+==== Ideal of Variety: 
+_[1]=y(1)+1
+      
+==== Exceptional Divisors: 
+[1]:
+   _[1]=1
+[2]:
+   _[1]=1
+[3]:
+   _[1]=1
+[4]:
+   _[1]=1
+[5]:
+   _[1]=1
+[6]:
+   _[1]=1
+[7]:
+   _[1]=1
+[8]:
+   _[1]=y(1)
+[9]:
+   _[1]=1
+[10]:
+   _[1]=x(3)
+[11]:
+   _[1]=x(4)
+   
+==== Images of variables of original ring:
+_[1]=x(3)^9*x(4)^13*y(1)^9
+_[2]=x(3)^2*x(4)^2*y(1)
+_[3]=x(3)^5*x(4)^8*y(1)^6
+_[4]=x(1)
+   
+pause>                        
+/////////////////////////// Final Chart 51 /////////////////////////
+======================== History of this chart ======================
+                  
+Blow Up 1 :
+     Center determined in L[2][1],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 2 :
+     Center determined in L[2][2],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 3 :
+     Center determined in L[2][3],
+     Passing to chart  3  in resulting blow up.
+                  
+Blow Up 4 :
+     Center determined in L[2][6],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 5 :
+     Center determined in L[2][13],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 6 :
+     Center determined in L[2][22],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 7 :
+     Center determined in L[2][36],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 8 :
+     Center determined in L[2][54],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 9 :
+     Center determined in L[2][74],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 10 :
+     Center determined in L[2][98],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 11 :
+     Center determined in L[2][114],
+     Passing to chart  2  in resulting blow up.
+                 
+======================== Data of this chart ========================
+                       
+==== Ambient Space: 
+_[1]=0
+      
+==== Ideal of Variety: 
+_[1]=y(0)+1
+      
+==== Exceptional Divisors: 
+[1]:
+   _[1]=1
+[2]:
+   _[1]=1
+[3]:
+   _[1]=1
+[4]:
+   _[1]=y(0)
+[5]:
+   _[1]=1
+[6]:
+   _[1]=1
+[7]:
+   _[1]=1
+[8]:
+   _[1]=1
+[9]:
+   _[1]=1
+[10]:
+   _[1]=x(3)
+[11]:
+   _[1]=x(2)
+   
+==== Images of variables of original ring:
+_[1]=x(2)^13*x(3)^9*y(0)^4
+_[2]=x(2)^2*x(3)^2*y(0)
+_[3]=x(2)^8*x(3)^5*y(0)^2
+_[4]=x(1)
+   
+pause>                        
+/////////////////////////// Final Chart 52 /////////////////////////
+======================== History of this chart ======================
+                  
+Blow Up 1 :
+     Center determined in L[2][1],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 2 :
+     Center determined in L[2][2],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 3 :
+     Center determined in L[2][3],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 4 :
+     Center determined in L[2][5],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 5 :
+     Center determined in L[2][11],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 6 :
+     Center determined in L[2][21],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 7 :
+     Center determined in L[2][34],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 8 :
+     Center determined in L[2][52],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 9 :
+     Center determined in L[2][72],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 10 :
+     Center determined in L[2][93],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 11 :
+     Center determined in L[2][110],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 12 :
+     Center determined in L[2][120],
+     Passing to chart  1  in resulting blow up.
+                 
+======================== Data of this chart ========================
+                       
+==== Ambient Space: 
+_[1]=0
+      
+==== Ideal of Variety: 
+_[1]=y(1)+1
+      
+==== Exceptional Divisors: 
+[1]:
+   _[1]=1
+[2]:
+   _[1]=1
+[3]:
+   _[1]=1
+[4]:
+   _[1]=1
+[5]:
+   _[1]=1
+[6]:
+   _[1]=x(1)
+[7]:
+   _[1]=1
+[8]:
+   _[1]=1
+[9]:
+   _[1]=1
+[10]:
+   _[1]=1
+[11]:
+   _[1]=y(1)
+[12]:
+   _[1]=x(4)
+   
+==== Images of variables of original ring:
+_[1]=x(1)^6*x(4)^7*y(1)^6
+_[2]=x(1)^4*x(4)^6*y(1)^5
+_[3]=x(1)
+_[4]=x(2)
+   
+pause>                        
+/////////////////////////// Final Chart 53 /////////////////////////
+======================== History of this chart ======================
+                  
+Blow Up 1 :
+     Center determined in L[2][1],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 2 :
+     Center determined in L[2][2],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 3 :
+     Center determined in L[2][3],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 4 :
+     Center determined in L[2][5],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 5 :
+     Center determined in L[2][11],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 6 :
+     Center determined in L[2][21],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 7 :
+     Center determined in L[2][34],
+     Passing to chart  1  in resulting blow up.
+                  
+Blow Up 8 :
+     Center determined in L[2][52],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 9 :
+     Center determined in L[2][72],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 10 :
+     Center determined in L[2][93],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 11 :
+     Center determined in L[2][110],
+     Passing to chart  2  in resulting blow up.
+                  
+Blow Up 12 :
+     Center determined in L[2][120],
+     Passing to chart  2  in resulting blow up.
+                 
+======================== Data of this chart ========================
+                       
+==== Ambient Space: 
+_[1]=0
+      
+==== Ideal of Variety: 
+_[1]=y(0)+1
+      
+==== Exceptional Divisors: 
+[1]:
+   _[1]=1
+[2]:
+   _[1]=y(0)
+[3]:
+   _[1]=1
+[4]:
+   _[1]=1
+[5]:
+   _[1]=1
+[6]:
+   _[1]=x(1)
+[7]:
+   _[1]=1
+[8]:
+   _[1]=1
+[9]:
+   _[1]=1
+[10]:
+   _[1]=1
+[11]:
+   _[1]=1
+[12]:
+   _[1]=x(3)
+   
+==== Images of variables of original ring:
+_[1]=x(1)^6*x(3)^7*y(0)
+_[2]=x(1)^4*x(3)^6*y(0)
+_[3]=x(1)
+_[4]=x(2)
+   
+pause>////////////////////////////////////////////////////////////////////
+For identification of exceptional divisors please use the tools
+provided by reszeta.lib, e.g. collectDiv.
+For viewing an illustration of the tree of charts please use the
+procedure ResTree from resgraph.lib.
+////////////////////////////////////////////////////////////////////

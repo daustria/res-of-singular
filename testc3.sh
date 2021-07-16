@@ -20,14 +20,24 @@ do
 	polynomial+="+x($i)^$prod"
 done
 
-echo "Testing $polynomial"
-outputfile="$k-$n-$m.out"
+outputfile="$HOME/singular/conj03tests/$k-$n-$m.out"
 
-program="ring A = (0, complex),x(0..$k),dp;
+program="ring A = (0, complex),x(0..$k),lp;
+int t = timer;
 ideal J = $polynomial;
+
+printf(\"k:%s, n:%s, m:%s\", $k, $n, $m);
+printf(\"Polynomial:%s\", J[1]);
+printf(\"First center of blowup:%s\", Center(J));
+
 list l = resolve(J);
 presentTree(l);
+
+printf(\"Time taken:%s\", timer - t);
+
 quit;
 "
 
-yes | Singular -q --no-warn -c "LIB \"resolve.lib\"; $program" | tee $HOME/singular/conj03tests/$outputfile
+rm $outputfile > /dev/null
+
+yes | Singular -q --no-warn -c "LIB \"resolve.lib\"; $program" | tee $outputfile

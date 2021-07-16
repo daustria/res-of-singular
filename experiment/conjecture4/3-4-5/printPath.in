@@ -13,7 +13,7 @@ printf("Time taken to resolve :%s", timer - t);
 proc showPath(int finalChartNumber)
 {
 
-	string filename = sprintf("path%s.in", finalChartNumber);
+	string filename = sprintf("path%s.out", finalChartNumber);
 	write(":w " + filename, "");
 
 	//first, get the list storing the route we will take.
@@ -65,31 +65,26 @@ proc showPath(int finalChartNumber)
 
 		if(i > 1) 
 		{
-			write(":a " + filename, sprintf("Last map: %s\n", lastMap));
-			write(":a " + filename, newline + newline);
+			write(":a " + filename, sprintf("Last map: %s", lastMap));
 		}
 		
 		if(i == 1)
 		{
-			write(":a " + filename, sprintf("First polynomial: %s\n", J[1]));
-			write(":a " + filename, newline + newline);
+			write(":a " + filename, sprintf("First polynomial: %s", J[1]));
 		}
 		else
 		{
-			write(":a " + filename, sprintf("Strict transform: %s\n\n", sT));
-			write(":a " + filename, newline + newline);
+			write(":a " + filename, sprintf("Strict transform: %s", sT));
 		}
 
-		write(":a " + filename, sprintf("Exceptional divisors: %s", eD));
-		write(":a " + filename, newline + newline);
+		write(":a " + filename, "Exceptional Divisors: ");
+		write(":a " + filename, eD);
 
-		write(":a " + filename, sprintf("Center of blowup: %s \n\n", C));
-		write(":a " + filename, newline + newline);
+		write(":a " + filename, sprintf("Center of blowup: %s", C));
 
 		if(pathRoute[i] != finalChartNumber)
 		{
-			write(":a " + filename, sprintf("Passing to chart: %s (%s)\n\n", chartPaths[i], var(chartPaths[i])));
-			write(":a " + filename, newline + newline);
+			write(":a " + filename, sprintf("Passing to chart: %s (%s)", chartPaths[i], var(chartPaths[i])));
 		}
 	}
 }
@@ -97,4 +92,6 @@ for(int i = 2; i <= 40; i++)
 {
 	showPath(i);
 }
+
+quit;
 

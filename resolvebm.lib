@@ -143,13 +143,14 @@ proc print_blowup_data(blowUpData blowup)
         print("");
         print("ring variables: " + blowup.ringvars);
         print("");
-        print("ideal of blownup ambient space:"+string(blowup.ambientSpace));
+        print("ideal of blownup ambient space:"+ blowup.ambientSpace);
         print("");
-        print("ideal of strict transform:"+string(blowup.strictTransform));
+        print("ideal of strict transform:" + blowup.strictTransform);
         print("");
-        print("ideal of exceptional divisor:"+string(blowup.exceptionalDivisor));
+        print("ideal of exceptional divisor:" + blowup.exceptionalDivisor);
         print("");
-        print("ideal of blowup map:"+string(blowup.blowUpMap));
+        print("ideal of blowup map:" + blowup.blowUpMap);
+	print("==========================================");
 }
 
 proc print_tree_node(tree_node node)
@@ -492,6 +493,8 @@ proc dfs_resolve(ideal K, int max_depth)
 	for(int i = 1; i <= size(farthest_path); i++)
 	{
 		print("///////////////////NODE "+string(i)+"//////////////////");
-		print(farthest_path[i]);
+		print(farthest_path[i].params);
+		print(farthest_path[i].blowup);
+		//print(farthest_path[i]);
 	}
 }

@@ -1,0 +1,16 @@
+LIB "resolve.lib";
+
+ring A = (0, complex),(x(0..3), w), lp;
+
+poly f = x(1)^6+x(2)^6+x(3)^6+x(0)^3; // max length 2
+ideal J = f*w;
+int t = timer;
+
+printf("polynomial: %s", J[1]);
+printf("first center of blowup: %s", Center(J));
+
+list l = resolve(J);
+printf("time taken: %s", timer - t);
+
+presentTree(l);
+quit;

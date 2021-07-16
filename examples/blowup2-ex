@@ -1,0 +1,34 @@
+LIB "resolve.lib";
+
+ideal J = x2 + y2 - z2;
+string idealStr = string(J);
+
+ideal C = x,y,z;
+
+list blow = blowUp2(J,C);
+
+print("Current basering: ");
+basering;
+
+print("Blowing up the ideal : " + string(J) + " along " + string(C));
+
+for(int i = 1; i <= size(blow); i++)
+{
+	print("=====================================");
+	print("Chart " + string(i));
+
+	def S = blow[i];
+	setring S;
+	basering;
+
+	print("The resulting ideal from blowing up " + idealStr);
+	Jnew;
+
+	print("The ideal of the new exceptional divisor");
+	eD;
+	print("The ideal corresponding to the blow-up map");
+	bM;	
+	print("=====================================");	
+}
+
+string(J);
