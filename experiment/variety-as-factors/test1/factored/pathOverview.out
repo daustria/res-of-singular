@@ -1,0 +1,34 @@
+Ideal :x^2+y^2,-x*y+z^2
+                        
+/////////////////////////// Final Chart 1 /////////////////////////
+======================== History of this chart ======================
+                  
+Blow Up 1 :
+     Center determined in L[2][1],
+     Passing to chart  1  in resulting blow up.
+                 
+======================== Data of this chart ========================
+                       
+==== Ambient Space: 
+_[1]=0
+      
+==== Ideal of Variety: 
+_[1]=y(1)^2+1
+_[2]=y(0)^2-y(1)
+      
+==== Exceptional Divisors: 
+[1]:
+   _[1]=x(1)
+   
+==== Images of variables of original ring:
+_[1]=x(1)
+_[2]=x(1)*y(1)
+_[3]=x(1)*y(0)
+   
+pause>////////////////////////////////////////////////////////////////////
+For identification of exceptional divisors please use the tools
+provided by reszeta.lib, e.g. collectDiv.
+For viewing an illustration of the tree of charts please use the
+procedure ResTree from resgraph.lib.
+////////////////////////////////////////////////////////////////////
+Time taken to resolve :0
