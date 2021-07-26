@@ -1,6 +1,0 @@
-LIB "resolvebm.lib";
-printlevel = 10;
-ideal I = x^50 + y^40*z^41;
-
-dfs_resolve(I, 20);
-quit;
