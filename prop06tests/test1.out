@@ -1,7 +1,0 @@
-polynomial: x(0)^4*w+x(1)^12*w+x(2)^12*w+x(3)^12*w+x(4)^12*w+x(5)^12*w
-first center of blowup: w,x(5),x(4),x(3),x(2),x(1),x(0)
-Singular : signal 11 (v: 4112):
-current line:>>         I=I^i;<<
-Segment fault/Bus error occurred at 7f544763b480 because of 10212 (r:1625513763)
-please inform the authors
-trying to restart...

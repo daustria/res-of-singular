@@ -1,0 +1,34 @@
+
+///////////////////////////////////////Showing path 2/////////////////////////////////////////////////////
+=============================Blow Up 1===========================
+First polynomial: y^5*z^5+x^8
+Exceptional Divisors: 
+
+Center of blowup: z,y,x
+Passing to chart: 1 (x)
+=============================Blow Up 2===========================
+Last map: x*z,x*y,x
+Strict transform: z^8+x^2*y^5
+Exceptional Divisors: 
+x
+Center of blowup: x,y,z
+=============================Blow Up 3===========================
+Last map: x,x*z,x*y
+Strict transform: x*y^8+z^5
+Exceptional Divisors: 
+1,x
+Center of blowup: x,y,z
+Passing to chart: 1 (x)
+=============================Blow Up 4===========================
+Last map: x*z,x,x*y
+Strict transform: y^5+x^4*z
+Exceptional Divisors: 
+1,z,x
+Center of blowup: x,y,z
+Passing to chart: 2 (y)
+=============================Blow Up 5===========================
+Last map: x*z,x*y,x
+Strict transform: z^8+x^2*y^5
+Exceptional Divisors: 
+x
+Center of blowup: x,y,z

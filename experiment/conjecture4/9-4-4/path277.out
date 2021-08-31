@@ -1,0 +1,91 @@
+
+///////////////////////////////////////Showing path 277/////////////////////////////////////////////////////
+=============================Blow Up 1===========================
+First polynomial: x^9+y^4*z^4
+Exceptional Divisors: 
+
+Center of blowup: z,y,x
+Passing to chart: 1 (x)
+=============================Blow Up 2===========================
+Last map: x*z,x*y,x
+Strict transform: x*z^9+y^4
+Exceptional Divisors: 
+x
+Center of blowup: x,y,z
+Passing to chart: 2 (y)
+=============================Blow Up 3===========================
+Last map: x,x*z,x*y
+Strict transform: x^6*y^9+z^4
+Exceptional Divisors: 
+1,x
+Center of blowup: z,y
+Passing to chart: 1 (x)
+=============================Blow Up 4===========================
+Last map: x,y,y*z
+Strict transform: x^6*y^5+z^4
+Exceptional Divisors: 
+1,x,y
+Center of blowup: z,y
+Passing to chart: 2 (y)
+=============================Blow Up 5===========================
+Last map: x,y,y*z
+Strict transform: x^6*y+z^4
+Exceptional Divisors: 
+1,x,1,y
+Center of blowup: z,x
+Passing to chart: 2 (y)
+=============================Blow Up 6===========================
+Last map: x,y,x*z
+Strict transform: z^4+x^2*y
+Exceptional Divisors: 
+1,1,1,y,x
+Center of blowup: x,y,z
+Passing to chart: 2 (y)
+=============================Blow Up 7===========================
+Last map: x*z,x,x*y
+Strict transform: x*y^4+z^2
+Exceptional Divisors: 
+1,1,1,1,z,x
+Center of blowup: x,y,z
+Passing to chart: 1 (x)
+=============================Blow Up 8===========================
+Last map: x*z,x,x*y
+Strict transform: x^3*z+y^2
+Exceptional Divisors: 
+1,1,1,1,y,z,x
+Center of blowup: x,y,z
+Passing to chart: 1 (x)
+=============================Blow Up 9===========================
+Last map: x*z,x*y,x
+Strict transform: x^2*z^3+y^2
+Exceptional Divisors: 
+1,1,1,1,y,1,z,x
+Center of blowup: y,x
+Passing to chart: 2 (y)
+=============================Blow Up 10===========================
+Last map: x,x*z,y
+Strict transform: y^3+z^2
+Exceptional Divisors: 
+1,1,1,1,z,1,y,1,x
+Center of blowup: z,y
+Passing to chart: 2 (y)
+=============================Blow Up 11===========================
+Last map: x,y,y*z
+Strict transform: z^2+y
+Exceptional Divisors: 
+1,1,1,1,z,1,1,1,x,y
+Center of blowup: x,y,z
+Passing to chart: 1 (x)
+=============================Blow Up 12===========================
+Last map: x*z,x*y,x
+Strict transform: x+y
+Exceptional Divisors: 
+1,1,1,1,1,1,1,1,z,y,x
+Center of blowup: x,y,z
+Passing to chart: 3 (z)
+=============================Blow Up 13===========================
+Last map: y*z,x,y
+Strict transform: x^4*y*z^2+1
+Exceptional Divisors: 
+1,1,1,1,1,1,z,y
+Center of blowup: x^4*y*z^2+1

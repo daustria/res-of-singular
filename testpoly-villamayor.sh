@@ -1,19 +1,24 @@
 #!/bin/bash
 
-# Compute the tree of the polynomial x^a + y^b*z^c in singular
-if [[ $# -ne 3 ]]; then
-	echo "Usage: $0 a b c"
+# Test conjecture 0.3
+
+# arguments: ./testc3.sh k n m
+if [[ $# -ne 1 ]]; then
+	echo "usage: $0 k n m"
 	exit
 fi
+#construct the polynomial to be used in the singular program
+polynomial=$1
 
-a=$1
-b=$2
-c=$3
+echo "Testing $polynomial"
+outputfile="$1.out"
 
-# bound=$(($a + $b + $c))
-bound=50
-library="resolve.lib"
+program="ring A = (0, complex),x(0..$k),dp;
+ideal J = $polynomial;
+list l = resolve(J);
+presentTree(l);
+print(l);
+quit;
+"
 
-output_file="$a-$b-$c.out"
-
-yes | Singular -q --no-warn -c "LIB \"$library\"; ideal J = x$a + y$b*z$c; list out = resolve(J); presentTree(out); quit;" | tee $HOME/singular/villamayor-tests/$output_file
+yes | Singular -q --no-warn -c "LIB \"resolve.lib\"; $program" | tee $HOME/singular/conj03tests/$outputfile

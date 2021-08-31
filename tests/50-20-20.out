@@ -19,6 +19,7 @@ ideal of strict transform:x(3)^10*y(2)^50+y(1)^20
 ideal of exceptional divisor:x(3)
 
 ideal of blowup map:x(3)*y(2),x(3)*y(1),x(3)
+==========================================
 ///////////////////NODE 2//////////////////
 =================PARAMETERS===============
 
@@ -40,6 +41,7 @@ ideal of strict transform:x(3)^40*y(2)^10+y(1)^20
 ideal of exceptional divisor:x(3)
 
 ideal of blowup map:x(3)*y(2),x(3)*y(1),x(3)
+==========================================
 ///////////////////NODE 3//////////////////
 =================PARAMETERS===============
 
@@ -61,6 +63,7 @@ ideal of strict transform:x(1)^30*y(0)^10+y(1)^20
 ideal of exceptional divisor:x(1)
 
 ideal of blowup map:x(1),x(1)*y(1),x(1)*y(0)
+==========================================
 ///////////////////NODE 4//////////////////
 =================PARAMETERS===============
 
@@ -82,6 +85,7 @@ ideal of strict transform:x(1)^20*y(1)^10+y(0)^20
 ideal of exceptional divisor:x(1)
 
 ideal of blowup map:x(1),x(1)*y(1),x(1)*y(0)
+==========================================
 ///////////////////NODE 5//////////////////
 =================PARAMETERS===============
 
@@ -103,6 +107,7 @@ ideal of strict transform:x(1)^10*y(0)^10+y(1)^20
 ideal of exceptional divisor:x(1)
 
 ideal of blowup map:x(1),x(1)*y(1),x(1)*y(0)
+==========================================
 ///////////////////NODE 6//////////////////
 =================PARAMETERS===============
 
@@ -124,6 +129,7 @@ ideal of strict transform:y(0)^20+y(2)^10
 ideal of exceptional divisor:x(2)
 
 ideal of blowup map:x(2)*y(2),x(2),x(2)*y(0)
+==========================================
 ///////////////////NODE 7//////////////////
 =================PARAMETERS===============
 
@@ -145,6 +151,7 @@ ideal of strict transform:x(1)^10+y(0)^10
 ideal of exceptional divisor:x(1)
 
 ideal of blowup map:0,x(1),x(1)*y(0)
+==========================================
 ///////////////////NODE 8//////////////////
 =================PARAMETERS===============
 
@@ -166,3 +173,5 @@ ideal of strict transform:y(0)^10+1
 ideal of exceptional divisor:x(1)
 
 ideal of blowup map:x(1),x(1)*y(0)
+==========================================
+time taken: 1

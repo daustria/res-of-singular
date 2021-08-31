@@ -18,10 +18,22 @@ output_file="$a-$b-$c.out"
 
 testfile=$HOME/singular/tests/$output_file
 
+# time the resolution
+start=`date +%s`
 Singular -q --no-warn -c "LIB \"$library\"; poly f = x$a + y$b*z$c; dfs_resolve(ideal(f), deg(f)); quit;" | tee $testfile
+end=`date +%s`
 
+runtime=$((end-start))
 
 # next remove the irrelevant lines from the output
 
 sed -i '/quotient/d' $testfile
 sed -i '/iteration/d' $testfile
+
+# append the time taken to the output file
+
+echo "time taken: $runtime" | tee -a $testfile
+
+
+
+

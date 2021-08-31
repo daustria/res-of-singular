@@ -2,7 +2,10 @@
 info="
 LIBRARY:   cideal.lib  
 AUTHOR:    Dominic Austria, email: dgaustri@uwaterloo.ca
-
+/*
+ * This library contains helper functions for the coefficient ideal structure, used to
+ * process invariants in the Bierstone-Milman algorithm.
+ */
 ";
 ////////////////////////////////////////////////////////////////
 static proc mod_init()

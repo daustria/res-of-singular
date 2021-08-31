@@ -2,7 +2,10 @@
 info="
 LIBRARY:   hypersurface.lib  
 AUTHOR:    Dominic Austria, email: dgaustri@uwaterloo.ca
-
+KEYWORDS: hypersurface.lib, hypersurface
+PROCEDURES:
+	smallest_total_degree_polynomial([poly,...,poly])	return the polynomial of lowest degree
+	hypersurface_max_contact(f)				return the coordinate variable (type poly) that is a hypersurface of max contact for f
 ";
 ////////////////////////////////////////////////////////////////
 
@@ -12,17 +15,32 @@ static proc mod_init()
 	LIB "zeroset.lib";
 }
 
+
+
+
 /*
-polynomials: a list of polynomials
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ */
 
-Returns the polynomial in the list with a monomial of minimum total degree. 
-
--If there are multiple choices, a
-'greatest' polynomial is chosen where the ordering comes from the active basering.
-
--If the list is empty, returns the zero polynomial poly(0).
-*/
 proc smallest_total_degree_polynomial(list polynomials)
+"
+USAGE: 	smallest_total_degree_polynomial([f_1,...,f_n]);
+RETURN: 	poly: f_i, where f_i has minimum total degree. poly(0) if the list is empty
+NOTE:		This is mostly a helper function for computing the order of vanishing at the origin
+ 		of the polynomials f_1,..,f_n
+"
 {
 	if(size(polynomials) == 0)
 	{
@@ -85,8 +103,13 @@ static proc degree_in(poly f, poly z)
 
 */
 proc hypersurface_max_contact(poly f)
+"
+USAGE: 	hypersurface_max_contact(f); f poly.
+RETURN: poly: the hypersurface of max contact of f, which is also one of the coordinate variables in the active basering, or poly(0) on failure.
+NOTE:	The failure scenario is when none of the coordinate variables are a suitable hypersurface of max contact for f.
+"
 {
-	//a partial derivative of f is a coordinate variable if and only if
+	//a partial derivative of f is a coordinate variable (up to a unit) if and only if
 	//it has degree 1 in a single variabe, and 0 everywhere else.
 	
 	//for each variable x_i of f, differentiate f with respect to x_i until it has degree 1 in x_i.

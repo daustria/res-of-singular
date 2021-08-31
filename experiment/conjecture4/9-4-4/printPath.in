@@ -1,0 +1,97 @@
+LIB "resolve.lib";
+
+int t = timer;
+ideal J = x9 + y4z4;
+
+printf("Polynomial:%s", J[1]);
+
+list l = resolve(J);
+presentTree(l);
+
+printf("Time taken to resolve :%s", timer - t);
+
+proc showPath(int finalChartNumber)
+{
+
+	string filename = sprintf("path%s.out", finalChartNumber);
+	write(":w " + filename, "");
+
+	//first, get the list storing the route we will take.
+	def fC = l[1][finalChartNumber];
+	setring(fC);
+
+	list pathRoute; //list of all chart numbers in the path.
+
+	list chartPaths; //chartPaths[i] shows the chart that will be used to get to the next node
+
+	for(int i = 2; i <= ncols(path); i++)
+	{
+		pathRoute = insert(pathRoute, int(path[1,i]), size(pathRoute));
+
+		chartPaths = insert(chartPaths, int(path[2,i]), size(chartPaths));
+	}
+
+	pathRoute = insert(pathRoute, finalChartNumber, size(pathRoute));
+
+	//now print the route
+
+	write(":a " + filename, sprintf("///////////////////////////////////////Showing path %s/////////////////////////////////////////////////////", finalChartNumber));
+
+	for(int i = 1; i <= size(pathRoute); i++)
+	{
+
+		//first, make global variables for some of the objects in this ring
+		def Q = l[2][pathRoute[i]];
+
+		setring(Q);	
+
+		ideal sT = BO[2];
+		list eD = BO[4];
+
+		setring(R);
+
+		list eD;
+		if(i > 1)
+		{
+			eD = fetch(Q, eD);
+		}
+
+		ideal sT = fetch(Q, sT);
+		ideal C = fetch(Q, cent);
+		ideal lastMap = fetch(Q, lastMap);
+
+
+		write(":a " + filename, sprintf("=============================Blow Up %s===========================", i));
+
+		if(i > 1) 
+		{
+			write(":a " + filename, sprintf("Last map: %s", lastMap));
+		}
+		
+		if(i == 1)
+		{
+			write(":a " + filename, sprintf("First polynomial: %s", J[1]));
+		}
+		else
+		{
+			write(":a " + filename, sprintf("Strict transform: %s", sT));
+		}
+
+		write(":a " + filename, "Exceptional Divisors: ");
+		write(":a " + filename, eD);
+
+		write(":a " + filename, sprintf("Center of blowup: %s", C));
+
+		if(pathRoute[i] != finalChartNumber)
+		{
+			write(":a " + filename, sprintf("Passing to chart: %s (%s)", chartPaths[i], var(chartPaths[i])));
+		}
+	}
+}
+for(int i = 2; i <= size(l[2]); i++)
+{
+	showPath(i);
+}
+
+quit;
+

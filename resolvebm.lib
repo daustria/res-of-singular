@@ -2,6 +2,8 @@
 info="
 LIBRARY:   resolvebm.lib
 AUTHOR:    Dominic Austria, email: dgaustri@uwaterloo.ca
+KEYWORDS:  cideal, cideal.lib
+
 
 ";
 ////////////////////////////////////////////////////////////////
@@ -33,18 +35,18 @@ static proc mod_init()
 	system("install", "tree_node", "print", print_tree_node, 1);
 }
 
-proc string_inv_data(invData data)
+static proc string_inv_data(invData data)
 {
 	string out = "(invariant:"+string(data.invariant)+" hypersurfaces of max contact:"+string(data.hypersurfaces)+")";
 	return(out);
 }
 
-proc pretty_print_inv_data(invData data)
+static proc pretty_print_inv_data(invData data)
 {
 	print(string(data));
 }
 
-proc update_invariant(invData data, poly hypersurface_max_cont, list new_data)
+static proc update_invariant(invData data, poly hypersurface_max_cont, list new_data)
 {
 	if(hypersurface_max_cont != poly(0))
 	{
@@ -55,12 +57,12 @@ proc update_invariant(invData data, poly hypersurface_max_cont, list new_data)
 	return(data);
 }
 
-proc is_null(invData data)
+static proc is_null(invData data)
 {
 	return(size(data.invariant) == 0);
 }
 
-proc make_inv_data(list invariant, list hypersurfaces)
+static proc make_inv_data(list invariant, list hypersurfaces)
 {
 	invData data;
 	data.invariant = invariant;
@@ -68,14 +70,14 @@ proc make_inv_data(list invariant, list hypersurfaces)
 	return(data);
 }
 
-proc make_null_inv_data()
+static proc make_null_inv_data()
 {
 	invData null_data = list(), list();
 	return(null_data);
 }
 
 // returns 1 if left < right, false otherwise
-proc invCompare(list left, list right)
+static proc invCompare(list left, list right)
 {
 	int min_size = min(size(left), size(right));
 
@@ -95,7 +97,7 @@ proc invCompare(list left, list right)
 	return(0);
 }
 
-proc make_node_data(string idealStr, int depth, list invariant, string centreBlowup)
+static proc make_node_data(string idealStr, int depth, list invariant, string centreBlowup)
 {
 	nodeData data;
 	data.idealStr = idealStr;
@@ -105,7 +107,7 @@ proc make_node_data(string idealStr, int depth, list invariant, string centreBlo
 	return(data);
 }
 
-proc make_blowup_data(string ringvars, string ambientSpace, string strictTransform, string exceptionalDivisor, string blowUpMap)
+static proc make_blowup_data(string ringvars, string ambientSpace, string strictTransform, string exceptionalDivisor, string blowUpMap)
 {
 	blowUpData data;
 	data.ringvars = ringvars;
@@ -116,7 +118,7 @@ proc make_blowup_data(string ringvars, string ambientSpace, string strictTransfo
 	return(data);
 }
 
-proc make_tree_node(nodeData params, blowUpData blowup)
+static proc make_tree_node(nodeData params, blowUpData blowup)
 {
 	tree_node node;
 	node.params = params;
@@ -124,7 +126,7 @@ proc make_tree_node(nodeData params, blowUpData blowup)
 	return(node);
 }
 
-proc print_node_data(nodeData node)
+static proc print_node_data(nodeData node)
 {
         print("=================PARAMETERS===============");
         print("");
@@ -137,7 +139,7 @@ proc print_node_data(nodeData node)
         printf("centre of blowup: %s", node.centreBlowup); 
 }
 
-proc print_blowup_data(blowUpData blowup)
+static proc print_blowup_data(blowUpData blowup)
 {
         print("==================BLOWUP==================");
         print("");
@@ -153,7 +155,7 @@ proc print_blowup_data(blowUpData blowup)
 	print("==========================================");
 }
 
-proc print_tree_node(tree_node node)
+static proc print_tree_node(tree_node node)
 {
 	print(node.params);
 	print(node.blowup);
@@ -323,12 +325,9 @@ example
 	process_coeff_ideal(J, z); // ((-x6y3,x8), 6)
 }
 
-//assume I is non-zero
-//computes the invariant of I at year 0
-//
-//TODO: i can make this cleaner by doing all the work in a simple loop
 proc compute_invariant_0(ideal I)
 {
+	
 	if(size(I) == 0)
 	{
 		dbprint("compute_invariant_0 | input:"+string(I)+" has size 0");
